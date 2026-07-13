@@ -21,7 +21,7 @@ export default function TempleMap() {
           border: '1px solid var(--border-color)', 
           position: 'relative' 
         }}>
-          <img src="/srirangam/Srirangam_inside_temple_map.svg" alt="Srirangam Temple Map" style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto' }} />
+          <img src="/srirangam/Temple_map_Srirangam1.png" alt="Srirangam Temple Map" style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto' }} />
         
         {/* Paramapathavasal Hover Zone */}
         <div 

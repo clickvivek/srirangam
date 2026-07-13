@@ -9,8 +9,19 @@ export default function TempleMap() {
         <p>Explore the layout of the 7 prakarams (enclosures) and 21 gopurams</p>
       </div>
       
-      <div style={{ margin: '2rem auto', maxWidth: '100%', overflow: 'auto', backgroundColor: 'white', padding: '1rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)', position: 'relative', width: 'fit-content' }}>
-        <img src="/srirangam/map-final.svg" alt="Srirangam Temple Map" style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '0 auto' }} />
+      <div style={{ width: '100%', overflowX: 'auto', padding: '1rem 0' }}>
+        <div style={{ 
+          margin: '0 auto', 
+          minWidth: '800px', 
+          maxWidth: '1200px', 
+          backgroundColor: 'white', 
+          padding: '1rem', 
+          borderRadius: '12px', 
+          boxShadow: '0 4px 15px rgba(0,0,0,0.05)', 
+          border: '1px solid var(--border-color)', 
+          position: 'relative' 
+        }}>
+          <img src="/srirangam/map-final.svg" alt="Srirangam Temple Map" style={{ width: '100%', height: 'auto', display: 'block', margin: '0 auto' }} />
         
         {/* Paramapathavasal Hover Zone */}
         <div 
@@ -122,9 +133,10 @@ export default function TempleMap() {
             visibility: visible !important;
           }
         `}} />
+        </div>
       </div>
 
-      <div style={{ marginTop: '3rem', marginBottom: '2rem' }}>
+      <div style={{ marginTop: '2rem', marginBottom: '2rem' }}>
         <Link href="/" className="btn btn-primary">
           ← Back to Home
         </Link>

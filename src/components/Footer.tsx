@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="did-you-know">
           <Lightbulb className="did-you-know-icon" size={24} />
           <p>
-            <strong>Did you know?</strong> The temple's annual revenue exceeds ₹3,500 crore, making it the richest religious institution in the world. The Hundi (donation box) alone receives over 50 kg of gold annually.
+            <strong>Did you know?</strong> The temple&apos;s annual revenue exceeds ₹3,500 crore, making it the richest religious institution in the world. The Hundi (donation box) alone receives over 50 kg of gold annually.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export default function Footer() {
               <h3>Srirangam Temple Portal</h3>
             </div>
             <p className="footer-desc">
-              An informational portal for Sri Ranganathaswamy Temple, Srirangam — the world's largest functioning Hindu temple and a premier Vaishnava Divya Desam.
+              An informational portal for Sri Ranganathaswamy Temple, Srirangam — the world&apos;s largest functioning Hindu temple and a premier Vaishnava Divya Desam.
             </p>
           </div>
 

@@ -23,7 +23,7 @@ export default function Home() {
             </button>
             <button className="btn glass hero-btn">
               <Users size={20} style={{marginBottom: '0.25rem'}}/>
-              <span>TODAY'S QUEUE</span>
+              <span>TODAY&apos;S QUEUE</span>
               <strong>~45 min wait</strong>
             </button>
             <button className="btn glass hero-btn">

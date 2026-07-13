@@ -10,7 +10,7 @@ export default function TempleMap() {
       </div>
       
       <div style={{ margin: '2rem auto', maxWidth: '100%', overflow: 'auto', backgroundColor: 'white', padding: '1rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)', position: 'relative', width: 'fit-content' }}>
-        <img src="/map-final.svg" alt="Srirangam Temple Map" style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '0 auto' }} />
+        <img src="/srirangam/map-final.svg" alt="Srirangam Temple Map" style={{ maxWidth: '100%', height: 'auto', display: 'block', margin: '0 auto' }} />
         
         {/* Paramapathavasal Hover Zone */}
         <div 
@@ -46,7 +46,7 @@ export default function TempleMap() {
               border: '2px solid var(--primary-color)',
               position: 'relative'
             }}>
-              <img src="/Paramapathavasal.png" alt="Paramapathavasal" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
+              <img src="/srirangam/Paramapathavasal.png" alt="Paramapathavasal" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
               <div style={{ textAlign: 'center', fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--primary-color)', marginTop: '4px' }}>
                 Paramapathavasal
               </div>
@@ -98,7 +98,7 @@ export default function TempleMap() {
               border: '2px solid var(--primary-color)',
               position: 'relative'
             }}>
-              <img src="/RangaNayaki.png" alt="Ranga Naachiyar" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
+              <img src="/srirangam/RangaNayaki.png" alt="Ranga Naachiyar" style={{ width: '100%', height: 'auto', borderRadius: '4px' }} />
               <div style={{ textAlign: 'center', fontSize: '0.8rem', fontWeight: 'bold', color: 'var(--primary-color)', marginTop: '4px' }}>
                 Ranga Naachiyar
               </div>

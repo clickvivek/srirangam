@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 export const metadata: Metadata = {
   title: "Sri Ranganathaswamy Temple | Srirangam",
   description: "Portal for Sri Ranganathaswamy Temple, Srirangam",
-  manifest: "/manifest.json",
+  manifest: "/srirangam/manifest.json",
 };
 
 export const viewport: Viewport = {

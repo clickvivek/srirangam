@@ -1,0 +1,16 @@
+{
+  "name": "Sri Ranganathaswamy Temple",
+  "short_name": "Srirangam",
+  "description": "Portal for Sri Ranganathaswamy Temple, Srirangam",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff7b00",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

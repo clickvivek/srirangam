@@ -81,6 +81,36 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
               </div>
               <span>{dict.navigation.history}</span>
             </Link>
+            <Link href={`/${lang}/seva-booking`} className="quick-link-item">
+              <div className="quick-icon">
+                <CalendarHeart size={32} color="#571a15" />
+              </div>
+              <span>{dict.navigation.seva}</span>
+            </Link>
+            <Link href={`/${lang}/prasadam`} className="quick-link-item">
+              <div className="quick-icon">
+                <Gift size={32} color="#d69f12" />
+              </div>
+              <span>{dict.navigation.prasadam}</span>
+            </Link>
+            <Link href={`/${lang}/dharma-salas`} className="quick-link-item">
+              <div className="quick-icon">
+                <Building size={32} color="#c28e5e" />
+              </div>
+              <span>{dict.navigation.dharmaSalas}</span>
+            </Link>
+            <Link href={`/${lang}/transport`} className="quick-link-item">
+              <div className="quick-icon">
+                <Bus size={32} color="#571a15" />
+              </div>
+              <span>{dict.navigation.transport}</span>
+            </Link>
+            <Link href={`/${lang}/gallery`} className="quick-link-item">
+              <div className="quick-icon">
+                <Camera size={32} color="#d69f12" />
+              </div>
+              <span>{dict.navigation.gallery}</span>
+            </Link>
             <Link href={`/${lang}/map`} className="quick-link-item">
               <div className="quick-icon">
                 <Map size={32} color="#571a15" />

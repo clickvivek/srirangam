@@ -1,10 +1,15 @@
 {
   "navigation": {
-    "darshan": "Darshan Timings",
-    "deity": "Deity & Pooja",
-    "history": "Temple History",
-    "map": "Temple Map",
-    "surroundings": "Surroundings"
+    "darshan": "கோவில் நேரம்",
+    "deity": "கோவிலை ஆராய்க",
+    "history": "கோவில் வரலாறு",
+    "map": "கோவில் வரைபடம்",
+    "surroundings": "அருகிலுள்ள கோவில்கள்",
+    "seva": "சேவை முன்பதிவு",
+    "prasadam": "பிரசாதம் ஆர்டர்",
+    "dharmaSalas": "தர்ம சாலைகள்",
+    "transport": "போக்குவரத்து",
+    "gallery": "புகைப்படங்கள்"
   },
   "home": {
     "title": "Arulmigu Ranganathaswamy Temple",

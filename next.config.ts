@@ -7,7 +7,6 @@ const withPWA = require('next-pwa')({
 });
 
 const nextConfig: NextConfig = {
-  output: 'export',
   basePath: '/srirangam',
   images: {
     unoptimized: true,

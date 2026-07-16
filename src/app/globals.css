@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.75rem 1.5rem;
+  padding: 0.4rem 1.5rem;
   min-width: 180px;
   background: #d95c14 !important;
   border-color: #eb7128 !important;

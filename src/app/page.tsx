@@ -3,8 +3,25 @@ import {
   Building, Bus, Camera, Users, Calendar, Map, Compass
 } from 'lucide-react';
 import Link from 'next/link';
+import fs from 'fs/promises';
+import path from 'path';
+import ImportantNotePopup from '../components/ImportantNotePopup';
 
-export default function Home() {
+export default async function Home() {
+  let timings = {
+    viswaroopa: "06:00 AM - 07:15 AM",
+    morning: "09:00 AM - 12:00 PM",
+    afternoon: "01:15 PM - 05:45 PM",
+    evening: "06:45 PM - 09:00 PM"
+  };
+
+  try {
+    const dataFilePath = path.join(process.cwd(), 'data', 'timings.json');
+    const fileContents = await fs.readFile(dataFilePath, 'utf8');
+    timings = JSON.parse(fileContents);
+  } catch (err) {
+    console.error("Could not load timings, using defaults.", err);
+  }
   return (
     <>
       <section className="hero animate-fade-in">
@@ -54,7 +71,7 @@ export default function Home() {
               </div>
               <span>Nearby<br/>Temples</span>
             </Link>
-            <Link href="/" className="quick-link-item">
+            <Link href="/history" className="quick-link-item">
               <div className="quick-icon">
                 <FileText size={32} color="#c28e5e" />
               </div>
@@ -96,11 +113,11 @@ export default function Home() {
               </div>
               <span>Temple<br/>Map</span>
             </Link>
-            <Link href="/" className="quick-link-item">
+            <Link href="/deity-pooja" className="quick-link-item">
               <div className="quick-icon">
                 <Compass size={32} color="#c28e5e" />
               </div>
-              <span>Explore<br/>Temple</span>
+              <span>Deity &<br/>Pooja</span>
             </Link>
           </div>
           
@@ -122,20 +139,22 @@ export default function Home() {
              <div style={{maxWidth: '600px', width: '100%', backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)'}}>
                <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: '1px solid #eee', marginBottom: '1rem'}}>
                  <strong style={{color: 'var(--primary-color)'}}>Viswaroopa Darshan</strong>
-                 <span>06:00 AM - 07:15 AM</span>
+                 <span>{timings.viswaroopa}</span>
                </div>
                <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: '1px solid #eee', marginBottom: '1rem'}}>
                  <strong style={{color: 'var(--primary-color)'}}>General Darshan (Morning)</strong>
-                 <span>09:00 AM - 12:00 PM</span>
+                 <span>{timings.morning}</span>
                </div>
                <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: '1px solid #eee', marginBottom: '1rem'}}>
                  <strong style={{color: 'var(--primary-color)'}}>General Darshan (Afternoon)</strong>
-                 <span>01:15 PM - 05:45 PM</span>
+                 <span>{timings.afternoon}</span>
                </div>
                <div style={{display: 'flex', justifyContent: 'space-between'}}>
                  <strong style={{color: 'var(--primary-color)'}}>General Darshan (Evening)</strong>
-                 <span>06:45 PM - 09:00 PM</span>
+                 <span>{timings.evening}</span>
                </div>
+               
+               <ImportantNotePopup />
              </div>
           </div>
 

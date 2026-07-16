@@ -2,7 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-export default function HistoryPage() {
+export default async function HistoryPage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+
+
   return (
     <div style={{ padding: '2rem', backgroundColor: '#fdf0f0', minHeight: '100vh', fontFamily: 'sans-serif' }}>
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>

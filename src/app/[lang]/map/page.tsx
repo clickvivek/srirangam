@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
-export default function TempleMap() {
+export default async function TempleMap({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
   return (
     <div className="container" style={{ padding: '4rem 1rem', textAlign: 'center' }}>
       <div className="section-title">

@@ -2,7 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-export default function ThulukkaNachiyarPage() {
+export default async function ThulukkaNachiyarPage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
   return (
     <div style={{ backgroundColor: '#fdf0f0', minHeight: '100vh', fontFamily: 'sans-serif' }}>
       
@@ -27,7 +28,7 @@ export default function ThulukkaNachiyarPage() {
       <div style={{ maxWidth: '900px', margin: '-3rem auto 3rem', position: 'relative', zIndex: 10, padding: '0 2rem' }}>
         <div style={{ backgroundColor: 'white', borderRadius: '12px', padding: '3rem', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }}>
           
-          <img src="/Thulukka-Nachiyar.jpg" alt="Sri Thulukka Nachiyar" style={{ width: '100%', height: 'auto', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
+          <img src="/srirangam/Thulukka-Nachiyar.jpg" alt="Sri Thulukka Nachiyar" style={{ width: '100%', height: 'auto', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
           
           <p style={leadParagraphStyle}>
             This is a delightful and wondrous history handed down by the <em>Koyil Ozhugu</em>, the temple chronicle of Thiruvarangam (Srirangam).

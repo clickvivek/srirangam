@@ -2,7 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-export default function ViswaroopamSevaPage() {
+export default async function ViswaroopamSevaPage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
   return (
     <div style={{ backgroundColor: '#fdf0f0', minHeight: '100vh', fontFamily: 'sans-serif' }}>
       
@@ -27,7 +28,7 @@ export default function ViswaroopamSevaPage() {
       <div style={{ maxWidth: '900px', margin: '-3rem auto 3rem', position: 'relative', zIndex: 10, padding: '0 2rem' }}>
         <div style={{ backgroundColor: 'white', borderRadius: '12px', padding: '3rem', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }}>
           
-          <img src="/Viswaroopam.png" alt="Viswaroopam Seva" style={{ width: '100%', height: 'auto', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
+          <img src="/srirangam/Viswaroopam.png" alt="Viswaroopam Seva" style={{ width: '100%', height: 'auto', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
           
           <p style={leadParagraphStyle}>
             <strong>Vishwaroopam</strong> is the first and most sacred seva (worship service) performed every day at dawn in the Arulmigu Ranganathaswamy Temple at Srirangam. It is the ritual of <em>"Palli Ezhuchi"</em> — the ceremonial awakening of Namperumal from his Yoga Nidra (divine slumber, known as Thiruppallik Kolludhal), conducted through Vedic chanting, Divya Prabandha hymns, the ringing of bells and the waving of lamps (deepaaradhanai), beseeching the Lord to rise and bestow his grace upon the world.

@@ -38,7 +38,7 @@ export default async function RanganathaPerumalPage({ params }: { params: Promis
             if (trimmed.startsWith('-') || trimmed.startsWith('•')) {
                return <li key={idx} style={{...paragraphStyle, marginLeft: '1.5rem'}}>{trimmed.substring(1).trim()}</li>;
             }
-            if (trimmed.length < 80 && !trimmed.endsWith('.') && !trimmed.endsWith(',')) {
+            if (trimmed.length < 80 && !trimmed.endsWith('.') && !trimmed.endsWith(',') && !trimmed.endsWith(':')) {
               return <h2 key={idx} style={headingStyle}>{trimmed}</h2>;
             }
             return <p key={idx} style={paragraphStyle}>{trimmed}</p>;

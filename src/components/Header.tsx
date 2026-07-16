@@ -1,6 +1,29 @@
+"use client";
 import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 
 export default function Header() {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  // Extract current language from pathname (e.g. /en/history -> en)
+  const currentLang = pathname.split('/')[1] || 'en';
+
+  const changeLanguage = (lang: string) => {
+    const segments = pathname.split('/');
+    segments[1] = lang;
+    router.push(segments.join('/') || '/');
+  };
+
+  const languages = [
+    { code: 'en', label: 'EN' },
+    { code: 'ta', label: 'த' },
+    { code: 'hi', label: 'हि' },
+    { code: 'te', label: 'తె' },
+    { code: 'kn', label: 'ಕ' },
+    { code: 'ml', label: 'മ' }
+  ];
+
   return (
     <>
       <div className="top-bar">
@@ -15,7 +38,7 @@ export default function Header() {
       </div>
       <header className="header">
         <div className="container header-container">
-          <Link href="/" className="logo-section">
+          <Link href={`/${currentLang}`} className="logo-section">
             <div className="logo-circle">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m8 17 4 4 4-4"/></svg>
             </div>
@@ -27,15 +50,19 @@ export default function Header() {
           
           <div className="language-selector">
             <span>Language:</span>
-            <button className="lang-btn active">EN</button>
-            <button className="lang-btn">हि</button>
-            <button className="lang-btn">த</button>
-            <button className="lang-btn">తె</button>
-            <button className="lang-btn">ಕ</button>
-            <button className="lang-btn">മ</button>
+            {languages.map((lang) => (
+              <button 
+                key={lang.code}
+                className={`lang-btn ${currentLang === lang.code ? 'active' : ''}`}
+                onClick={() => changeLanguage(lang.code)}
+              >
+                {lang.label}
+              </button>
+            ))}
           </div>
         </div>
       </header>
     </>
   );
 }
+

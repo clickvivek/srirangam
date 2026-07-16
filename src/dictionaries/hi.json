@@ -1,0 +1,15 @@
+{
+  "navigation": {
+    "darshan": "Darshan Timings",
+    "deity": "Deity & Pooja",
+    "history": "Temple History",
+    "map": "Temple Map",
+    "surroundings": "Surroundings"
+  },
+  "home": {
+    "title": "Arulmigu Ranganathaswamy Temple",
+    "subtitle": "The First and Foremost of the 108 Divya Desams",
+    "explore": "Explore Temple",
+    "quickAccess": "Quick Access"
+  }
+}

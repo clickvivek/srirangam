@@ -5,9 +5,13 @@ import {
 import Link from 'next/link';
 import fs from 'fs/promises';
 import path from 'path';
-import ImportantNotePopup from '../components/ImportantNotePopup';
+import ImportantNotePopup from '../../components/ImportantNotePopup';
+import { getDictionary } from '../../dictionaries';
 
-export default async function Home() {
+export default async function Home({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+
   let timings = {
     viswaroopa: "06:00 AM - 07:15 AM",
     morning: "09:00 AM - 12:00 PM",
@@ -59,65 +63,35 @@ export default async function Home() {
           </div>
           
           <div className="quick-access-grid">
-            <Link href="/" className="quick-link-item">
+            <Link href={`/${lang}/timings`} className="quick-link-item">
               <div className="quick-icon">
                 <Clock size={32} color="#571a15" />
               </div>
-              <span>Temple<br/>Timings</span>
+              <span>{dict.navigation.darshan}</span>
             </Link>
-            <Link href="/" className="quick-link-item">
+            <Link href={`/${lang}/surroundings`} className="quick-link-item">
               <div className="quick-icon">
                 <MapPin size={32} color="#d69f12" />
               </div>
-              <span>Nearby<br/>Temples</span>
+              <span>{dict.navigation.surroundings}</span>
             </Link>
-            <Link href="/history" className="quick-link-item">
+            <Link href={`/${lang}/history`} className="quick-link-item">
               <div className="quick-icon">
                 <FileText size={32} color="#c28e5e" />
               </div>
-              <span>Temple<br/>History</span>
+              <span>{dict.navigation.history}</span>
             </Link>
-            <Link href="/" className="quick-link-item">
-              <div className="quick-icon">
-                <CalendarHeart size={32} color="#571a15" />
-              </div>
-              <span>Seva<br/>Booking</span>
-            </Link>
-            <Link href="/" className="quick-link-item">
-              <div className="quick-icon">
-                <Gift size={32} color="#d69f12" />
-              </div>
-              <span>Prasadam<br/>Order</span>
-            </Link>
-            <Link href="/" className="quick-link-item">
-              <div className="quick-icon">
-                <Building size={32} color="#c28e5e" />
-              </div>
-              <span>Dharma<br/>Salas</span>
-            </Link>
-            <Link href="/" className="quick-link-item">
-              <div className="quick-icon">
-                <Bus size={32} color="#571a15" />
-              </div>
-              <span>Transport<br/>Info</span>
-            </Link>
-            <Link href="/" className="quick-link-item">
-              <div className="quick-icon">
-                <Camera size={32} color="#d69f12" />
-              </div>
-              <span>Photo<br/>Gallery</span>
-            </Link>
-            <Link href="/map" className="quick-link-item">
+            <Link href={`/${lang}/map`} className="quick-link-item">
               <div className="quick-icon">
                 <Map size={32} color="#571a15" />
               </div>
-              <span>Temple<br/>Map</span>
+              <span>{dict.navigation.map}</span>
             </Link>
-            <Link href="/deity-pooja" className="quick-link-item">
+            <Link href={`/${lang}/deity-pooja`} className="quick-link-item">
               <div className="quick-icon">
                 <Compass size={32} color="#c28e5e" />
               </div>
-              <span>Deity &<br/>Pooja</span>
+              <span>{dict.navigation.deity}</span>
             </Link>
           </div>
           

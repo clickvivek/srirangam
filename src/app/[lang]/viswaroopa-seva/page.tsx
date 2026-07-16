@@ -5,7 +5,7 @@ import { getDictionary } from '@/dictionaries';
 
 export default async function ViswaroopamSevaPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang) as any;
   const t = dict.viswaroopaSeva;
 
   // Fallback to english if not available in dictionary

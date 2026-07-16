@@ -88,7 +88,7 @@ const heroStyle: React.CSSProperties = {
   backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sri_Ranganathaswamy_Temple_Gopuram.jpg/1200px-Sri_Ranganathaswamy_Temple_Gopuram.jpg')",
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  height: '175px',
+  minHeight: '300px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -104,7 +104,7 @@ const heroOverlayStyle: React.CSSProperties = {
 const heroContentStyle: React.CSSProperties = {
   position: 'relative',
   zIndex: 10,
-  padding: '0 2rem'
+  padding: '5rem 2rem 5rem'
 };
 
 const backLinkStyle: React.CSSProperties = {

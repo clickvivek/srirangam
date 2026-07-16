@@ -16,7 +16,7 @@ export default function ExplorePage() {
       name: "Sri Ranganatha Perumal",
       title: "The Presiding Deity",
       description: "The presiding deity of the temple, Lord Ranganatha, is seen in a reclining posture (Anantha Sayanam) on the serpent Adisesha. He is the ultimate symbol of peace and grace, facing south towards Lanka to bless His great devotee, King Vibhishana.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Jambukeshwarar_Temple_Trichy.jpg/800px-Jambukeshwarar_Temple_Trichy.jpg",
+      image: "/srirangam/sri-ranga.avif",
       link: `/${lang}/ranganatha-perumal`
     },
     {
@@ -31,21 +31,23 @@ export default function ExplorePage() {
       name: "Sri Chakrathalvar",
       title: "Lord Sudarshana",
       description: "The Sri Chakrathalvar shrine is one of the most prominent sub-shrines. It houses the personification of Lord Vishnu's divine discus (Sudarshana Chakra). On the reverse of the idol is Lord Narasimha, offering dual blessings to devotees.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Jambukeshwarar_Temple_Trichy.jpg/800px-Jambukeshwarar_Temple_Trichy.jpg"
+      image: "/srirangam/chakrathalwar.png",
+      link: `/${lang}/chakrathalwar`
     },
     {
       id: 4,
       name: "Sri Ramanujar",
       title: "The Great Preceptor",
       description: "The shrine of Sri Ramanujacharya holds his preserved mortal remains (Thaan Ana Thirumeni). He was the most important philosopher of the Sri Vaishnava tradition, and he administered the Srirangam temple for many decades during his lifetime.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sri_Ranganathaswamy_Temple_Gopuram.jpg/800px-Sri_Ranganathaswamy_Temple_Gopuram.jpg"
+      image: "/srirangam/Sri-Ramanujar.png",
+      link: `/${lang}/ramanujar`
     },
     {
       id: 5,
       name: "Sri Thulakka Nachiyar",
       title: "The Celestial Princess",
       description: "Sri Thulakka Nachiyar (also known as Bibi Nachiyar or Surathani) is a unique and revered shrine dedicated to a Muslim princess from Delhi who fell deeply in love with the processional deity, Lord Namperumal. Her devotion represents the universal nature of the Lord's grace.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Jambukeshwarar_Temple_Trichy.jpg/800px-Jambukeshwarar_Temple_Trichy.jpg",
+      image: "/srirangam/Thulukka-Nachiyar.png",
       link: `/${lang}/thulukka-nachiyar`
     },
     {
@@ -60,14 +62,15 @@ export default function ExplorePage() {
       name: "Sri Dhavanthri Sannidhi",
       title: "The God of Medicine",
       description: "This shrine is dedicated to Lord Dhanvantari, the divine physician and avatar of Lord Vishnu who emerged with the nectar of immortality (Amrita). Devotees offer prayers here seeking good health, healing, and well-being.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Jambukeshwarar_Temple_Trichy.jpg/800px-Jambukeshwarar_Temple_Trichy.jpg"
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Jambukeshwarar_Temple_Trichy.jpg/800px-Jambukeshwarar_Temple_Trichy.jpg",
+      link: `/${lang}/dhanvantri`
     },
     {
       id: 8,
       name: "Viswaroopam Seva",
       title: "Sacred Dawn Worship",
       description: "Vishwaroopam is the first and most sacred seva performed every day at dawn. It is the ritual of 'Palli Ezhuchi' — the ceremonial awakening of Namperumal from his divine slumber.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sri_Ranganathaswamy_Temple_Gopuram.jpg/800px-Sri_Ranganathaswamy_Temple_Gopuram.jpg",
+      image: "/srirangam/Viswaroopam.png",
       link: `/${lang}/viswaroopa-seva`
     }
   ];
@@ -155,9 +158,9 @@ const cardStyle: React.CSSProperties = {
 };
 
 const imageStyle: React.CSSProperties = {
-  height: '200px',
+  height: '240px',
   backgroundSize: 'cover',
-  backgroundPosition: 'center',
+  backgroundPosition: 'top center',
   position: 'relative'
 };
 

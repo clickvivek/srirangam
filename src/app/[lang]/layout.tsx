@@ -17,6 +17,8 @@ export const viewport: Viewport = {
   themeColor: "#ff7b00",
 };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return [
     { lang: 'en' },

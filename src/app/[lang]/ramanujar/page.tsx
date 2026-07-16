@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import { getDictionary } from '@/dictionaries';
 
-export default async function RanganathaPerumalPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
+export default async function RamanujarPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const { lang } = await params;
   const dict = await getDictionary(lang) as any;
-  const t = dict.ranganathaPerumal;
+  const t = dict.ramanujar;
 
   // Fallback if not available
   if (!t) return null;
@@ -34,8 +34,8 @@ export default async function RanganathaPerumalPage({ params }: { params: Promis
         <div style={{ backgroundColor: 'white', borderRadius: '12px', padding: '3rem', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }}>
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2.5rem' }}>
             <Image 
-              src="/srirangam/Sri-Ranganathar.png" 
-              alt="Sri Ranganathar" 
+              src="/srirangam/Sri-Ramanujar.png" 
+              alt="Sri Ramanujar" 
               width={500} 
               height={500} 
               style={{ borderRadius: '8px', objectFit: 'contain', maxHeight: '400px' }}

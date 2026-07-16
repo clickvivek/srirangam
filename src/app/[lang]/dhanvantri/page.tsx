@@ -1,15 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import { getDictionary } from '@/dictionaries';
 
-export default async function RanganathaPerumalPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
+export default async function DhanvantriPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const { lang } = await params;
   const dict = await getDictionary(lang) as any;
-  const t = dict.ranganathaPerumal;
+  const t = dict.dhanvantri;
 
-  // Fallback if not available
   if (!t) return null;
 
   return (
@@ -32,24 +30,13 @@ export default async function RanganathaPerumalPage({ params }: { params: Promis
 
       <div style={{ maxWidth: '900px', margin: '-3rem auto 3rem', position: 'relative', zIndex: 10, padding: '0 2rem' }}>
         <div style={{ backgroundColor: 'white', borderRadius: '12px', padding: '3rem', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }}>
-          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2.5rem' }}>
-            <Image 
-              src="/srirangam/Sri-Ranganathar.png" 
-              alt="Sri Ranganathar" 
-              width={500} 
-              height={500} 
-              style={{ borderRadius: '8px', objectFit: 'contain', maxHeight: '400px' }}
-              priority
-            />
-          </div>
-          
           {t.content.split('\n').filter((p: string) => p.trim() !== '').map((paragraph: string, idx: number) => {
             const trimmed = paragraph.trim();
-            // Heuristic for identifying headings vs paragraphs vs list items
-            if (trimmed.startsWith('-') || trimmed.startsWith('•')) {
-               return <li key={idx} style={{...paragraphStyle, marginLeft: '1.5rem'}}>{trimmed.substring(1).trim()}</li>;
+            // Identifying blockquotes and headings
+            if (trimmed.startsWith('>')) {
+               return <blockquote key={idx} style={quoteStyle}>{trimmed.substring(1).trim()}</blockquote>;
             }
-            if (trimmed.length < 80 && !trimmed.endsWith('.') && !trimmed.endsWith(',') && !trimmed.endsWith(':')) {
+            if (trimmed.length < 60 && !trimmed.endsWith('.') && !trimmed.endsWith(',') && !trimmed.endsWith(':') && !trimmed.startsWith('*')) {
               return <h2 key={idx} style={headingStyle}>{trimmed}</h2>;
             }
             return <p key={idx} style={paragraphStyle}>{trimmed}</p>;
@@ -114,4 +101,13 @@ const paragraphStyle: React.CSSProperties = {
   marginBottom: '1rem',
   fontSize: '1.05rem',
   textAlign: 'justify' as const
+};
+
+const quoteStyle: React.CSSProperties = {
+  color: '#571a15',
+  fontStyle: 'italic',
+  borderLeft: '4px solid #d95c14',
+  paddingLeft: '1rem',
+  margin: '0.5rem 0 0.5rem 2rem',
+  fontWeight: '500'
 };

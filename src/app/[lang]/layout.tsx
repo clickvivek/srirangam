@@ -42,7 +42,7 @@ export default async function RootLayout({
       <body className={`${lora.variable} ${inter.variable}`}>
         <Header />
         <main>{children}</main>
-        <Footer />
+        <Footer lang={lang} />
       </body>
     </html>
   );

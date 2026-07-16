@@ -197,7 +197,7 @@ export default function TempleMap() {
       </div>
 
       <div style={{ marginTop: '2rem', marginBottom: '2rem', textAlign: 'center' }}>
-        <Link href="/" className="btn btn-primary">
+        <Link href={`/${lang}`} className="btn btn-primary">
           ← Back to Home
         </Link>
       </div>

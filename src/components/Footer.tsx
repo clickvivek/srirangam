@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Phone, Mail, MapPin, Clock, Lightbulb } from 'lucide-react';
 
-export default function Footer() {
+export default function Footer({ lang }: { lang: string }) {
   return (
     <footer className="footer">
       <div className="container">
@@ -27,11 +27,11 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Quick Links</h4>
             <ul className="footer-links">
-              <li><Link href="/">Temple Timings</Link></li>
-              <li><Link href="/">Seva Booking</Link></li>
-              <li><Link href="/">Prasadam Orders</Link></li>
-              <li><Link href="/">Accommodation</Link></li>
-              <li><Link href="/">Contact TTD</Link></li>
+              <li><Link href={`/${lang}`}>Temple Timings</Link></li>
+              <li><Link href={`/${lang}`}>Seva Booking</Link></li>
+              <li><Link href={`/${lang}`}>Prasadam Orders</Link></li>
+              <li><Link href={`/${lang}`}>Accommodation</Link></li>
+              <li><Link href={`/${lang}`}>Contact TTD</Link></li>
             </ul>
           </div>
 

@@ -10,7 +10,7 @@ export default function ViswaroopamSevaPage() {
       <div style={heroStyle}>
         <div style={heroOverlayStyle}></div>
         <div style={heroContentStyle}>
-          <Link href="/deity-pooja" style={backLinkStyle}>
+          <Link href={`/${lang}/deity-pooja`} style={backLinkStyle}>
             <ArrowLeft size={20} />
             Back to Deity & Pooja
           </Link>

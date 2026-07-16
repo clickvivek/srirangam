@@ -61,7 +61,7 @@ const deities = [
     title: "Sacred Dawn Worship",
     description: "Vishwaroopam is the first and most sacred seva performed every day at dawn. It is the ritual of 'Palli Ezhuchi' — the ceremonial awakening of Namperumal from his divine slumber.",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sri_Ranganathaswamy_Temple_Gopuram.jpg/800px-Sri_Ranganathaswamy_Temple_Gopuram.jpg",
-    link: "/viswaroopa-seva"
+    link: `/${lang}/viswaroopa-seva`
   }
 ];
 
@@ -71,7 +71,7 @@ export default function ExplorePage() {
   return (
     <div style={{ padding: '2rem', backgroundColor: '#fdf0f0', minHeight: '100vh', fontFamily: 'sans-serif' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#571a15', textDecoration: 'none', marginBottom: '2rem', fontWeight: 'bold' }}>
+        <Link href={`/${lang}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#571a15', textDecoration: 'none', marginBottom: '2rem', fontWeight: 'bold' }}>
           <ArrowLeft size={20} />
           Back to Home
         </Link>

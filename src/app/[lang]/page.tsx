@@ -10,7 +10,7 @@ import { getDictionary } from '../../dictionaries';
 
 export default async function Home({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang) as any;
 
   let timings = {
     viswaroopa: "06:00 AM - 07:15 AM",

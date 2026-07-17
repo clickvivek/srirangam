@@ -7,6 +7,15 @@ import fs from 'fs/promises';
 import path from 'path';
 import ImportantNotePopup from '../../components/ImportantNotePopup';
 import { getDictionary } from '../../dictionaries';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as "en" | "ta" | "hi" | "te" | "ml" | "kn") as any;
+  return {
+    title: dict?.home?.title || "Home",
+  };
+}
 
 export default async function Home({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const { lang } = await params;
@@ -158,7 +167,17 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
                  <span>{timings.evening}</span>
                </div>
                
-               <ImportantNotePopup />
+               <div style={{ marginTop: '1.5rem', display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', width: '100%', borderTop: '1px solid #eee', paddingTop: '1.5rem' }}>
+                 <ImportantNotePopup />
+                 <a 
+                   href="https://srirangamranganathar.hrce.tn.gov.in/resources/docs/invitation/777/invitation_1.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   style={{ color: '#d95c14', fontWeight: 600, textDecoration: 'underline', fontSize: '0.95rem', whiteSpace: 'nowrap' }}
+                 >
+                   Full calendar
+                 </a>
+               </div>
              </div>
           </div>
 

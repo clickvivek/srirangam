@@ -230,8 +230,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.25rem;
   color: var(--background-light);
+  margin-top: 2rem;
   margin-bottom: 0.5rem;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
@@ -259,27 +260,46 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 3rem; /* Add big space below buttons */
 }
 
 .hero-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.4rem 1.5rem;
-  min-width: 180px;
-  background: #d95c14 !important;
-  border-color: #eb7128 !important;
+  padding: 0.75rem 1.5rem;
+  width: 280px; /* Fixed width to make them all exactly the same size */
+  max-width: 100%;
+  background: linear-gradient(135deg, rgba(217, 92, 20, 0.9), rgba(181, 65, 8, 0.9)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 100px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: white;
+  transition: all 0.3s ease;
 }
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(135deg, rgba(225, 105, 30, 0.95), rgba(195, 75, 12, 0.95)) !important;
+}
+
 .hero-btn span {
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   opacity: 0.9;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
 }
+
 .hero-btn strong {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 @media (max-width: 768px) {
@@ -360,12 +380,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--border-color), transparent);
-  margin: 4rem 0;
+  margin: 1rem 0;
 }
 
 /* Quick Access */
 .quick-access-section {
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: var(--background-light);
 }
 
@@ -418,7 +438,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Timings & Temples */
 .timings-section, .nearby-section {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
 .nearby-grid {
@@ -600,6 +620,16 @@ h1, h2, h3, h4, h5, h6 {
 .footer-links a:hover { color: var(--secondary-color); }
 .footer-links a::before {
   content: '›';
+  color: var(--secondary-color);
+}
+
+.footer-contact li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact li a:hover {
   color: var(--secondary-color);
 }
 

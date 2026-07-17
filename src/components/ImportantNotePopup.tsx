@@ -8,25 +8,24 @@ export default function ImportantNotePopup() {
 
   return (
     <>
-      <div style={{ marginTop: '1.5rem', textAlign: 'center', width: '100%', borderTop: '1px solid #eee', paddingTop: '1rem' }}>
-        <button 
-          onClick={(e) => {
-            e.preventDefault();
-            setIsOpen(true);
-          }}
-          style={{ 
-            background: 'none', 
-            border: 'none', 
-            color: '#d95c14', 
-            textDecoration: 'underline', 
-            fontWeight: 'bold', 
-            fontSize: '1rem', 
-            cursor: 'pointer' 
-          }}
-        >
-          Important note
-        </button>
-      </div>
+      <button 
+        onClick={(e) => {
+          e.preventDefault();
+          setIsOpen(true);
+        }}
+        style={{ 
+          background: 'none', 
+          border: 'none', 
+          color: '#d95c14', 
+          textDecoration: 'underline', 
+          fontWeight: 'bold', 
+          fontSize: '1rem', 
+          cursor: 'pointer',
+          whiteSpace: 'nowrap'
+        }}
+      >
+        Important note
+      </button>
 
       {isOpen && (
         <div style={overlayStyle} onClick={() => setIsOpen(false)}>

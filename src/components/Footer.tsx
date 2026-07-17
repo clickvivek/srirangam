@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Clock, Lightbulb } from 'lucide-react';
+import { Mail, MessageSquare, Lightbulb } from 'lucide-react';
+import ContactFormPopup from './ContactFormPopup';
 
 export default function Footer({ lang }: { lang: string }) {
   return (
@@ -16,7 +17,7 @@ export default function Footer({ lang }: { lang: string }) {
         <div className="footer-grid">
           <div className="footer-col">
             <div className="footer-logo">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m8 17 4 4 4-4"/></svg>
+              <img src="/srirangam/logo_new.png" alt="Srirangam Temple Logo" style={{ height: '50px', width: 'auto', marginRight: '1rem' }} />
               <h3>Srirangam Temple Portal</h3>
             </div>
             <p className="footer-desc">
@@ -27,11 +28,12 @@ export default function Footer({ lang }: { lang: string }) {
           <div className="footer-col">
             <h4>Quick Links</h4>
             <ul className="footer-links">
-              <li><Link href={`/${lang}`}>Temple Timings</Link></li>
-              <li><Link href={`/${lang}`}>Seva Booking</Link></li>
-              <li><Link href={`/${lang}`}>Prasadam Orders</Link></li>
-              <li><Link href={`/${lang}`}>Accommodation</Link></li>
-              <li><Link href={`/${lang}`}>Contact TTD</Link></li>
+              <li><Link href={`/${lang}/timings`}>Darshan Timings</Link></li>
+              <li><Link href={`/${lang}/surroundings`}>Surroundings</Link></li>
+              <li><Link href={`/${lang}/history`}>Temple History</Link></li>
+              <li><Link href={`/${lang}/seva-booking`}>Seva Booking</Link></li>
+              <li><Link href={`/${lang}/prasadam`}>Prasadam</Link></li>
+              <li><Link href={`/${lang}/dharma-salas`}>Dharma Salas</Link></li>
             </ul>
           </div>
 
@@ -39,20 +41,12 @@ export default function Footer({ lang }: { lang: string }) {
             <h4>Contact</h4>
             <ul className="footer-contact">
               <li>
-                <Phone />
-                <span>TTD Helpline: 1800-123-4567</span>
-              </li>
-              <li>
                 <Mail />
-                <span>info@ttdsevaonline.com</span>
+                <span>srirangam.net@gmail.com</span>
               </li>
               <li>
-                <MapPin />
-                <span>Srirangam, Tiruchirappalli - 620 006</span>
-              </li>
-              <li>
-                <Clock />
-                <span>Office: 8:00 AM – 8:00 PM</span>
+                <MessageSquare />
+                <ContactFormPopup />
               </li>
             </ul>
           </div>

@@ -3,6 +3,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import { getDictionary } from '@/dictionaries';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as "en" | "ta" | "hi" | "te" | "ml" | "kn") as any;
+  return {
+    title: dict?.ramanujar?.title || "Sri Ramanujar",
+  };
+}
 
 export default async function RamanujarPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const { lang } = await params;

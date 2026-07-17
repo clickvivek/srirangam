@@ -39,9 +39,7 @@ export default function Header() {
       <header className="header">
         <div className="container header-container">
           <Link href={`/${currentLang}`} className="logo-section">
-            <div className="logo-circle">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/><path d="M12 12v9"/><path d="m8 17 4 4 4-4"/></svg>
-            </div>
+            <img src="/srirangam/logo_new.png" alt="Srirangam Temple Logo" style={{ height: '60px', width: 'auto' }} />
             <div className="logo-text">
               <h2>Srirangam Temple Portal</h2>
               <p>ஸ்ரீரங்கம் ரங்கநாதர் கோவில் • Divya Desam</p>

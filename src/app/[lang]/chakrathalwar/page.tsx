@@ -3,6 +3,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft } from 'lucide-react';
 import { getDictionary } from '@/dictionaries';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as "en" | "ta" | "hi" | "te" | "ml" | "kn") as any;
+  return {
+    title: dict?.chakrathalwar?.title || "Sri Chakrathalwar",
+  };
+}
 
 export default async function ChakrathalwarPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const { lang } = await params;
@@ -49,7 +58,7 @@ export default async function ChakrathalwarPage({ params }: { params: Promise<{ 
             if (trimmed.startsWith('>')) {
                return <blockquote key={idx} style={quoteStyle}>{trimmed.substring(1).trim()}</blockquote>;
             }
-            if (trimmed.length < 80 && !trimmed.endsWith('.') && !trimmed.endsWith(',') && !trimmed.endsWith(':')) {
+            if (trimmed.length < 80 && !trimmed.endsWith('.') && !trimmed.endsWith(',') && !trimmed.endsWith(':') && !trimmed.startsWith('-') && !trimmed.startsWith('*')) {
               return <h2 key={idx} style={headingStyle}>{trimmed}</h2>;
             }
             return <p key={idx} style={paragraphStyle}>{trimmed}</p>;

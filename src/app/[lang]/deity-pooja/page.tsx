@@ -54,15 +54,16 @@ export default function ExplorePage() {
       id: 6,
       name: "Sri Garudalwar Sannidhi",
       title: "The Divine Mount",
-      description: "Sri Garudalwar, the sacred eagle mount (Vahana) of Lord Vishnu, has a significant shrine in the temple. The majestic idol of Garuda is depicted with folded hands in deep devotion, facing the main sanctum of Lord Ranganatha.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sri_Ranganathaswamy_Temple_Gopuram.jpg/800px-Sri_Ranganathaswamy_Temple_Gopuram.jpg"
+      description: "Located opposite the main sanctum, this impressive shrine features a towering 14-foot image of Garuda, Lord Vishnu's eagle mount. Uniquely, he is depicted in a seated posture, eternally waiting for the Lord's command.",
+      image: "/srirangam/garudalwar.jpg",
+      link: `/${lang}/garudalwar`
     },
     {
       id: 7,
       name: "Sri Dhavanthri Sannidhi",
       title: "The God of Medicine",
       description: "This shrine is dedicated to Lord Dhanvantari, the divine physician and avatar of Lord Vishnu who emerged with the nectar of immortality (Amrita). Devotees offer prayers here seeking good health, healing, and well-being.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Jambukeshwarar_Temple_Trichy.jpg/800px-Jambukeshwarar_Temple_Trichy.jpg",
+      image: "/srirangam/Sri-Dhavantri.png",
       link: `/${lang}/dhanvantri`
     },
     {

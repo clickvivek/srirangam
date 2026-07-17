@@ -6,6 +6,7 @@ import Link from 'next/link';
 import fs from 'fs/promises';
 import path from 'path';
 import ImportantNotePopup from '../../components/ImportantNotePopup';
+import NearbyTemplesCarousel from '../../components/NearbyTemplesCarousel';
 import { getDictionary } from '../../dictionaries';
 import type { Metadata } from 'next';
 
@@ -193,46 +194,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
             <p>समीपवर्ती देवालय — Pilgrimage Circuit</p>
           </div>
 
-          <div className="nearby-grid">
-            {/* Card 1 */}
-            <div className="temple-card">
-              <div className="temple-card-img" style={{backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sri_Ranganathaswamy_Temple_Gopuram.jpg/800px-Sri_Ranganathaswamy_Temple_Gopuram.jpg')"}}>
-                <span className="temple-badge">Must Visit</span>
-                <span className="temple-distance"><MapPin size={12}/> 5 km</span>
-              </div>
-              <div className="temple-info">
-                <h3>Sri Padmavathi Temple</h3>
-                <p>Goddess Padmavathi</p>
-                <div className="temple-rating">
-                   <span>⭐⭐⭐⭐⭐</span> 4.9
-                </div>
-                <div className="temple-time">
-                  <Clock size={16} /> 6:00 AM - 8:00 PM
-                </div>
-                <button className="btn btn-outline btn-full">Get Directions →</button>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="temple-card">
-              <div className="temple-card-img" style={{backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Jambukeshwarar_Temple_Trichy.jpg/800px-Jambukeshwarar_Temple_Trichy.jpg')"}}>
-                <span className="temple-badge ancient">Ancient</span>
-                <span className="temple-distance"><MapPin size={12}/> 8 km</span>
-              </div>
-              <div className="temple-info">
-                <h3>Sri Govindaraja Swami</h3>
-                <p>Lord Vishnu</p>
-                <div className="temple-rating">
-                   <span>⭐⭐⭐⭐⭐</span> 4.7
-                </div>
-                <div className="temple-time">
-                  <Clock size={16} /> 5:30 AM - 9:00 PM
-                </div>
-                <button className="btn btn-outline btn-full">Get Directions →</button>
-              </div>
-            </div>
-            
-          </div>
+          <NearbyTemplesCarousel lang={lang} />
         </div>
       </section>
     </>

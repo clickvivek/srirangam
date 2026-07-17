@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Mail, MessageSquare, Lightbulb } from 'lucide-react';
 import ContactFormPopup from './ContactFormPopup';
+import DidYouKnow from './DidYouKnow';
 
 export default function Footer({ lang }: { lang: string }) {
   return (
@@ -9,9 +10,9 @@ export default function Footer({ lang }: { lang: string }) {
         
         <div className="did-you-know">
           <Lightbulb className="did-you-know-icon" size={24} />
-          <p>
-            <strong>Did you know?</strong> The temple&apos;s annual revenue exceeds ₹3,500 crore, making it the richest religious institution in the world. The Hundi (donation box) alone receives over 50 kg of gold annually.
-          </p>
+            <p className="footer-desc">
+              <DidYouKnow lang={lang} />
+            </p>
         </div>
 
         <div className="footer-grid">
@@ -32,7 +33,7 @@ export default function Footer({ lang }: { lang: string }) {
               <li><Link href={`/${lang}/surroundings`}>Surroundings</Link></li>
               <li><Link href={`/${lang}/history`}>Temple History</Link></li>
               <li><Link href={`/${lang}/seva-booking`}>Seva Booking</Link></li>
-              <li><Link href={`/${lang}/prasadam`}>Prasadam</Link></li>
+              <li><Link href={`/${lang}/prasadam`}>Annadhanam / Prasadam</Link></li>
               <li><Link href={`/${lang}/dharma-salas`}>Dharma Salas</Link></li>
             </ul>
           </div>

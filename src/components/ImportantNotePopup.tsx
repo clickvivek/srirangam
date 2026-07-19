@@ -1,35 +1,45 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { AlertCircle, X } from 'lucide-react';
 
-export default function ImportantNotePopup({ label = "Important note" }: { label?: string }) {
+export default function ImportantNotePopup({ label = "Important note", content }: { label?: string, content?: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <>
-      <button 
+      <span 
         onClick={(e) => {
           e.preventDefault();
+          e.stopPropagation();
           setIsOpen(true);
         }}
         style={{ 
-          background: 'none', 
-          border: 'none', 
           color: '#d95c14', 
           textDecoration: 'underline', 
           fontWeight: 'bold', 
           fontSize: '1rem', 
           cursor: 'pointer',
-          whiteSpace: 'nowrap'
+          whiteSpace: 'nowrap',
+          display: 'inline-block'
         }}
         className="important-note-btn"
       >
         {label}
-      </button>
+      </span>
 
-      {isOpen && (
-        <div style={overlayStyle} onClick={() => setIsOpen(false)}>
+      {isOpen && mounted && createPortal(
+        <div style={overlayStyle} onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          setIsOpen(false);
+        }}>
           <div style={modalStyle} onClick={e => e.stopPropagation()}>
             <button style={closeBtnStyle} onClick={() => setIsOpen(false)}>
               <X size={24} color="#555" />
@@ -41,20 +51,27 @@ export default function ImportantNotePopup({ label = "Important note" }: { label
             </h2>
             
             <div style={contentStyle}>
-              <p style={paragraphStyle}>
-                Devotees are strongly advised to join the darshan queue at least <strong>30 minutes</strong> before the scheduled temple closing time to ensure entry before the queue is closed.
-              </p>
-              
-              <p style={paragraphStyle}>
-                During major festivals, especially <strong>Vaikunta Ekadasi</strong>, the darshan queue may be closed up to <strong>one hour</strong> before the scheduled closing time, depending on the number of devotees and the crowd within the temple complex. Visitors are therefore encouraged to arrive well in advance during festival periods.
-              </p>
-              
-              <p style={paragraphStyle}>
-                Please note that the <strong>Sri Ranga Nachiyar Temple</strong> (also known as Sri Ranga Nayaki Temple, Thayar Sannidhi, or Amma Sannidhi) located within the temple complex generally closes at approximately the same time as the Sri Ranganathar Temple. Devotees planning to have darshan at both shrines are advised to schedule their visit accordingly to avoid missing the closing time.
-              </p>
+              {content ? (
+                typeof content === 'string' ? <p style={paragraphStyle}>{content}</p> : content
+              ) : (
+                <>
+                  <p style={paragraphStyle}>
+                    Devotees are strongly advised to join the darshan queue at least <strong>30 minutes</strong> before the scheduled temple closing time to ensure entry before the queue is closed.
+                  </p>
+                  
+                  <p style={paragraphStyle}>
+                    During major festivals, especially <strong>Vaikunta Ekadasi</strong>, the darshan queue may be closed up to <strong>one hour</strong> before the scheduled closing time, depending on the number of devotees and the crowd within the temple complex. Visitors are therefore encouraged to arrive well in advance during festival periods.
+                  </p>
+                  
+                  <p style={paragraphStyle}>
+                    Please note that the <strong>Sri Ranga Nachiyar Temple</strong> (also known as Sri Ranga Nayaki Temple, Thayar Sannidhi, or Amma Sannidhi) located within the temple complex generally closes at approximately the same time as the Sri Ranganathar Temple. Devotees planning to have darshan at both shrines are advised to schedule their visit accordingly to avoid missing the closing time.
+                  </p>
+                </>
+              )}
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );

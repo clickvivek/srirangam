@@ -1,47 +1,51 @@
 import React from 'react';
 import Image from 'next/image';
 import { MapPin } from 'lucide-react';
+import { getDictionary } from '@/dictionaries';
 
-export default function Surroundings() {
+export default async function Surroundings({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> | { lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' } }) {
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang) as any;
+  const nearby = dict.nearby || {};
   const temples = [
     {
-      name: "Thiruvanaikaval Jambukeswarar Temple",
-      desc: "One of the five major Shiva Temples of Tamil Nadu representing the Mahābhūta or five great elements. This temple represents the element of water (Appu Lingam).",
+      name: nearby.temples?.[0]?.name || "Thiruvanaikaval Jambukeswarar Temple",
+      desc: nearby.temples?.[0]?.desc || "One of the five major Shiva Temples of Tamil Nadu representing the Mahābhūta or five great elements. This temple represents the element of water (Appu Lingam).",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Jambukeshwarar_Temple_Trichy.jpg/800px-Jambukeshwarar_Temple_Trichy.jpg",
       distSrirangam: "2.5 km",
       distTrichy: "8 km"
     },
     {
-      name: "Rockfort Ucchi Pillayar Temple",
-      desc: "A historic temple dedicated to Lord Ganesha built on a 3-billion-year-old rock. It offers panoramic views of Trichy and Srirangam.",
+      name: nearby.temples?.[1]?.name || "Rockfort Ucchi Pillayar Temple",
+      desc: nearby.temples?.[1]?.desc || "A historic temple dedicated to Lord Ganesha built on a 3-billion-year-old rock. It offers panoramic views of Trichy and Srirangam.",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Rockfort_Temple_Trichy_India.jpg/800px-Rockfort_Temple_Trichy_India.jpg",
       distSrirangam: "6 km",
       distTrichy: "5 km"
     },
     {
-      name: "Samayapuram Mariamman Temple",
-      desc: "A very popular and powerful temple dedicated to Goddess Mariamman, located on the outskirts of Trichy.",
+      name: nearby.temples?.[2]?.name || "Samayapuram Mariamman Temple",
+      desc: nearby.temples?.[2]?.desc || "A very popular and powerful temple dedicated to Goddess Mariamman, located on the outskirts of Trichy.",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Samayapuram_Mariamman_Temple.jpg/800px-Samayapuram_Mariamman_Temple.jpg",
       distSrirangam: "12 km",
       distTrichy: "20 km"
     },
     {
-      name: "Uraiyur Vekkali Amman Temple",
-      desc: "A unique and powerful temple in Uraiyur (the ancient Chola capital) where the sanctum of the Goddess does not have a roof, symbolizing her connection to the sky and nature.",
+      name: nearby.temples?.[3]?.name || "Uraiyur Vekkali Amman Temple",
+      desc: nearby.temples?.[3]?.desc || "A unique and powerful temple in Uraiyur (the ancient Chola capital) where the sanctum of the Goddess does not have a roof, symbolizing her connection to the sky and nature.",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Vekkali_Amman_Temple_Gopuram.jpg/800px-Vekkali_Amman_Temple_Gopuram.jpg",
       distSrirangam: "9 km",
       distTrichy: "6 km"
     },
     {
-      name: "Vayalur Murugan Temple",
-      desc: "Located amidst lush green fields, this peaceful temple dedicated to Lord Murugan is associated with the great saint Arunagirinathar.",
+      name: nearby.temples?.[4]?.name || "Vayalur Murugan Temple",
+      desc: nearby.temples?.[4]?.desc || "Located amidst lush green fields, this peaceful temple dedicated to Lord Murugan is associated with the great saint Arunagirinathar.",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Vayalur_Murugan_Temple.jpg/800px-Vayalur_Murugan_Temple.jpg",
       distSrirangam: "15 km",
       distTrichy: "11 km"
     },
     {
-      name: "Tanjore Brahadeswara Temple",
-      desc: "Also known as the Peruvudaiyar Kovil, this UNESCO World Heritage Site is one of the largest and most magnificent Chola temples, located in Thanjavur.",
+      name: nearby.temples?.[5]?.name || "Tanjore Brahadeswara Temple",
+      desc: nearby.temples?.[5]?.desc || "Also known as the Peruvudaiyar Kovil, this UNESCO World Heritage Site is one of the largest and most magnificent Chola temples, located in Thanjavur.",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Brihadeeswarar_Temple_Thanjavur.jpg/800px-Brihadeeswarar_Temple_Thanjavur.jpg",
       distSrirangam: "60 km",
       distTrichy: "55 km"
@@ -51,10 +55,9 @@ export default function Surroundings() {
   return (
     <div style={{ backgroundColor: '#fdfaf4', minHeight: '100vh', padding: '4rem 1rem' }}>
       <div className="container" style={{ maxWidth: '1000px' }}>
-        <h1 style={{ color: 'var(--primary-color)', fontSize: '2.5rem', marginBottom: '1rem', textAlign: 'center' }}>Nearby Temples</h1>
+        <h1 style={{ color: 'var(--primary-color)', fontSize: '2.5rem', marginBottom: '1rem', textAlign: 'center' }}>{nearby.title || "Nearby Temples"}</h1>
         <p style={{ fontSize: '1.1rem', marginBottom: '4rem', textAlign: 'center', color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto 4rem' }}>
-          Extend your spiritual journey by visiting these magnificent and powerful temples 
-          located in and around the Trichy and Tanjore regions.
+          {nearby.subtitle || "Extend your spiritual journey by visiting these magnificent and powerful temples located in and around the Trichy and Tanjore regions."}
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
@@ -97,12 +100,12 @@ export default function Surroundings() {
                 <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#888', fontSize: '0.9rem' }}>
                     <MapPin size={16} color="var(--secondary-color)" />
-                    <span><strong>{temple.distSrirangam}</strong> from Srirangam</span>
+                    <span><strong>{temple.distSrirangam}</strong> {nearby.fromSrirangam || "from Srirangam"}</span>
                   </div>
                   <div style={{ width: '1px', height: '15px', backgroundColor: '#e0e0e0' }}></div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#888', fontSize: '0.9rem' }}>
                     <MapPin size={16} color="var(--secondary-color)" />
-                    <span><strong>{temple.distTrichy}</strong> from Trichy Central</span>
+                    <span><strong>{temple.distTrichy}</strong> {nearby.fromTrichy || "from Trichy Central"}</span>
                   </div>
                 </div>
               </div>

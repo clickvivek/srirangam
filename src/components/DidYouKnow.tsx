@@ -18,11 +18,19 @@ export default function DidYouKnow({ lang }: { lang: string }) {
   const fact = didYouKnowData[factIndex];
   const factText = (fact as Record<string, string>)[lang] || (fact as Record<string, string>)['en'];
   
-  const didYouKnowLabel = lang === 'ta' ? 'உங்களுக்குத் தெரியுமா?' : 'Did you know?';
+  const labels: Record<string, string> = {
+    en: 'Did you know?',
+    ta: 'உங்களுக்குத் தெரியுமா?',
+    hi: 'क्या आप जानते हैं?',
+    te: 'మీకు తెలుసా?',
+    ml: 'നിങ്ങൾക്കറിയാമോ?',
+    kn: 'ನಿಮಗೆ ತಿಳಿದಿದೆಯೇ?'
+  };
+  const didYouKnowLabel = labels[lang] || labels['en'];
 
   return (
     <>
-      <strong>{didYouKnowLabel}</strong> {factText}
+      <strong>{didYouKnowLabel}</strong> {factText || fact['en']}
     </>
   );
 }

@@ -12,7 +12,7 @@ const routes = [
   '/thulukka-nachiyar',
   '/viswaroopa-seva',
   '/history',
-  '/surroundings',
+  '/Temples-Nearby-Srirangam-Trichy',
   '/darshan',
   '/thayar',
   '/prasadam'

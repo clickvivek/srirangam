@@ -104,7 +104,7 @@ export default function NearbyTemplesCarousel({ lang }: { lang: string }) {
             <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
               <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', color: '#571a15', minHeight: '40px' }}>{temple.name}</h3>
               <p style={{ margin: '0 0 1rem 0', fontSize: '0.9rem', color: '#666', flexGrow: 1 }}>{temple.desc}</p>
-              <Link href={`/${lang}/surroundings`} style={{ fontSize: '0.9rem', color: '#d95c14', fontWeight: 600, textDecoration: 'none' }}>Explore →</Link>
+              <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`} style={{ fontSize: '0.9rem', color: '#d95c14', fontWeight: 600, textDecoration: 'none' }}>Explore →</Link>
             </div>
           </div>
         ))}

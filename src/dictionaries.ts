@@ -33,6 +33,7 @@ function deepMerge(target: any, source: any) {
 }
 
 export const getDictionary = async (locale: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn') => {
+  // Busting Next.js JSON cache for dev mode (Stay translations fix)
   if (!dictionaries[locale] || locale === 'en') {
     return dictionaries['en'];
   }

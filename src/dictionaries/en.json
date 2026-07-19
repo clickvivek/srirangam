@@ -113,5 +113,329 @@
     "contact": "CONTACT",
     "contactForm": "Contact Form",
     "disclaimer": "Disclaimer: This is not the official government website of Sriranganatha temple. This website is maintained by Sri Ranganathar Devotees (Volunteers)."
+  },
+  "sevaBooking": {
+    "title": "Seva Booking",
+    "subtitle": "Official Darshan & Services",
+    "noticeTitle": "Important Notice",
+    "noticeText": "srirangam.net is an informational portal and is not the official temple booking site. All seva and darshan bookings are securely processed through the official Tamil Nadu Government (HR&CE) website. The links below will redirect you to the official government portal for booking.",
+    "proceedToBooking": "Proceed to Official Booking",
+    "importantNoteLabel": "Important Note",
+    "items": {
+      "allSevas": {
+        "title": "All Seva Bookings",
+        "desc": "Explore and book all available Sevas and services."
+      },
+      "vishwaroopam": {
+        "title": "Perumal Sannathi Vishwaroopam Sevai",
+        "desc": "Book tickets for the early morning Vishwaroopam Darshan of Lord Ranganatha.",
+        "timing": "Timing 5.30 AM to 7.00 AM. No Darshan on Festival days & Mid Dec to Mid Jan Marghazi month.",
+        "importantNote": "Only 150 people are allowed in for Viswaroopa Darshan at a time, so it's best to book your ticket online at least a week ahead. Tickets are also sold offline at the counter for ₹70, but that route is risky — there's no guarantee you'll reach the counter in time to get one."
+      },
+      "perumalSpecial": {
+        "title": "Perumal Sannathi Special Entrance",
+        "desc": "Special entry tickets for Lord Ranganatha's main sanctum."
+      },
+      "thayaarSpecial": {
+        "title": "Thayaar Sannathi Special Entrance",
+        "desc": "Special entry tickets for Goddess Sri Ranganayaki Thayar's sanctum."
+      },
+      "thirumanjanam": {
+        "title": "Thirumanjanam Tanvandiri",
+        "desc": "Book Thirumanjanam service for Lord Dhanvantri."
+      }
+    }
+  },
+  "timingsPage": {
+    "home": "Home",
+    "subtitle": "Darshan Schedule for all Deities",
+    "mainTemple": "Sri Ranganathaswamy Temple",
+    "mainTempleSub": "Sri Ranganathar",
+    "nachiyar": "Sri Ranga Nayaki (Nachiyar)",
+    "nachiyarSub": "Sri Ranganayaki Thayar",
+    "ramanujar": "Sri Ramanujar",
+    "ramanujarSub": "Sri Ramanujar",
+    "morningSeva1": "Morning Seva (Slot 1)",
+    "morningSeva2": "Morning Seva (Slot 2)",
+    "morningSeva": "Morning Seva",
+    "afternoonSeva": "Afternoon Seva",
+    "eveningSeva": "Evening Seva",
+    "notePrefix": "Note: ",
+    "chithiraiNote": "During Chithirai and Aippasi months, Vadai Ilai Pachai Karpuram and Kalavai Sathumurai takes place."
+  },
+  "nearby": {
+    "title": "Nearby Temples",
+    "subtitle": "Extend your spiritual journey by visiting these magnificent and powerful temples located in and around the Trichy and Tanjore regions.",
+    "fromSrirangam": "from Srirangam",
+    "fromTrichy": "from Trichy Central",
+    "temples": [
+      {
+        "name": "Thiruvanaikaval Jambukeswarar Temple",
+        "desc": "One of the five major Shiva Temples of Tamil Nadu representing the Mahābhūta or five great elements. This temple represents the element of water (Appu Lingam)."
+      },
+      {
+        "name": "Rockfort Ucchi Pillayar Temple",
+        "desc": "A historic temple dedicated to Lord Ganesha built on a 3-billion-year-old rock. It offers panoramic views of Trichy and Srirangam."
+      },
+      {
+        "name": "Samayapuram Mariamman Temple",
+        "desc": "A very popular and powerful temple dedicated to Goddess Mariamman, located on the outskirts of Trichy."
+      },
+      {
+        "name": "Uraiyur Vekkali Amman Temple",
+        "desc": "A unique and powerful temple in Uraiyur (the ancient Chola capital) where the sanctum of the Goddess does not have a roof, symbolizing her connection to the sky and nature."
+      },
+      {
+        "name": "Vayalur Murugan Temple",
+        "desc": "Located amidst lush green fields, this peaceful temple dedicated to Lord Murugan is associated with the great saint Arunagirinathar."
+      },
+      {
+        "name": "Tanjore Brahadeswara Temple",
+        "desc": "Also known as the Peruvudaiyar Kovil, this UNESCO World Heritage Site is one of the largest and most magnificent Chola temples, located in Thanjavur."
+      }
+    ]
+  },
+  "deitySeva": {
+    "backToHome": "Back to Home",
+    "title": "Deities and Seva",
+    "subtitle": "Discover the divine shrines and deities of Srirangam",
+    "viewDetails": "View Details",
+    "deities": [
+      {
+        "name": "Sri Ranganatha Perumal",
+        "title": "The Presiding Deity",
+        "description": "The presiding deity of the temple, Lord Ranganatha, is seen in a reclining posture (Anantha Sayanam) on the serpent Adisesha. He is the ultimate symbol of peace and grace, facing south towards Lanka to bless His great devotee, King Vibhishana."
+      },
+      {
+        "name": "Sri Ranga Nayaki",
+        "title": "Thayar / Amma Sannidhi",
+        "description": "Sri Ranga Nayaki, affectionately known as Thayar (Mother), is the divine consort of Lord Ranganatha. Her shrine is located in the fourth enclosure. According to tradition, Lord Ranganatha never leaves the temple without Her permission."
+      },
+      {
+        "name": "Sri Chakrathalvar",
+        "title": "Lord Sudarshana",
+        "description": "The Sri Chakrathalvar shrine is one of the most prominent sub-shrines. It houses the personification of Lord Vishnu's divine discus (Sudarshana Chakra). On the reverse of the idol is Lord Narasimha, offering dual blessings to devotees."
+      },
+      {
+        "name": "Sri Ramanujar",
+        "title": "The Great Preceptor",
+        "description": "The shrine of Sri Ramanujacharya holds his preserved mortal remains (Thaan Ana Thirumeni). He was the most important philosopher of the Sri Vaishnava tradition, and he administered the Srirangam temple for many decades during his lifetime."
+      },
+      {
+        "name": "Sri Thulakka Nachiyar",
+        "title": "The Celestial Princess",
+        "description": "Sri Thulakka Nachiyar (also known as Bibi Nachiyar or Surathani) is a unique and revered shrine dedicated to a Muslim princess from Delhi who fell deeply in love with the processional deity, Lord Namperumal. Her devotion represents the universal nature of the Lord's grace."
+      },
+      {
+        "name": "Sri Garudalwar Sannidhi",
+        "title": "The Divine Mount",
+        "description": "Located opposite the main sanctum, this impressive shrine features a towering 14-foot image of Garuda, Lord Vishnu's eagle mount. Uniquely, he is depicted in a seated posture, eternally waiting for the Lord's command."
+      },
+      {
+        "name": "Sri Dhavanthri Sannidhi",
+        "title": "The God of Medicine",
+        "description": "This shrine is dedicated to Lord Dhanvantari, the divine physician and avatar of Lord Vishnu who emerged with the nectar of immortality (Amrita). Devotees offer prayers here seeking good health, healing, and well-being."
+      },
+      {
+        "name": "Viswaroopam Seva",
+        "title": "Sacred Dawn Worship",
+        "description": "Vishwaroopam is the first and most sacred seva performed every day at dawn. It is the ritual of 'Palli Ezhuchi' — the ceremonial awakening of Namperumal from his divine slumber."
+      }
+    ]
+  },
+  "map": {
+    "layout": "TEMPLE LAYOUT",
+    "title": "Sri Ranganathaswamy Temple Map",
+    "subtitle": "Explore the layout of the 7 prakarams (enclosures) and 21 gopurams",
+    "paramapathavasal": "Paramapathavasal",
+    "rangaNaachiyar": "Ranga Naachiyar",
+    "darshanRouteTitle": "Recommended Darshan Route",
+    "darshanRouteSubtitle": "Welcome to the sacred abode of Sri Ranganatha! 🙏\nTo make your pilgrimage smooth, peaceful, and spiritually fulfilling, we recommend following the route below.",
+    "step1Title": "🚩 Step 1: Enter Through the South Rajagopuram",
+    "step1P1": "Begin your divine journey through the South Rajagopuram, the main and most convenient entrance to the temple.",
+    "step1P2": "As you enter, you will be blessed with the majestic Sri Garudazhwar. Pause for a moment, offer your prayers, and seek His blessings before proceeding to the sanctum of Sri Ranganathar.",
+    "step2Title": "🛕 Step 2: Choose Your Darshan Queue",
+    "step2P1": "You have two options for darshan:",
+    "step2L1": "🟢 <strong>Free Darshan:</strong> Entrance is located on the left side of the Sri Ranganathar Temple entrance. Suitable for devotees who prefer the regular queue.",
+    "step2L2": "⭐ <strong>₹100 Special Darshan:</strong> Entrance is located on the right side. Offers a significantly faster darshan with shorter waiting times.",
+    "step2P2": "Whichever option you choose, may Lord Ranganatha bless you with peace, happiness, and prosperity.",
+    "step3Title": "🚗 Step 3: Visit Sri Ranganachiyaar (Ranganayaki Thayar) Temple",
+    "step3P1": "After completing your darshan of Sri Ranganathar, continue your pilgrimage to Sri Ranganachiyaar Thayar Temple (Ranganayaki Amma Temple).",
+    "step3P2": "For your convenience:",
+    "step3L1": "🚗 Battery-operated golf carts are available and provide the easiest way to reach the temple.",
+    "step3L2": "🚶 Prefer walking? It takes approximately 10 minutes.",
+    "step4Title": "🛕 Step 4: Visit Sri Chakrathazhwar Temple",
+    "step4P1": "After receiving the blessings of Sri Ranganayaki Thayar, walk to the nearby Sri Chakrathazhwar Temple, one of the closest shrines from there.",
+    "step5Title": "🙏 Step 5: Seek the Blessings of Sri Ramanujar",
+    "step5P1": "Continue walking to the sacred Sri Ramanujar Temple, dedicated to the great Acharya who preserved and spread the Sri Vaishnava tradition.",
+    "step5P2": "Many devotees consider this visit an essential part of their pilgrimage to Srirangam.",
+    "step6Title": "🍛 Step 6: Receive the Blessings of Annadanam",
+    "step6P1": "As you return towards the main entrance, don't miss the opportunity to participate in Annadanam, the sacred offering of free meals to devotees.",
+    "step6BoxTitle": "Annadanam Timings",
+    "step6Box1": "📅 Every day throughout the year",
+    "step6Box2": "🕗 8:00 AM to approximately 8:30–9:00 PM",
+    "step6P2": "Sharing or receiving Annadanam is regarded as one of the highest forms of service and blessing.",
+    "finishTitle": "🌺 Complete Your Pilgrimage",
+    "finishP1": "By following this recommended route, you can comfortably visit the major shrines within the Sri Ranganathaswamy Temple Complex in the most convenient and spiritually enriching order.",
+    "finishP2": "May Sri Ranganatha, Sri Ranganayaki Thayar, Sri Chakrathazhwar, Sri Garudazhwar, and Sri Ramanujar shower you and your family with good health, happiness, prosperity, and divine grace.",
+    "finishP3": "🙏 Wishing you a blessed and memorable darshan at the holy temple of Srirangam!",
+    "backToHome": "← Back to Home"
+  },
+  "prasadam": {
+    "heroTitle": "Annadhanam & Prasadam",
+    "heroSubtitle": "Free Meals Scheme (Nithya Annadhanam)",
+    "programTitle": "Nithya Annadhanam Program",
+    "programDesc1": "For the convenience of the devotees, the full-day Annadanam program has been running successfully since <strong>13-09-2012</strong>. Every single day, at least <strong>3,000 devotees</strong> are provided with wholesome, sacred meals as Prasadam.",
+    "locationTitle": "Location",
+    "locationDesc": "Dining Hall near to the Temple Rooftop View Point.",
+    "referMap": "Refer to the Temple Map",
+    "donationTitle": "Donation Details",
+    "oneDayTitle": "One-Day Scheme",
+    "oneDayDesc": "Provides Annadanam to 100 persons for a single day.",
+    "permanentTitle": "Permanent Endowment",
+    "permanentDesc": "Deposit for feeding 100 persons on a particular day every year.",
+    "multipleNote": "For multiple Annadanams, the amount will be calculated in the above ratio.",
+    "donateBtn": "Proceed to Online Donation"
+  },
+  "transport": {
+    "heroTitle": "Transport Information",
+    "heroSubtitle": "How to Reach Srirangam",
+    "intro": "Sri Ranganathaswamy Temple is located on Srirangam Island in Tiruchirappalli (Trichy), Tamil Nadu. The temple is well connected by air, rail and road, making it easy for devotees from across India and abroad to visit.",
+    "busTitle": "Local Bus Stands",
+    "busChathiram": "From Chathiram Bus Stand",
+    "busChathiramD": "~5 km",
+    "busChathiramT": "⏱ 15–20 mins",
+    "busChathiramL1": "Frequent city buses to Srirangam.",
+    "busChathiramL2": "Auto-rickshaws readily available.",
+    "busChathiramL3": "Taxis and app-based cabs offer direct drop.",
+    "busTrichy": "From Trichy Central Bus Stand",
+    "busTrichyD": "~10 km",
+    "busTrichyT": "⏱ 25–35 mins",
+    "busTrichyL1": "City buses operate regularly.",
+    "busTrichyL2": "Autos and taxis available outside terminal.",
+    "busTrichyL3": "Recommended for families travelling with luggage.",
+    "busPanjapur": "From Panjapur Integrated Terminus",
+    "busPanjapurD": "~15–18 km",
+    "busPanjapurT": "⏱ 30–45 mins",
+    "busPanjapurL1": "Direct or connecting buses.",
+    "busPanjapurL2": "Allow extra time during peak traffic.",
+    "trainTitle": "Railway Stations",
+    "trainSrirangam": "Srirangam Railway Station",
+    "trainSrirangamD": "~1.5 km from the temple. Easily accessible by walk, auto or taxi.",
+    "trainTrichy": "Tiruchirappalli Junction",
+    "trainTrichyD": "~10 km from the temple. City buses, autos and taxis available outside.",
+    "airTitle": "By Air",
+    "airD": "~15 km to Airport",
+    "airT": "⏱ 30–40 mins travel",
+    "airDesc": "Trichy International Airport has domestic connectivity to Chennai, Bengaluru, Hyderabad, Mumbai, Delhi and Kochi, along with international flights to Singapore, Kuala Lumpur, Colombo and Gulf destinations.",
+    "airL1": "24×7 prepaid taxis & App-based cabs.",
+    "airL2": "Airport buses to city with Srirangam connections.",
+    "trainTravelTitle": "Train Travel from Major Cities",
+    "thCity": "City",
+    "thDist": "Distance",
+    "thTime": "Time",
+    "roadTravelTitle": "By Road (Driving)",
+    "parkingTitle": "Parking Information",
+    "parkingDesc": "Dedicated parking is available around the temple. During weekends and major festivals (like Vaikunta Ekadasi), arrive early as parking fills quickly.",
+    "tipsTitle": "Travel Tips",
+    "tip1": "Arrive at least 30 minutes before the queue closing time.",
+    "tip2": "Expect additional traffic during festivals.",
+    "tip3": "If your train stops at Srirangam Station, alight there for the shortest transfer.",
+    "tip4": "Carry drinking water and small cash for local transport.",
+    "tip5": "Early morning visits are recommended during summer.",
+    "tip6": "We recommend RedTaxi as a reliable Cab service. Affordable and reliable. Phone Number 0431 456 7890 or you can download Redtaxi from Playstore or Appstore.",
+    "tip7": "Annadhanam (Free Food/ Meals) Available from 8 am to 9 PM. Waiting time is approx 0-30 minutes."
+  },
+  "gallery": {
+    "galleryTitle": "Temple Gallery",
+    "gallerySubtitle": "A visual journey through Sri Ranganathaswamy Temple",
+    "noPhotos": "No photos have been uploaded yet. Please visit the Admin page to upload photos.",
+    "adminTitle": "Admin Photo Upload",
+    "adminSubtitle": "Upload photos to the public gallery",
+    "selectImage": "Select Image:",
+    "uploadBtn": "Upload Photo",
+    "uploadSuccess": "Photo uploaded successfully!",
+    "uploadFailed": "Upload failed.",
+    "uploading": "Uploading..."
+  },
+  "stay": {
+    "title": "Where to Stay in Srirangam",
+    "subtitle": "A guide to hotels, lodges, and temple guest houses",
+    "zonesTitle": "Two Main Zones to Choose From",
+    "zonesIntro": "For a Srirangam pilgrimage, you've basically got two zones to choose from: right at the temple's doorstep (walk to darshan, no traffic hassle) or a bit further out (usually quieter, sometimes cheaper).",
+    "walkingDistanceTitle": "Walking distance to the temple",
+    "walkingDistanceDesc": "Best if you want to avoid autos during early-morning or late-night darshan:",
+    "hotels": [
+      {
+        "name": "Anantha Shaiya",
+        "link": "https://share.google/J6QbeiL3UNSdyGeK2",
+        "desc": "About 30m from the South Gopuram, the closest option going. Small but very clean rooms, no elevator."
+      },
+      {
+        "name": "Sri Maruti Inn",
+        "link": "https://share.google/s8XcUQxbaxEmzwVom",
+        "desc": "2 minutes from the darshan entrance, some rooms even have gopuram views."
+      },
+      {
+        "name": "Sri Krishna Residency",
+        "link": "https://share.google/PnHW0EAaEMg9QcBTt",
+        "desc": "Spacious, clean rooms, also walking distance."
+      },
+      {
+        "name": "SRI RANGANADHA NILAYAM",
+        "link": "https://share.google/JAuCWraollwEqxpVk",
+        "desc": "A more homely lodge with a shared kitchen if you want to cook your own food, popular with families doing multi-day visits."
+      },
+      {
+        "name": "Yatri Nivas Guest House",
+        "link": "https://share.google/R1hnduL9IAgUq0okv",
+        "desc": "(on Kollidam Flood Bank Road) — Owned by the temple itself, large parking area, has an in-house veg restaurant. (Note: Cash-only, no online booking)."
+      }
+    ],
+    "furtherOutTitle": "Slightly further out, quieter",
+    "furtherOutDesc": "Good if you're also visiting Rockfort or Jambukeswarar Temple:",
+    "furtherOutHotels": [
+      {
+        "name": "RJ Residency Srirangam",
+        "link": "https://share.google/rxiguSlZbTxN4LyaJ",
+        "desc": "Highest-rated of the lot (4.9), calm location, family-friendly."
+      }
+    ],
+    "practicalNotesTitle": "Practical Notes",
+    "practicalNotes": [
+      "Book well ahead during festival season, especially around Vaikuntha Ekadasi (December–January) – rooms get scarce and some properties are known to hike prices last-minute.",
+      "If you want AC and modern amenities, the private hotels near the South Gate are more reliable than the temple guest houses, which are more basic.",
+      "Carry your own toiletries and a towel – several budget lodges near the temple don't provide them."
+    ],
+    "yatriNivasDetailsTitle": "Yatri Nivas Srirangam",
+    "yatriNivasDetailsLink": "https://share.google/9fwkK4alV4UEDyOWT",
+    "yatriNivasDetailsDesc": "The temple-run guest house – pulled together from booking guides, official temple contacts, and traveler reviews.",
+    "basicsTitle": "The Basics",
+    "basics": [
+      "Location: Kollidam Flood Bank Road, Srirangam – about 2 km from the temple, not walking distance.",
+      "Ownership: It's the official Sri Ranganathaswamy Devasthanam (temple) lodge, not a private hotel.",
+      "Room types: 88 rooms plus separate cottages and dormitories.",
+      "Booking: No official online booking exists. You book by phone (temple enquiry: 0431-2432246, lodge: 94864-82246) or by walking in. Fake sites exist, beware.",
+      "Payment: Cash only at check-in – no cards, no UPI/GPay. Refundable deposit typically required.",
+      "Rough tariffs: AC double rooms ~₹1750/night, four-bed AC cottages ~₹1750, dorms ₹800 (8-bed) to ₹1400 (14-bed)."
+    ],
+    "prosTitle": "Pros",
+    "pros": [
+      "Cheapest option in the area by a wide margin, especially for groups.",
+      "Genuinely built for pilgrims – large parking (~30 cars), in-house veg restaurant, layout designed for groups/families.",
+      "Peaceful setting – calmer and less commercial than lodges near temple gates.",
+      "Ample space – large rooms, cottages, and dorms for bigger groups."
+    ],
+    "consTitle": "Cons",
+    "cons": [
+      "Not walking distance – needs an auto for every darshan.",
+      "Inconsistent maintenance – worn bedding, mosquitoes (especially dorms), general upkeep issues.",
+      "No hot water in dormitories (confirm if booking).",
+      "Restaurant is average and pricier than expected.",
+      "Booking uncertainty – no real online system, phone bookings sometimes not honored.",
+      "Inconsistent service quality – check-in/out policies can be unclear."
+    ],
+    "bottomLineTitle": "Bottom Line",
+    "bottomLineDesc": "Yatri Nivas is a solid pick if you're budget-conscious, traveling as a group, and don't mind commuting 2 km for darshan – but go in with realistic expectations. If proximity and consistent quality matter more, private lodges near the South Gate will likely serve you better."
   }
 }

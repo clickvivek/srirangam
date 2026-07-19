@@ -1,94 +1,92 @@
-"use client";
-
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { ArrowLeft, X, Eye, Info } from 'lucide-react';
+import { ArrowLeft, Info } from 'lucide-react';
+import { getDictionary } from '@/dictionaries';
 
-import { useParams } from 'next/navigation';
-
-export default function ExplorePage() {
-  const params = useParams();
-  const lang = params.lang as string || 'en';
+export default async function ExplorePage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> | { lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' } }) {
+  const resolvedParams = await params;
+  const lang = resolvedParams.lang;
+  const dict = await getDictionary(lang) as any;
+  const t = dict.deitySeva || {};
 
   const deities = [
     {
       id: 1,
-      name: "Sri Ranganatha Perumal",
-      title: "The Presiding Deity",
-      description: "The presiding deity of the temple, Lord Ranganatha, is seen in a reclining posture (Anantha Sayanam) on the serpent Adisesha. He is the ultimate symbol of peace and grace, facing south towards Lanka to bless His great devotee, King Vibhishana.",
+      name: t.deities?.[0]?.name || "Sri Ranganatha Perumal",
+      title: t.deities?.[0]?.title || "The Presiding Deity",
+      description: t.deities?.[0]?.description || "The presiding deity of the temple, Lord Ranganatha, is seen in a reclining posture (Anantha Sayanam) on the serpent Adisesha. He is the ultimate symbol of peace and grace, facing south towards Lanka to bless His great devotee, King Vibhishana.",
       image: "/srirangam/Sri-Ranga.png",
       link: `/${lang}/ranganatha-perumal`
     },
     {
       id: 2,
-      name: "Sri Ranga Nayaki",
-      title: "Thayar / Amma Sannidhi",
-      description: "Sri Ranga Nayaki, affectionately known as Thayar (Mother), is the divine consort of Lord Ranganatha. Her shrine is located in the fourth enclosure. According to tradition, Lord Ranganatha never leaves the temple without Her permission.",
+      name: t.deities?.[1]?.name || "Sri Ranga Nayaki",
+      title: t.deities?.[1]?.title || "Thayar / Amma Sannidhi",
+      description: t.deities?.[1]?.description || "Sri Ranga Nayaki, affectionately known as Thayar (Mother), is the divine consort of Lord Ranganatha. Her shrine is located in the fourth enclosure. According to tradition, Lord Ranganatha never leaves the temple without Her permission.",
       image: "/srirangam/thayar.jpg",
       link: `/${lang}/thayar`
     },
     {
       id: 3,
-      name: "Sri Chakrathalvar",
-      title: "Lord Sudarshana",
-      description: "The Sri Chakrathalvar shrine is one of the most prominent sub-shrines. It houses the personification of Lord Vishnu's divine discus (Sudarshana Chakra). On the reverse of the idol is Lord Narasimha, offering dual blessings to devotees.",
+      name: t.deities?.[2]?.name || "Sri Chakrathalvar",
+      title: t.deities?.[2]?.title || "Lord Sudarshana",
+      description: t.deities?.[2]?.description || "The Sri Chakrathalvar shrine is one of the most prominent sub-shrines. It houses the personification of Lord Vishnu's divine discus (Sudarshana Chakra). On the reverse of the idol is Lord Narasimha, offering dual blessings to devotees.",
       image: "/srirangam/chakrathalwar.png",
       link: `/${lang}/chakrathalwar`
     },
     {
       id: 4,
-      name: "Sri Ramanujar",
-      title: "The Great Preceptor",
-      description: "The shrine of Sri Ramanujacharya holds his preserved mortal remains (Thaan Ana Thirumeni). He was the most important philosopher of the Sri Vaishnava tradition, and he administered the Srirangam temple for many decades during his lifetime.",
+      name: t.deities?.[3]?.name || "Sri Ramanujar",
+      title: t.deities?.[3]?.title || "The Great Preceptor",
+      description: t.deities?.[3]?.description || "The shrine of Sri Ramanujacharya holds his preserved mortal remains (Thaan Ana Thirumeni). He was the most important philosopher of the Sri Vaishnava tradition, and he administered the Srirangam temple for many decades during his lifetime.",
       image: "/srirangam/Sri-Ramanujar.png",
       link: `/${lang}/ramanujar`
     },
     {
       id: 5,
-      name: "Sri Thulakka Nachiyar",
-      title: "The Celestial Princess",
-      description: "Sri Thulakka Nachiyar (also known as Bibi Nachiyar or Surathani) is a unique and revered shrine dedicated to a Muslim princess from Delhi who fell deeply in love with the processional deity, Lord Namperumal. Her devotion represents the universal nature of the Lord's grace.",
+      name: t.deities?.[4]?.name || "Sri Thulakka Nachiyar",
+      title: t.deities?.[4]?.title || "The Celestial Princess",
+      description: t.deities?.[4]?.description || "Sri Thulakka Nachiyar (also known as Bibi Nachiyar or Surathani) is a unique and revered shrine dedicated to a Muslim princess from Delhi who fell deeply in love with the processional deity, Lord Namperumal. Her devotion represents the universal nature of the Lord's grace.",
       image: "/srirangam/Thulukka-Nachiyar.png",
       link: `/${lang}/thulukka-nachiyar`
     },
     {
       id: 6,
-      name: "Sri Garudalwar Sannidhi",
-      title: "The Divine Mount",
-      description: "Located opposite the main sanctum, this impressive shrine features a towering 14-foot image of Garuda, Lord Vishnu's eagle mount. Uniquely, he is depicted in a seated posture, eternally waiting for the Lord's command.",
+      name: t.deities?.[5]?.name || "Sri Garudalwar Sannidhi",
+      title: t.deities?.[5]?.title || "The Divine Mount",
+      description: t.deities?.[5]?.description || "Located opposite the main sanctum, this impressive shrine features a towering 14-foot image of Garuda, Lord Vishnu's eagle mount. Uniquely, he is depicted in a seated posture, eternally waiting for the Lord's command.",
       image: "/srirangam/garudalwar.jpg",
       link: `/${lang}/garudalwar`
     },
     {
       id: 7,
-      name: "Sri Dhavanthri Sannidhi",
-      title: "The God of Medicine",
-      description: "This shrine is dedicated to Lord Dhanvantari, the divine physician and avatar of Lord Vishnu who emerged with the nectar of immortality (Amrita). Devotees offer prayers here seeking good health, healing, and well-being.",
+      name: t.deities?.[6]?.name || "Sri Dhavanthri Sannidhi",
+      title: t.deities?.[6]?.title || "The God of Medicine",
+      description: t.deities?.[6]?.description || "This shrine is dedicated to Lord Dhanvantari, the divine physician and avatar of Lord Vishnu who emerged with the nectar of immortality (Amrita). Devotees offer prayers here seeking good health, healing, and well-being.",
       image: "/srirangam/Sri-Dhavantri.png",
       link: `/${lang}/dhanvantri`
     },
     {
       id: 8,
-      name: "Viswaroopam Seva",
-      title: "Sacred Dawn Worship",
-      description: "Vishwaroopam is the first and most sacred seva performed every day at dawn. It is the ritual of 'Palli Ezhuchi' — the ceremonial awakening of Namperumal from his divine slumber.",
+      name: t.deities?.[7]?.name || "Viswaroopam Seva",
+      title: t.deities?.[7]?.title || "Sacred Dawn Worship",
+      description: t.deities?.[7]?.description || "Vishwaroopam is the first and most sacred seva performed every day at dawn. It is the ritual of 'Palli Ezhuchi' — the ceremonial awakening of Namperumal from his divine slumber.",
       image: "/srirangam/Viswaroopam.png",
       link: `/${lang}/viswaroopa-seva`
     }
   ];
-  const [selectedDeity, setSelectedDeity] = useState<typeof deities[0] | null>(null);
 
   return (
     <div style={{ padding: '2rem', backgroundColor: '#fdf0f0', minHeight: '100vh', fontFamily: 'sans-serif' }}>
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
         <Link href={`/${lang}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#571a15', textDecoration: 'none', marginBottom: '2rem', fontWeight: 'bold' }}>
           <ArrowLeft size={20} />
-          Back to Home
+          {t.backToHome || "Back to Home"}
         </Link>
         
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <h1 style={{ color: '#571a15', fontSize: '2.5rem', marginBottom: '0.5rem' }}>Deities and Seva</h1>
-          <p style={{ color: '#666', fontSize: '1.1rem' }}>Discover the divine shrines and deities of Srirangam</p>
+          <h1 style={{ color: '#571a15', fontSize: '2.5rem', marginBottom: '0.5rem' }}>{t.title || "Deities and Seva"}</h1>
+          <p style={{ color: '#666', fontSize: '1.1rem' }}>{t.subtitle || "Discover the divine shrines and deities of Srirangam"}</p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
@@ -105,7 +103,7 @@ export default function ExplorePage() {
                   <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
                     <div style={buttonStyle as React.CSSProperties}>
                       <Info size={18} />
-                      View Details
+                      {t.viewDetails || "View Details"}
                     </div>
                   </div>
                 </div>
@@ -120,42 +118,14 @@ export default function ExplorePage() {
               );
             }
 
-            return (
-              <div 
-                key={deity.id} 
-                style={{ ...cardStyle, cursor: 'pointer' } as React.CSSProperties}
-                onClick={() => setSelectedDeity(deity)}
-              >
-                {cardContent}
-              </div>
-            );
+            return null; // Fallback for no link (removed modal)
           })}
         </div>
-
-        {/* Modal */}
-        {selectedDeity && (
-          <div style={overlayStyle} onClick={() => setSelectedDeity(null)}>
-            <div style={modalStyle} onClick={e => e.stopPropagation()}>
-              <button style={closeBtnStyle} onClick={() => setSelectedDeity(null)}>
-                <X size={24} color="#555" />
-              </button>
-              
-              <div style={{...modalImageStyle, backgroundImage: `url('${selectedDeity.image}')`}}></div>
-              
-              <div style={{ padding: '2rem' }}>
-                <span style={{ color: '#d95c14', fontSize: '0.9rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>{selectedDeity.title}</span>
-                <h2 style={{ color: '#571a15', fontSize: '2rem', margin: '0.5rem 0 1.5rem 0' }}>{selectedDeity.name}</h2>
-                <p style={{ color: '#444', lineHeight: '1.8', fontSize: '1.1rem', textAlign: 'justify' }}>
-                  {selectedDeity.description}
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
 }
+
 
 // Styles
 const cardStyle: React.CSSProperties = {

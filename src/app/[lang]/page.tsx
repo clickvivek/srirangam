@@ -131,13 +131,13 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
               </div>
               <span>{dict.navigation.gallery}</span>
             </Link>
-            <Link href={`/${lang}/dharma-salas`} className="quick-link-item">
+            <Link href={`/${lang}/Stay-Hotel-Lodge`} className="quick-link-item">
               <div className="quick-icon">
                 <Building size={32} color="#c28e5e" />
               </div>
               <span>{dict.navigation.dharmaSalas}</span>
             </Link>
-            <Link href={`/${lang}/surroundings`} className="quick-link-item">
+            <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`} className="quick-link-item">
               <div className="quick-icon">
                 <MapPin size={32} color="#d69f12" />
               </div>

@@ -32,11 +32,11 @@ export default async function Footer({ lang }: { lang: string }) {
             <h4>{dict.footer.quickLinks}</h4>
             <ul className="footer-links">
               <li><Link href={`/${lang}/timings`}>{dict.navigation.darshan}</Link></li>
-              <li><Link href={`/${lang}/surroundings`}>{dict.navigation.surroundings}</Link></li>
+              <li><Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`}>{dict.navigation.surroundings}</Link></li>
               <li><Link href={`/${lang}/history`}>{dict.navigation.history}</Link></li>
               <li><Link href={`/${lang}/seva-booking`}>{dict.navigation.seva}</Link></li>
               <li><Link href={`/${lang}/prasadam`}>{dict.navigation.prasadam}</Link></li>
-              <li><Link href={`/${lang}/dharma-salas`}>{dict.navigation.dharmaSalas}</Link></li>
+              <li><Link href={`/${lang}/Stay-Hotel-Lodge`}>{dict.navigation.dharmaSalas}</Link></li>
               <li><Link href={`/${lang}/transport`}>{dict.navigation.transport}</Link></li>
             </ul>
           </div>

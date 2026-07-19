@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { AlertCircle, X } from 'lucide-react';
 
-export default function ImportantNotePopup() {
+export default function ImportantNotePopup({ label = "Important note" }: { label?: string }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -23,8 +23,9 @@ export default function ImportantNotePopup() {
           cursor: 'pointer',
           whiteSpace: 'nowrap'
         }}
+        className="important-note-btn"
       >
-        Important note
+        {label}
       </button>
 
       {isOpen && (

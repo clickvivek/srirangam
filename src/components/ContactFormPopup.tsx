@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { X, MessageSquare } from 'lucide-react';
 
-export default function ContactFormPopup() {
+export default function ContactFormPopup({ label = "Contact Form" }: { label?: string }) {
   const [isOpen, setIsOpen] = useState(false);
   
   const [name, setName] = useState('');
@@ -42,7 +42,7 @@ export default function ContactFormPopup() {
         }}
         className="contact-btn"
       >
-        Contact Form
+        {label}
       </button>
 
       {isOpen && (

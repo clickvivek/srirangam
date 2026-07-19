@@ -18,6 +18,17 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     description: "Portal for Sri Ranganathaswamy Temple, Srirangam, the largest functioning Hindu temple in the world.",
     manifest: "/srirangam/manifest.json",
     metadataBase: new URL('https://srirangam.org'),
+    alternates: {
+      canonical: `/${langTyped}`,
+      languages: {
+        'en': '/en',
+        'ta': '/ta',
+        'hi': '/hi',
+        'te': '/te',
+        'ml': '/ml',
+        'kn': '/kn'
+      }
+    },
     openGraph: {
       title: "Sri Ranganathaswamy Temple",
       description: "Portal for Sri Ranganathaswamy Temple, Srirangam",

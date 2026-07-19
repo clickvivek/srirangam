@@ -13,7 +13,9 @@ const routes = [
   '/viswaroopa-seva',
   '/history',
   '/surroundings',
-  '/darshan'
+  '/darshan',
+  '/thayar',
+  '/prasadam'
 ];
 
 export const dynamic = 'force-static';
@@ -32,11 +34,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   languages.forEach((lang) => {
     routes.forEach((route) => {
+      const alternates: Record<string, string> = {};
+      languages.forEach((altLang) => {
+        alternates[altLang] = `${baseUrl}/${altLang}${route}`;
+      });
+
       sitemapEntries.push({
         url: `${baseUrl}/${lang}${route}`,
         lastModified: new Date(),
         changeFrequency: route === '' ? 'daily' : 'weekly',
         priority: route === '' ? 0.9 : 0.8,
+        alternates: {
+          languages: alternates
+        }
       });
     });
   });

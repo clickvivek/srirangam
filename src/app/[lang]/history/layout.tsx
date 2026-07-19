@@ -4,9 +4,10 @@ import { getDictionary } from '../../../dictionaries';
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
   const dict = await getDictionary(lang as "en" | "ta" | "hi" | "te" | "ml" | "kn") as any;
+  
   return {
-    title: dict?.navigation?.deity || "Deities & Seva",
-    description: "Explore the different deities, shrines, and sevas available at Sri Ranganathaswamy Temple."
+    title: dict?.navigation?.history || "Temple History",
+    description: "Read about the rich history and architecture of the Sri Ranganathaswamy Temple, Srirangam."
   };
 }
 

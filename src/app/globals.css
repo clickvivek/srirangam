@@ -195,9 +195,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Home Page */
 .hero {
   text-align: center;
-  height: 50vh;
+  height: auto;
   min-height: 50vh;
-  padding: 2rem 1rem;
+  padding: 0 1rem 0;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 0.65rem 1rem 0.5rem;
 }
 
 .hero-logo-large {
@@ -230,9 +230,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero h1 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: var(--background-light);
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
@@ -260,14 +260,14 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1.5rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 3rem; /* Add big space below buttons */
+  margin-bottom: 1rem;
 }
 
 .hero-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.75rem 1.5rem;
+  padding: 0.4rem 1.5rem;
   width: 280px; /* Fixed width to make them all exactly the same size */
   max-width: 100%;
   background: linear-gradient(135deg, rgba(217, 92, 20, 0.9), rgba(181, 65, 8, 0.9)) !important;
@@ -306,11 +306,11 @@ h1, h2, h3, h4, h5, h6 {
   .hero {
     height: auto;
     min-height: 50vh;
-    padding: 3rem 1rem 2rem;
+    padding: 5rem 1rem 2rem;
   }
   .hero h1 {
-    font-size: 2rem;
-    margin-top: 1rem;
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
   }
   .hero .subtitle {
     font-size: 1.1rem;

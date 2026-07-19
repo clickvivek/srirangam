@@ -1,6 +1,6 @@
 import { 
   Clock, MapPin, FileText, CalendarHeart, Gift, 
-  Building, Bus, Camera, Users, Calendar, Map, Compass
+  Building, Bus, Camera, Users, Calendar, Map, Compass, Sparkles
 } from 'lucide-react';
 import Link from 'next/link';
 import fs from 'fs/promises';
@@ -50,22 +50,22 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
     <>
       <section className="hero animate-fade-in">
         <div className="container hero-content">
-          <h1>Sri Ranganathaswamy Temple</h1>
-          <div className="subtitle">ஸ்ரீரங்கம் ரங்கநாதர் — Srirangam, Tamil Nadu</div>
+          <h1>{dict.home.title}</h1>
+          <div className="subtitle">{dict.home.subtitle}</div>
           <p className="desc">
-            The largest functioning Hindu temple in the world, dedicated to Lord Ranganatha (Vishnu). A premier Vaishnava Divya Desam on the sacred island of Srirangam.
+            {dict.home.desc}
           </p>
           
           <div className="hero-actions">
             <button className="btn glass hero-btn">
               <CalendarHeart size={20} style={{marginBottom: '0.25rem'}}/>
-              <span>OPEN TODAY</span>
-              <strong>4 Slots Today</strong>
+              <span>{dict.home.openToday}</span>
+              <strong>{dict.home.slotsToday}</strong>
             </button>
             <button className="btn glass hero-btn">
               <Users size={20} style={{marginBottom: '0.25rem'}}/>
-              <span>TODAY&apos;S QUEUE</span>
-              <strong>~45 min wait</strong>
+              <span>{dict.home.todaysQueue}</span>
+              <strong>{dict.home.waitMin}</strong>
             </button>
 
           </div>
@@ -75,7 +75,11 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
       <section className="quick-access-section animate-fade-in">
         <div className="container">
           <div className="section-title">
-            <span>QUICK ACCESS</span>
+            <div className="divider">
+              <Sparkles size={16} color="#d95c14"/>
+              <span>{dict.home.quickAccess}</span>
+              <Sparkles size={16} color="#d95c14"/>
+            </div>
           </div>
           
           <div className="quick-access-grid">
@@ -163,9 +167,9 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
       <section className="timings-section">
         <div className="container">
           <div className="section-title">
-            <span>DARSHAN SCHEDULE</span>
-            <h2>Temple Timings</h2>
-            <p>கோயில் நேரம் — 4 Darshan Slots Daily</p>
+            <span>{dict.home.darshanSchedule}</span>
+            <h2>{dict.home.templeTimings}</h2>
+            <p>{dict.home.timingsSub}</p>
           </div>
           
           <div style={{display: 'flex', justifyContent: 'center'}}>
@@ -173,31 +177,31 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
                  since it's a bit cut off in the provided screenshot, we'll keep it simple */}
              <div style={{maxWidth: '600px', width: '100%', backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)'}}>
                <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: '1px solid #eee', marginBottom: '1rem'}}>
-                 <strong style={{color: 'var(--primary-color)'}}>Viswaroopa Darshan</strong>
+                 <strong style={{color: 'var(--primary-color)'}}>{dict.home.viswaroopaDarshan}</strong>
                  <span>{timings.viswaroopa}</span>
                </div>
                <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: '1px solid #eee', marginBottom: '1rem'}}>
-                 <strong style={{color: 'var(--primary-color)'}}>General Darshan (Morning)</strong>
+                 <strong style={{color: 'var(--primary-color)'}}>{dict.home.generalMorning}</strong>
                  <span>{timings.morning}</span>
                </div>
                <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: '1px solid #eee', marginBottom: '1rem'}}>
-                 <strong style={{color: 'var(--primary-color)'}}>General Darshan (Afternoon)</strong>
+                 <strong style={{color: 'var(--primary-color)'}}>{dict.home.generalAfternoon}</strong>
                  <span>{timings.afternoon}</span>
                </div>
                <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                 <strong style={{color: 'var(--primary-color)'}}>General Darshan (Evening)</strong>
+                 <strong style={{color: 'var(--primary-color)'}}>{dict.home.generalEvening}</strong>
                  <span>{timings.evening}</span>
                </div>
                
                <div style={{ marginTop: '1.5rem', display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', width: '100%', borderTop: '1px solid #eee', paddingTop: '1.5rem' }}>
-                 <ImportantNotePopup />
+                 <ImportantNotePopup label={dict.home.importantNote} />
                  <a 
                    href="https://srirangamranganathar.hrce.tn.gov.in/resources/docs/invitation/777/invitation_1.pdf"
                    target="_blank"
                    rel="noopener noreferrer"
                    style={{ color: '#d95c14', fontWeight: 600, textDecoration: 'underline', fontSize: '0.95rem', whiteSpace: 'nowrap' }}
                  >
-                   Full calendar
+                   {dict.home.fullCalendar}
                  </a>
                </div>
              </div>

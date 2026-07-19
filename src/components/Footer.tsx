@@ -2,8 +2,10 @@ import Link from 'next/link';
 import { Mail, MessageSquare, Lightbulb } from 'lucide-react';
 import ContactFormPopup from './ContactFormPopup';
 import DidYouKnow from './DidYouKnow';
+import { getDictionary } from '../dictionaries';
 
-export default function Footer({ lang }: { lang: string }) {
+export default async function Footer({ lang }: { lang: string }) {
+  const dict = await getDictionary(lang as "en" | "ta" | "hi" | "te" | "ml" | "kn") as any;
   return (
     <footer className="footer">
       <div className="container">
@@ -22,25 +24,25 @@ export default function Footer({ lang }: { lang: string }) {
               <h3>Srirangam Temple Portal</h3>
             </div>
             <p className="footer-desc">
-              An informational portal for Sri Ranganathaswamy Temple, Srirangam — the world&apos;s largest functioning Hindu temple and a premier Vaishnava Divya Desam.
+              {dict.footer.desc}
             </p>
           </div>
 
           <div className="footer-col">
-            <h4>Quick Links</h4>
+            <h4>{dict.footer.quickLinks}</h4>
             <ul className="footer-links">
-              <li><Link href={`/${lang}/timings`}>Darshan Timings</Link></li>
-              <li><Link href={`/${lang}/surroundings`}>Surroundings</Link></li>
-              <li><Link href={`/${lang}/history`}>Temple History</Link></li>
-              <li><Link href={`/${lang}/seva-booking`}>Seva Booking</Link></li>
-              <li><Link href={`/${lang}/prasadam`}>Annadhanam / Prasadam</Link></li>
-              <li><Link href={`/${lang}/dharma-salas`}>Hotels/Stay</Link></li>
-              <li><Link href={`/${lang}/transport`}>Transport Info</Link></li>
+              <li><Link href={`/${lang}/timings`}>{dict.navigation.darshan}</Link></li>
+              <li><Link href={`/${lang}/surroundings`}>{dict.navigation.surroundings}</Link></li>
+              <li><Link href={`/${lang}/history`}>{dict.navigation.history}</Link></li>
+              <li><Link href={`/${lang}/seva-booking`}>{dict.navigation.seva}</Link></li>
+              <li><Link href={`/${lang}/prasadam`}>{dict.navigation.prasadam}</Link></li>
+              <li><Link href={`/${lang}/dharma-salas`}>{dict.navigation.dharmaSalas}</Link></li>
+              <li><Link href={`/${lang}/transport`}>{dict.navigation.transport}</Link></li>
             </ul>
           </div>
 
           <div className="footer-col">
-            <h4>Contact</h4>
+            <h4>{dict.footer.contact}</h4>
             <ul className="footer-contact">
               <li>
                 <Mail />
@@ -48,7 +50,7 @@ export default function Footer({ lang }: { lang: string }) {
               </li>
               <li>
                 <MessageSquare />
-                <ContactFormPopup />
+                <ContactFormPopup label={dict.footer.contactForm} />
               </li>
             </ul>
           </div>
@@ -57,7 +59,7 @@ export default function Footer({ lang }: { lang: string }) {
       
       <div className="footer-bottom">
         <div className="container">
-          <p style={{marginBottom: '0.5rem'}}><strong>Disclaimer:</strong> This is not the official government website of Sriranganatha temple. This website is maintained by Sri Ranganathar Devotees (Volunteers).</p>
+          <p style={{marginBottom: '0.5rem'}}>{dict.footer.disclaimer}</p>
           <p>© 2024 Devasthana Portal • Made with 🙏 for devotees • सर्वे भवन्तु सुखिनः</p>
         </div>
       </div>

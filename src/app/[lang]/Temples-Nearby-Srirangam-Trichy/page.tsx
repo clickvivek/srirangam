@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { MapPin } from 'lucide-react';
 import { getDictionary } from '@/dictionaries';
 
-export default async function Surroundings({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> | { lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' } }) {
+export default async function Surroundings({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const resolvedParams = await params;
   const dict = await getDictionary(resolvedParams.lang) as any;
   const nearby = dict.nearby || {};

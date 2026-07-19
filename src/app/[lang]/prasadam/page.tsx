@@ -9,7 +9,7 @@ export const metadata = {
   description: 'Details about the full-day Annadanam program and donations at Sri Ranganathaswamy Temple, Srirangam.',
 };
 
-export default async function AnnadhanamPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> | { lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' } }) {
+export default async function AnnadhanamPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang;
   const dict = await getDictionary(lang) as any;

@@ -11,17 +11,39 @@ export default function ContactFormPopup({ label = "Contact Form" }: { label?: s
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = `Contact from ${name}`;
-    const body = `Name: ${name}\nPhone: ${phone}\nEmail: ${email || 'Not provided'}\n\nMessage:\n${message}`;
-    window.location.href = `mailto:srirangam.net@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    setIsOpen(false);
-    // Reset form
-    setName('');
-    setPhone('');
-    setEmail('');
-    setMessage('');
+    setIsSubmitting(true);
+    
+    try {
+      const res = await fetch('/srirangam/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, email, message })
+      });
+
+      if (res.ok) {
+        setIsSuccess(true);
+        setTimeout(() => {
+          setIsOpen(false);
+          setIsSuccess(false);
+          setName('');
+          setPhone('');
+          setEmail('');
+          setMessage('');
+        }, 3000);
+      } else {
+        alert("Failed to send message. Please try again later.");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -57,58 +79,70 @@ export default function ContactFormPopup({ label = "Contact Form" }: { label?: s
               Contact Us
             </h2>
             
-            <form onSubmit={handleSubmit} style={formStyle}>
-              <div style={inputGroupStyle}>
-                <label style={labelStyle} htmlFor="name">Full Name *</label>
-                <input 
-                  id="name"
-                  type="text" 
-                  required 
-                  value={name} 
-                  onChange={e => setName(e.target.value)} 
-                  style={inputStyle} 
-                />
+            {isSuccess ? (
+              <div style={{ textAlign: 'center', padding: '3rem 1rem', color: '#166534' }}>
+                <div style={{ fontSize: '4rem', marginBottom: '1rem', color: '#22c55e' }}>✓</div>
+                <h3 style={{ marginBottom: '0.5rem' }}>Message Sent!</h3>
+                <p>Thank you for contacting us. We have received your message and will get back to you soon.</p>
               </div>
-              
-              <div style={inputGroupStyle}>
-                <label style={labelStyle} htmlFor="phone">Phone Number *</label>
-                <input 
-                  id="phone"
-                  type="tel" 
-                  required 
-                  value={phone} 
-                  onChange={e => setPhone(e.target.value)} 
-                  style={inputStyle} 
-                />
-              </div>
+            ) : (
+              <form onSubmit={handleSubmit} style={formStyle}>
+                <div style={inputGroupStyle}>
+                  <label style={labelStyle} htmlFor="name">Full Name *</label>
+                  <input 
+                    id="name"
+                    type="text" 
+                    required 
+                    value={name} 
+                    onChange={e => setName(e.target.value)} 
+                    style={inputStyle} 
+                    disabled={isSubmitting}
+                  />
+                </div>
+                
+                <div style={inputGroupStyle}>
+                  <label style={labelStyle} htmlFor="phone">Phone Number *</label>
+                  <input 
+                    id="phone"
+                    type="tel" 
+                    required 
+                    value={phone} 
+                    onChange={e => setPhone(e.target.value)} 
+                    style={inputStyle} 
+                    disabled={isSubmitting}
+                  />
+                </div>
 
-              <div style={inputGroupStyle}>
-                <label style={labelStyle} htmlFor="email">Email ID (Optional)</label>
-                <input 
-                  id="email"
-                  type="email" 
-                  value={email} 
-                  onChange={e => setEmail(e.target.value)} 
-                  style={inputStyle} 
-                />
-              </div>
+                <div style={inputGroupStyle}>
+                  <label style={labelStyle} htmlFor="email">Email ID (Optional)</label>
+                  <input 
+                    id="email"
+                    type="email" 
+                    value={email} 
+                    onChange={e => setEmail(e.target.value)} 
+                    style={inputStyle} 
+                    disabled={isSubmitting}
+                  />
+                </div>
 
-              <div style={inputGroupStyle}>
-                <label style={labelStyle} htmlFor="message">Message *</label>
-                <textarea 
-                  id="message"
-                  required 
-                  rows={4}
-                  value={message} 
-                  onChange={e => setMessage(e.target.value)} 
-                  style={{ ...inputStyle, resize: 'vertical' }} 
-                />
-              </div>
+                <div style={inputGroupStyle}>
+                  <label style={labelStyle} htmlFor="message">Message *</label>
+                  <textarea 
+                    id="message"
+                    required 
+                    rows={4}
+                    value={message} 
+                    onChange={e => setMessage(e.target.value)} 
+                    style={{ ...inputStyle, resize: 'vertical' }} 
+                    disabled={isSubmitting}
+                  />
+                </div>
 
-              <button type="submit" style={submitBtnStyle}>
-                Send Message
-              </button>
-            </form>
+                <button type="submit" style={{ ...submitBtnStyle, opacity: isSubmitting ? 0.7 : 1, cursor: isSubmitting ? 'not-allowed' : 'pointer' }} disabled={isSubmitting}>
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+              </form>
+            )}
           </div>
         </div>
       )}

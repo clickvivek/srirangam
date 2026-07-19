@@ -1,10 +1,12 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, use } from 'react';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
-export default function AdminUpdatePage({ params }: { params: { lang: string } }) {
+export default function AdminUpdatePage({ params }: { params: Promise<{ lang: string }> }) {
+  const resolvedParams = use(params);
+  const lang = resolvedParams.lang;
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [secretCode, setSecretCode] = useState('');
   
@@ -97,7 +99,7 @@ export default function AdminUpdatePage({ params }: { params: { lang: string } }
       <div style={{ maxWidth: '800px', margin: '0 auto', backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)' }}>
         
         <div style={{ marginBottom: '2rem' }}>
-          <Link href={`/${params.lang}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#571a15', textDecoration: 'none', fontWeight: 'bold' }}>
+          <Link href={`/${lang}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#571a15', textDecoration: 'none', fontWeight: 'bold' }}>
             <ArrowLeft size={16} />
             Back to Home
           </Link>

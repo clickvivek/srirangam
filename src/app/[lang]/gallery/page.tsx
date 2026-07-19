@@ -30,7 +30,7 @@ async function getGalleryImages() {
   }
 }
 
-export default async function GalleryPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> | { lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' } }) {
+export default async function GalleryPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang;
   const dict = await getDictionary(lang) as any;

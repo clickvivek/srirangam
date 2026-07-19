@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowLeft, Info } from 'lucide-react';
 import { getDictionary } from '@/dictionaries';
 
-export default async function ExplorePage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> | { lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' } }) {
+export default async function ExplorePage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const resolvedParams = await params;
   const lang = resolvedParams.lang;
   const dict = await getDictionary(lang) as any;

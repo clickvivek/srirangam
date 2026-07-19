@@ -9,7 +9,7 @@ export const metadata = {
   description: 'Book official Sevas and Darshans for Sri Ranganathaswamy Temple, Srirangam.',
 };
 
-export default async function SevaBookingPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> | { lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' } }) {
+export default async function SevaBookingPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
   const resolvedParams = await params;
   const dict = await getDictionary(resolvedParams.lang);
   

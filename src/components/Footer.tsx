@@ -34,7 +34,8 @@ export default function Footer({ lang }: { lang: string }) {
               <li><Link href={`/${lang}/history`}>Temple History</Link></li>
               <li><Link href={`/${lang}/seva-booking`}>Seva Booking</Link></li>
               <li><Link href={`/${lang}/prasadam`}>Annadhanam / Prasadam</Link></li>
-              <li><Link href={`/${lang}/dharma-salas`}>Dharma Salas</Link></li>
+              <li><Link href={`/${lang}/dharma-salas`}>Hotels/Stay</Link></li>
+              <li><Link href={`/${lang}/transport`}>Transport Info</Link></li>
             </ul>
           </div>
 

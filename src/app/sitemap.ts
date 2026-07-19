@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next';
 const languages = ['en', 'ta', 'hi', 'te', 'ml', 'kn'];
 const routes = [
   '',
-  '/deity-pooja',
+  '/deity-seva',
   '/chakrathalwar',
   '/dhanvantri',
   '/garudalwar',

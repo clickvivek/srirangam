@@ -18,7 +18,7 @@ export default async function ViswaroopamSevaPage({ params }: { params: Promise<
       <div style={heroStyle}>
         <div style={heroOverlayStyle}></div>
         <div style={heroContentStyle}>
-          <Link href={`/${lang}/deity-pooja`} style={backLinkStyle}>
+          <Link href={`/${lang}/deity-seva`} style={backLinkStyle}>
             <ArrowLeft size={20} />
             {t.backLink}
           </Link>

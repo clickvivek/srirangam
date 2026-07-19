@@ -166,12 +166,13 @@ export default function TransportPage() {
                     { city: 'Bengaluru', dist: '340 km', time: '6–7 hrs' },
                     { city: 'Madurai', dist: '135 km', time: '2.5 hrs' },
                     { city: 'Coimbatore', dist: '220 km', time: '4 hrs' },
-                    { city: 'Salem', dist: '160 km', time: '3 hrs' }
-                  ].map((row, i) => (
+                    { city: 'Salem', dist: '160 km', time: '3 hrs' },
+                    { city: 'Tanjore', dist: '55 km', time: '1 hr' }
+                  ].map((route, i) => (
                     <tr key={i} style={{ borderBottom: '1px solid #f5f5f5' }}>
-                      <td style={{ padding: '0.75rem 0', color: '#333', fontWeight: 500 }}>{row.city}</td>
-                      <td style={{ padding: '0.75rem 0', color: '#666' }}>{row.dist}</td>
-                      <td style={{ padding: '0.75rem 0', color: '#666' }}>{row.time}</td>
+                      <td style={{ padding: '0.75rem 0', color: '#333', fontWeight: 500 }}>{route.city}</td>
+                      <td style={{ padding: '0.75rem 0', color: '#666' }}>{route.dist}</td>
+                      <td style={{ padding: '0.75rem 0', color: '#666' }}>{route.time}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -199,6 +200,7 @@ export default function TransportPage() {
               <li>Carry drinking water and small cash for local transport.</li>
               <li>Early morning visits are recommended during summer.</li>
               <li>We recommend RedTaxi as a reliable Cab service. Affordable and reliable. Phone Number 0431 456 7890 or you can download Redtaxi from Playstore or Appstore.</li>
+              <li>Annadhanam (Free Food/ Meals) Available from 8 am to 9 PM. Waiting time is approx 0-30 minutes.</li>
             </ul>
           </div>
 

@@ -3,7 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
-import { historyChapters } from '../../../data/historyContent';
+import { historyChapters as historyChaptersEn } from '../../../data/historyContent';
+import { historyChaptersTa } from '../../../data/historyContentTa';
 
 export default function HistoryPage({ params }: { params: Promise<{ lang: string }> }) {
   // We use React state directly here. We need to unwrap the params promise since we are in a Client Component.
@@ -14,6 +15,7 @@ export default function HistoryPage({ params }: { params: Promise<{ lang: string
     params.then(p => setLang(p.lang));
   }, [params]);
 
+  const historyChapters = lang === 'ta' ? historyChaptersTa : historyChaptersEn;
   const totalPages = historyChapters.length;
   const currentChapter = historyChapters[currentPage];
 

@@ -36,6 +36,16 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
   } catch (err) {
     console.error("Could not load timings, using defaults.", err);
   }
+
+  let updateText = "";
+  try {
+    const updateFilePath = path.join(process.cwd(), 'data', 'update.json');
+    const updateContents = await fs.readFile(updateFilePath, 'utf8');
+    const allUpdates = JSON.parse(updateContents);
+    updateText = allUpdates[lang] || allUpdates['en'] || "";
+  } catch (err) {
+    console.error("Could not load update text.", err);
+  }
   return (
     <>
       <section className="hero animate-fade-in">
@@ -57,11 +67,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
               <span>TODAY&apos;S QUEUE</span>
               <strong>~45 min wait</strong>
             </button>
-            <button className="btn glass hero-btn">
-              <Calendar size={20} style={{marginBottom: '0.25rem'}}/>
-              <span>SPECIAL SEVA</span>
-              <strong>Sahasranama Archana</strong>
-            </button>
+
           </div>
         </div>
       </section>
@@ -79,11 +85,17 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
               </div>
               <span>{dict.navigation.darshan}</span>
             </Link>
-            <Link href={`/${lang}/surroundings`} className="quick-link-item">
+            <Link href={`/${lang}/deity-seva`} className="quick-link-item">
               <div className="quick-icon">
-                <MapPin size={32} color="#d69f12" />
+                <Compass size={32} color="#c28e5e" />
               </div>
-              <span>{dict.navigation.surroundings}</span>
+              <span>{dict.navigation.deity}</span>
+            </Link>
+            <Link href={`/${lang}/map`} className="quick-link-item">
+              <div className="quick-icon">
+                <Map size={32} color="#571a15" />
+              </div>
+              <span>{dict.navigation.map}</span>
             </Link>
             <Link href={`/${lang}/history`} className="quick-link-item">
               <div className="quick-icon">
@@ -103,12 +115,6 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
               </div>
               <span>{dict.navigation.prasadam}</span>
             </Link>
-            <Link href={`/${lang}/dharma-salas`} className="quick-link-item">
-              <div className="quick-icon">
-                <Building size={32} color="#c28e5e" />
-              </div>
-              <span>{dict.navigation.dharmaSalas}</span>
-            </Link>
             <Link href={`/${lang}/transport`} className="quick-link-item">
               <div className="quick-icon">
                 <Bus size={32} color="#571a15" />
@@ -121,23 +127,38 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
               </div>
               <span>{dict.navigation.gallery}</span>
             </Link>
-            <Link href={`/${lang}/map`} className="quick-link-item">
+            <Link href={`/${lang}/dharma-salas`} className="quick-link-item">
               <div className="quick-icon">
-                <Map size={32} color="#571a15" />
+                <Building size={32} color="#c28e5e" />
               </div>
-              <span>{dict.navigation.map}</span>
+              <span>{dict.navigation.dharmaSalas}</span>
             </Link>
-            <Link href={`/${lang}/deity-pooja`} className="quick-link-item">
+            <Link href={`/${lang}/surroundings`} className="quick-link-item">
               <div className="quick-icon">
-                <Compass size={32} color="#c28e5e" />
+                <MapPin size={32} color="#d69f12" />
               </div>
-              <span>{dict.navigation.deity}</span>
+              <span>{dict.navigation.surroundings}</span>
             </Link>
           </div>
           
           <div className="section-divider"></div>
         </div>
       </section>
+
+      {updateText && (
+        <section style={{ backgroundColor: '#fff3cd', padding: '1.5rem', borderBottom: '2px solid #ffe69c' }}>
+          <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+             <h3 style={{ color: '#856404', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+               <span style={{ backgroundColor: '#856404', color: 'white', padding: '0.25rem 0.5rem', borderRadius: '4px', fontSize: '0.85rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Update :</span>
+             </h3>
+             <div style={{ color: '#856404', lineHeight: '1.6', fontWeight: '500' }}>
+               {updateText.split('\n').map((line: string, i: number) => (
+                 <p key={i} style={{ margin: 0 }}>{line}</p>
+               ))}
+             </div>
+          </div>
+        </section>
+      )}
 
       <section className="timings-section">
         <div className="container">

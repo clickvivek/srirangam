@@ -16,12 +16,12 @@ export default function Header() {
   };
 
   const languages = [
-    { code: 'en', label: 'EN' },
-    { code: 'ta', label: 'த' },
-    { code: 'hi', label: 'हि' },
-    { code: 'te', label: 'తె' },
-    { code: 'kn', label: 'ಕ' },
-    { code: 'ml', label: 'മ' }
+    { code: 'en', label: 'EN', name: 'English' },
+    { code: 'ta', label: 'த', name: 'Tamil' },
+    { code: 'hi', label: 'हि', name: 'Hindi' },
+    { code: 'te', label: 'తె', name: 'Telugu' },
+    { code: 'kn', label: 'ಕ', name: 'Kannada' },
+    { code: 'ml', label: 'മ', name: 'Malayalam' }
   ];
 
   return (
@@ -53,6 +53,7 @@ export default function Header() {
                 key={lang.code}
                 className={`lang-btn ${currentLang === lang.code ? 'active' : ''}`}
                 onClick={() => changeLanguage(lang.code)}
+                title={lang.name}
               >
                 {lang.label}
               </button>

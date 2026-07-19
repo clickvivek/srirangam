@@ -27,7 +27,7 @@ export default async function RamanujarPage({ params }: { params: Promise<{ lang
       {/* Stylish Hero Section */}
       <div style={heroStyle}>
         <div style={heroOverlayStyle}></div>
-        <Link href={`/${lang}/deity-pooja`} style={backLinkStyle}>
+        <Link href={`/${lang}/deity-seva`} style={backLinkStyle}>
           <ArrowLeft size={20} />
           {t.backLink}
         </Link>

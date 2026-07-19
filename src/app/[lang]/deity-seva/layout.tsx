@@ -5,7 +5,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang } = await params;
   const dict = await getDictionary(lang as "en" | "ta" | "hi" | "te" | "ml" | "kn") as any;
   return {
-    title: dict?.navigation?.deity || "Explore Temple",
+    title: dict?.navigation?.deity || "Deities & Seva",
   };
 }
 

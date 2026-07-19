@@ -18,7 +18,7 @@ export default async function RanganathaPerumalPage({ params }: { params: Promis
       {/* Stylish Hero Section */}
       <div style={heroStyle}>
         <div style={heroOverlayStyle}></div>
-        <Link href={`/${lang}/deity-pooja`} style={backLinkStyle}>
+        <Link href={`/${lang}/deity-seva`} style={backLinkStyle}>
           <ArrowLeft size={20} />
           {t.backLink}
         </Link>
@@ -34,7 +34,7 @@ export default async function RanganathaPerumalPage({ params }: { params: Promis
         <div style={{ backgroundColor: 'white', borderRadius: '12px', padding: '3rem', boxShadow: '0 10px 30px rgba(0,0,0,0.08)' }}>
           <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2.5rem' }}>
             <Image 
-              src="/srirangam/Sri-Ranganathar.png" 
+              src="/srirangam/Sri-Ranga.png" 
               alt="Sri Ranganathar" 
               width={500} 
               height={500} 
@@ -62,9 +62,7 @@ export default async function RanganathaPerumalPage({ params }: { params: Promis
 
 const heroStyle: React.CSSProperties = {
   position: 'relative',
-  backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sri_Ranganathaswamy_Temple_Gopuram.jpg/1200px-Sri_Ranganathaswamy_Temple_Gopuram.jpg')",
-  backgroundSize: 'cover',
-  backgroundPosition: 'center',
+  background: 'linear-gradient(135deg, #3a110e 0%, #571a15 40%, #d95c14 100%)',
   minHeight: '250px',
   display: 'flex',
   alignItems: 'center',
@@ -75,7 +73,7 @@ const heroStyle: React.CSSProperties = {
 const heroOverlayStyle: React.CSSProperties = {
   position: 'absolute',
   top: 0, left: 0, right: 0, bottom: 0,
-  backgroundColor: 'rgba(87, 26, 21, 0.7)' // Deep temple maroon overlay
+  // Removed overlay as we are using a gradient directly
 };
 
 const heroContentStyle: React.CSSProperties = {

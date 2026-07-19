@@ -16,7 +16,7 @@ export default function ExplorePage() {
       name: "Sri Ranganatha Perumal",
       title: "The Presiding Deity",
       description: "The presiding deity of the temple, Lord Ranganatha, is seen in a reclining posture (Anantha Sayanam) on the serpent Adisesha. He is the ultimate symbol of peace and grace, facing south towards Lanka to bless His great devotee, King Vibhishana.",
-      image: "/srirangam/sri-ranga.avif",
+      image: "/srirangam/Sri-Ranga.png",
       link: `/${lang}/ranganatha-perumal`
     },
     {
@@ -24,7 +24,8 @@ export default function ExplorePage() {
       name: "Sri Ranga Nayaki",
       title: "Thayar / Amma Sannidhi",
       description: "Sri Ranga Nayaki, affectionately known as Thayar (Mother), is the divine consort of Lord Ranganatha. Her shrine is located in the fourth enclosure. According to tradition, Lord Ranganatha never leaves the temple without Her permission.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Sri_Ranganathaswamy_Temple_Gopuram.jpg/800px-Sri_Ranganathaswamy_Temple_Gopuram.jpg"
+      image: "/srirangam/thayar.jpg",
+      link: `/${lang}/thayar`
     },
     {
       id: 3,
@@ -86,39 +87,49 @@ export default function ExplorePage() {
         </Link>
         
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-          <h1 style={{ color: '#571a15', fontSize: '2.5rem', marginBottom: '0.5rem' }}>Deities & Poojas</h1>
+          <h1 style={{ color: '#571a15', fontSize: '2.5rem', marginBottom: '0.5rem' }}>Deities and Seva</h1>
           <p style={{ color: '#666', fontSize: '1.1rem' }}>Discover the divine shrines and deities of Srirangam</p>
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
-          {deities.map(deity => (
-            <div key={deity.id} style={cardStyle}>
-              <div style={{ ...imageStyle, backgroundImage: `url('${deity.image}')` }}>
-                <div style={imageOverlayStyle}></div>
-              </div>
-              <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-                <span style={{ color: '#d95c14', fontSize: '0.85rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>{deity.title}</span>
-                <h3 style={{ color: '#333', fontSize: '1.4rem', margin: '0.5rem 0 1rem 0' }}>{deity.name}</h3>
-                
-                <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
-                  {deity.link ? (
-                    <Link href={deity.link} style={buttonStyle as React.CSSProperties}>
-                      <Info size={18} />
-                      View Details
-                    </Link>
-                  ) : (
-                    <button 
-                      onClick={() => setSelectedDeity(deity)}
-                      style={buttonStyle}
-                    >
-                      <Info size={18} />
-                      View Details
-                    </button>
-                  )}
+          {deities.map(deity => {
+            const cardContent = (
+              <>
+                <div style={{ ...imageStyle, backgroundImage: `url('${deity.image}')` }}>
+                  <div style={imageOverlayStyle}></div>
                 </div>
+                <div style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+                  <span style={{ color: '#d95c14', fontSize: '0.85rem', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>{deity.title}</span>
+                  <h3 style={{ color: '#333', fontSize: '1.4rem', margin: '0.5rem 0 1rem 0' }}>{deity.name}</h3>
+                  
+                  <div style={{ marginTop: 'auto', paddingTop: '1rem' }}>
+                    <div style={buttonStyle as React.CSSProperties}>
+                      <Info size={18} />
+                      View Details
+                    </div>
+                  </div>
+                </div>
+              </>
+            );
+
+            if (deity.link) {
+              return (
+                <Link href={deity.link} key={deity.id} style={{ ...cardStyle, textDecoration: 'none', display: 'flex', flexDirection: 'column', cursor: 'pointer' } as React.CSSProperties}>
+                  {cardContent}
+                </Link>
+              );
+            }
+
+            return (
+              <div 
+                key={deity.id} 
+                style={{ ...cardStyle, cursor: 'pointer' } as React.CSSProperties}
+                onClick={() => setSelectedDeity(deity)}
+              >
+                {cardContent}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Modal */}

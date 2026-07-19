@@ -1,19 +1,15 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, use } from 'react';
 import Link from 'next/link';
 import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import { historyChapters as historyChaptersEn } from '../../../data/historyContent';
 import { historyChaptersTa } from '../../../data/historyContentTa';
 
 export default function HistoryPage({ params }: { params: Promise<{ lang: string }> }) {
-  // We use React state directly here. We need to unwrap the params promise since we are in a Client Component.
-  const [lang, setLang] = useState('en');
+  const resolvedParams = use(params);
+  const lang = resolvedParams.lang;
   const [currentPage, setCurrentPage] = useState(0);
-
-  useEffect(() => {
-    params.then(p => setLang(p.lang));
-  }, [params]);
 
   const historyChapters = lang === 'ta' ? historyChaptersTa : historyChaptersEn;
   const totalPages = historyChapters.length;

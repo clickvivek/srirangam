@@ -25,7 +25,7 @@ export default async function JambukeswararTemple({ params }: { params: Promise<
     <>
       <section className="hero animate-fade-in" style={{ height: '30vh', minHeight: '30vh', background: 'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("/srirangam/thiruvanikovil-hero.png") center/cover no-repeat' }}>
         <div className="container hero-content" style={{ position: 'relative' }}>
-          <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`} style={{ position: 'absolute', top: '-1rem', left: '1rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+          <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`} className="back-link">
             <ArrowLeft size={20} />
             Back to Nearby Temples
           </Link>
@@ -34,10 +34,10 @@ export default async function JambukeswararTemple({ params }: { params: Promise<
         </div>
       </section>
 
-      <div style={{ backgroundColor: '#fdfaf4', minHeight: '100vh', padding: '4rem 1rem' }}>
+      <div className="temple-wrapper" style={{ backgroundColor: '#fdfaf4', minHeight: '100vh', padding: '4rem 1rem' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
           
-          <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', marginBottom: '3rem' }}>
+          <div className="temple-card-inner" style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', marginBottom: '3rem' }}>
             <h2 style={{ color: 'var(--primary-color)', marginTop: 0, marginBottom: '1.5rem', borderBottom: '2px solid #f0e6d6', paddingBottom: '0.5rem' }}>Contents</h2>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {topics.map(t => (
@@ -50,7 +50,7 @@ export default async function JambukeswararTemple({ params }: { params: Promise<
             </ul>
           </div>
 
-          <div style={{ backgroundColor: 'white', padding: '2.5rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', lineHeight: '1.8', color: '#444' }}>
+          <div className="temple-card-inner" style={{ backgroundColor: 'white', padding: '2.5rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', lineHeight: '1.8', color: '#444', fontSize: '1.05rem' }}>
             <p><strong>Arulmigu Jambukeswarar Akilandeswari Thirukoil, Thiruvanaikaval, Tiruchirappalli</strong></p>
             <p>Barely two kilometres from the Ranganathaswamy Temple, on the same island cradled by the Kaveri and Kollidam rivers, stands one of the five Pancha Bhoota Sthalams of Shaivism — temples where Lord Shiva is worshipped as one of the five elements of nature. Jambukeswarar Temple at Thiruvanaikaval represents <strong>Appu</strong>, the element of Water, and is among the oldest and most atmospheric shrines in the Srirangam temple cluster. Where Ranganathaswamy overwhelms with scale and gold, Jambukeswarar draws pilgrims inward — into cool, dim, moisture-laden corridors where a spring still rises, unbidden, around the base of the lingam.</p>
             

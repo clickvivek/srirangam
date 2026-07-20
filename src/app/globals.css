@@ -698,9 +698,95 @@ h1, h2, h3, h4, h5, h6 {
 
 .history-title { font-size: 1.75rem; } 
 @media (max-width: 768px) { .history-title { font-size: 1.25rem !important; } }
+@media (max-width: 768px) { .history-title { font-size: 1.25rem !important; } }
 
 .history-page-wrapper { padding: 2rem; } 
 @media (max-width: 768px) { .history-page-wrapper { padding: 1rem 0.5rem !important; } }
 
 html { scroll-behavior: smooth; }
 
+/* Temple Pages Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem !important;
+  }
+  .temple-wrapper {
+    padding: 1.5rem 0 !important;
+  }
+  .temple-card-inner {
+    padding: 1.25rem 0.75rem !important;
+  }
+}
+
+.back-link {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .back-link {
+    position: static !important;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    justify-content: flex-start;
+  }
+}
+
+.back-link-dark {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .back-link-dark {
+    position: static !important;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    justify-content: flex-start;
+  }
+}
+
+.row-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-card-img {
+  flex-shrink: 0;
+  width: 320px;
+  min-height: 220px;
+}
+
+.row-card-content {
+  padding: 2.5rem;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .row-card {
+    flex-direction: column;
+  }
+  .row-card-img {
+    width: 100% !important;
+    min-height: 250px;
+  }
+  .row-card-content {
+    padding: 1.5rem !important;
+  }
+}

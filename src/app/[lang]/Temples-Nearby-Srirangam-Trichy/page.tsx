@@ -20,7 +20,7 @@ export default async function Surroundings({ params }: { params: Promise<{ lang:
     {
       name: nearby.temples?.[1]?.name || "Rockfort Ucchi Pillayar Temple",
       desc: nearby.temples?.[1]?.desc || "A historic temple dedicated to Lord Ganesha built on a 3-billion-year-old rock. It offers panoramic views of Trichy and Srirangam.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Rockfort_Temple_Trichy_India.jpg/800px-Rockfort_Temple_Trichy_India.jpg",
+      image: "/srirangam/Rockfort3.png",
       distSrirangam: "6 km",
       distTrichy: "5 km",
       link: "rockfort-ucchi-pillayar-temple"
@@ -28,37 +28,41 @@ export default async function Surroundings({ params }: { params: Promise<{ lang:
     {
       name: nearby.temples?.[2]?.name || "Samayapuram Mariamman Temple",
       desc: nearby.temples?.[2]?.desc || "A very popular and powerful temple dedicated to Goddess Mariamman, located on the outskirts of Trichy.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Samayapuram_Mariamman_Temple.jpg/800px-Samayapuram_Mariamman_Temple.jpg",
+      image: "/srirangam/samayapuram1.png",
       distSrirangam: "12 km",
-      distTrichy: "20 km"
+      distTrichy: "20 km",
+      link: "samayapuram-mariamman-temple"
     },
     {
       name: nearby.temples?.[3]?.name || "Uraiyur Vekkali Amman Temple",
       desc: nearby.temples?.[3]?.desc || "A unique and powerful temple in Uraiyur (the ancient Chola capital) where the sanctum of the Goddess does not have a roof, symbolizing her connection to the sky and nature.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Vekkali_Amman_Temple_Gopuram.jpg/800px-Vekkali_Amman_Temple_Gopuram.jpg",
+      image: "/srirangam/uraiyur1.jpg",
       distSrirangam: "9 km",
-      distTrichy: "6 km"
+      distTrichy: "6 km",
+      link: "uraiyur-vekkali-amman-temple"
     },
     {
       name: nearby.temples?.[4]?.name || "Vayalur Murugan Temple",
       desc: nearby.temples?.[4]?.desc || "Located amidst lush green fields, this peaceful temple dedicated to Lord Murugan is associated with the great saint Arunagirinathar.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Vayalur_Murugan_Temple.jpg/800px-Vayalur_Murugan_Temple.jpg",
+      image: "/srirangam/vayalur1.png",
       distSrirangam: "15 km",
-      distTrichy: "11 km"
+      distTrichy: "11 km",
+      link: "vayalur-murugan-temple"
     },
     {
       name: nearby.temples?.[5]?.name || "Tanjore Brahadeswara Temple",
       desc: nearby.temples?.[5]?.desc || "Also known as the Peruvudaiyar Kovil, this UNESCO World Heritage Site is one of the largest and most magnificent Chola temples, located in Thanjavur.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Brihadeeswarar_Temple_Thanjavur.jpg/800px-Brihadeeswarar_Temple_Thanjavur.jpg",
+      image: "/srirangam/tanjore1.png",
       distSrirangam: "60 km",
-      distTrichy: "55 km"
+      distTrichy: "55 km",
+      link: "tanjore-brahadeswara-temple"
     }
   ];
 
   return (
     <div style={{ backgroundColor: '#fdfaf4', minHeight: '100vh', padding: '4rem 1rem' }}>
       <div className="container" style={{ maxWidth: '1000px', position: 'relative' }}>
-        <Link href={`/${resolvedParams.lang}`} style={{ position: 'absolute', top: '-2rem', left: '0', color: '#571a15', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+        <Link href={`/${resolvedParams.lang}`} className="back-link-dark">
           <ArrowLeft size={20} />
           Back to Home
         </Link>
@@ -82,10 +86,7 @@ export default async function Surroundings({ params }: { params: Promise<{ lang:
               }} className="row-card">
                 
                 {/* Image Side */}
-                <div style={{ 
-                  flexShrink: 0, 
-                  width: '320px', 
-                  minHeight: '220px',
+                <div className="row-card-img" style={{ 
                   backgroundImage: `url(${temple.image})`, 
                   backgroundSize: 'contain',
                   backgroundRepeat: 'no-repeat',
@@ -94,12 +95,10 @@ export default async function Surroundings({ params }: { params: Promise<{ lang:
                 }}></div>
                 
                 {/* Content Side */}
-                <div style={{ 
-                  padding: '2.5rem', 
+                <div className="row-card-content" style={{ 
                   display: 'flex', 
                   flexDirection: 'column', 
-                  justifyContent: 'center',
-                  flex: 1
+                  justifyContent: 'center'
                 }}>
                   <h2 style={{ color: 'var(--primary-color)', fontSize: '1.6rem', marginBottom: '1rem', marginTop: 0 }}>
                     {temple.name}

@@ -25,9 +25,9 @@ export default async function RockfortTemple({ params }: { params: Promise<{ lan
 
   return (
     <>
-      <section className="hero animate-fade-in" style={{ height: '30vh', minHeight: '30vh', background: 'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Rockfort_Temple_Trichy_India.jpg/800px-Rockfort_Temple_Trichy_India.jpg") center/cover no-repeat' }}>
+      <section className="hero animate-fade-in" style={{ height: '30vh', minHeight: '30vh', background: 'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("/srirangam/Rockfort2.png") center/cover no-repeat' }}>
         <div className="container hero-content" style={{ position: 'relative' }}>
-          <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`} style={{ position: 'absolute', top: '-1rem', left: '1rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+          <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`} className="back-link">
             <ArrowLeft size={20} />
             Back to Nearby Temples
           </Link>
@@ -36,10 +36,10 @@ export default async function RockfortTemple({ params }: { params: Promise<{ lan
         </div>
       </section>
 
-      <div style={{ backgroundColor: '#fdfaf4', minHeight: '100vh', padding: '4rem 1rem' }}>
+      <div className="temple-wrapper" style={{ backgroundColor: '#fdfaf4', minHeight: '100vh', padding: '4rem 1rem' }}>
         <div className="container" style={{ maxWidth: '900px' }}>
           
-          <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', marginBottom: '3rem' }}>
+          <div className="temple-card-inner" style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', marginBottom: '3rem' }}>
             <h2 style={{ color: 'var(--primary-color)', marginTop: 0, marginBottom: '1.5rem', borderBottom: '2px solid #f0e6d6', paddingBottom: '0.5rem' }}>Contents</h2>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {topics.map(t => (
@@ -52,10 +52,20 @@ export default async function RockfortTemple({ params }: { params: Promise<{ lan
             </ul>
           </div>
 
-          <div style={{ backgroundColor: 'white', padding: '2.5rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', lineHeight: '1.8', color: '#444' }}>
+          <div className="temple-card-inner" style={{ backgroundColor: 'white', padding: '2.5rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', lineHeight: '1.8', color: '#444', fontSize: '1.05rem' }}>
             <p><em>Arulmigu Ucchi Pillayar Thirukoil, atop the Rockfort (Malaikottai), Tiruchirappalli</em></p>
             <p>Rising straight out of the middle of Trichy's old town, the Rockfort is impossible to miss — an 83-metre monolith of bare rock, among the oldest rock formations exposed anywhere in India, with a Ganesha shrine perched right at its summit. For anyone visiting the Srirangam temple cluster, Rockfort is the natural next stop: it sits just across the Kaveri, offers a view back over Srirangam's gopurams from the top, and is reached the old-fashioned way — on foot, step by step, with no shortcut available at any price.</p>
             
+            <div style={{ margin: '2.5rem 0', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+              <Image 
+                src="/srirangam/Rockfort3.png" 
+                alt="Rockfort Temple View" 
+                width={900} 
+                height={500} 
+                style={{ width: '100%', height: 'auto', display: 'block' }} 
+              />
+            </div>
+
             <h3 style={{ color: 'var(--primary-color)', marginTop: '2rem' }}>Quick Facts</h3>
             <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
               <li><strong>Presiding Deity (summit):</strong> Sri Ucchi Vinayagar / Ucchi Pillayar (Lord Ganesha)</li>
@@ -76,9 +86,8 @@ export default async function RockfortTemple({ params }: { params: Promise<{ lan
               <li><strong>Address:</strong> Rockfort Temple, Chinna Kadai Street, Teppakulam, Tiruchirappalli, Tamil Nadu 620002</li>
               <li><strong>Coordinates:</strong> approx. 10.8273° N, 78.6972° E</li>
               <li><strong>Access point:</strong> Entry is from Rockfort Bazaar, Trichy's busy old market street — the walk through the bazaar to the ticket counter and steps is part of the experience in itself.</li>
-              <li><strong>Google Maps:</strong> search "Rockfort Temple, Trichy" or "Ucchi Pillayar Temple"</li>
+              <li><strong>Google Maps:</strong> <a href="https://maps.app.goo.gl/toeJ1qJFsYvSVv32A" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>View on Google Maps</a></li>
             </ul>
-            <p>Because it sits directly across the river from Srirangam, Rockfort is very commonly paired with a Ranganathaswamy / Jambukeswarar visit on the same day — most pilgrims see it either as a sunrise or sunset stop, bookending a temple-hopping day in Srirangam.</p>
             
             <h2 id="history" style={{ color: 'var(--primary-color)', marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid #eee' }}>2. History</h2>
             <p>The Rockfort's story runs in two parallel tracks — sacred and military.</p>
@@ -100,6 +109,16 @@ export default async function RockfortTemple({ params }: { params: Promise<{ lan
               <li>Geologically, the rock itself is genuinely ancient Precambrian crust — see the section below for what's verified and what's popular folklore.</li>
             </ul>
 
+            <div style={{ margin: '2.5rem 0', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+              <Image 
+                src="/srirangam/rockfort temple art.png" 
+                alt="Rockfort Temple Art" 
+                width={900} 
+                height={500} 
+                style={{ width: '100%', height: 'auto', display: 'block' }} 
+              />
+            </div>
+
             <h2 id="fact-check" style={{ color: 'var(--primary-color)', marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid #eee' }}>5. How Old Is the Rock, Really? (A Fact-Check)</h2>
             <p>Almost every article on Rockfort repeats the same claim: that the rock is <strong>3.8 billion years old</strong>, making it one of the oldest exposed rock formations on Earth — older than the Himalayas, and in some versions of the story, "second oldest in the world after Mount Kailash." It's worth separating what's solid from what's folklore, since the two get blended together online.</p>
             <p><strong>What's accurate:</strong></p>
@@ -108,14 +127,6 @@ export default async function RockfortTemple({ params }: { params: Promise<{ lan
               <li>The rock genuinely predates the Himalayas by a wide margin. The Himalayas are a young mountain range, roughly 40–50 million years old, formed by the ongoing collision of the Indian and Eurasian plates. Rockfort's charnockite, as part of India's ancient Precambrian peninsular shield, is far older than that by any reasonable estimate.</li>
               <li>The Rockfort outcrop is a striking, scientifically genuine example of a very old, deeply eroded piece of continental crust standing exposed above an otherwise flat landscape — the kind of geology that draws real academic interest in the region.</li>
             </ul>
-            <p><strong>What doesn't hold up to scrutiny:</strong></p>
-            <ul style={{ paddingLeft: '1.5rem' }}>
-              <li>The specific figure of <strong>3.8 billion years</strong> doesn't trace back to any published geological survey or dated study of the Trichy outcrop specifically — it appears to circulate purely through tourism websites repeating each other, not from primary geochronology.</li>
-              <li>Published age-dating of the charnockites and granulites of the <strong>Southern Granulite Terrain</strong> in Tamil Nadu (the geological family this rock belongs to) generally places their formation in the <strong>Neoarchean, around 2.5–2.6 billion years ago</strong> — old and impressive in its own right, but meaningfully younger than the commonly quoted 3.8 billion.</li>
-              <li>The 3.8-billion-year figure is suspiciously close to the age of the world's genuinely oldest <em>documented</em> rocks elsewhere on Earth — the Acasta Gneiss in Canada (~4.03 billion years) and the Isua Greenstone Belt in Greenland (~3.7–3.8 billion years). It looks likely that this number was borrowed from global "oldest rocks on Earth" reporting rather than derived from a Trichy-specific study.</li>
-              <li>The claim that Rockfort is the <strong>"second oldest rock formation in the world after Mount Kailash"</strong> doesn't hold up at all. There's no geological survey that dates or ranks Kailash this way — its reverence is a matter of Hindu, Buddhist, Jain, and Bon spiritual tradition, not geochronology, and no credible source connects the two sites in a scientific ranking.</li>
-            </ul>
-            <p><strong>The honest summary:</strong> Rockfort sits on real, ancient Precambrian crust — genuinely old enough to comfortably predate the Himalayas, and a legitimate subject of geological interest. But the specific "3.8 billion years, second only to Kailash" line is popular temple folklore rather than a verified figure, and a website aiming for accuracy is better off citing the ~2.5 billion year range that actual geological literature supports for this rock type, while being clear that even that number is a regional estimate for the rock family rather than a site-specific dated study of this exact outcrop.</p>
             
             <h2 id="architecture" style={{ color: 'var(--primary-color)', marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid #eee' }}>6. Architecture and Layout</h2>
             <p>Rockfort unfolds in three distinct tiers as you climb:</p>
@@ -134,6 +145,16 @@ export default async function RockfortTemple({ params }: { params: Promise<{ lan
               <li><strong>Ucchi Pillayar Temple:</strong> Lord Ganesha (as Ucchi Vinayagar) (Summit)</li>
             </ul>
             <p>Pilgrims typically visit all three in sequence on the way up, treating the climb itself as a graduated darshan rather than a single stop.</p>
+
+            <div style={{ margin: '2.5rem 0', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 15px rgba(0,0,0,0.1)' }}>
+              <Image 
+                src="/srirangam/Rockfort Thayumanavar.png" 
+                alt="Rockfort Thayumanavar" 
+                width={900} 
+                height={500} 
+                style={{ width: '100%', height: 'auto', display: 'block' }} 
+              />
+            </div>
 
             <h2 id="climb" style={{ color: 'var(--primary-color)', marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid #eee' }}>8. The Climb — Steps Are the Only Way Up</h2>
             <p>This is the detail every first-time visitor needs to know: <strong>there is no road, vehicle access, ramp, or elevator to either the Thayumanaswamy shrine or the Ucchi Pillayar summit.</strong> The temple is reached exclusively via a flight of rock-cut steps carved into the hill — commonly cited as somewhere between <strong>417 and 437 steps</strong> depending on the source and exact counting point.</p>
@@ -185,7 +206,6 @@ export default async function RockfortTemple({ params }: { params: Promise<{ lan
             </ul>
 
             <p style={{ marginTop: '3rem', fontSize: '0.9rem', color: '#777', fontStyle: 'italic', textAlign: 'center' }}>
-              *This article covers the Rockfort Ucchi Pillayar Temple as part of srirangam.net's guide to temples within and around the Srirangam–Trichy cluster. Timings, festival dates, and step counts vary slightly across sources — please confirm specifics close to your travel date.*<br/>
               *Please note Images used in this website were enhanced using advance techniques and AI to make it better.*
             </p>
           </div>

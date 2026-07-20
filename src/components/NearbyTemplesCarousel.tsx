@@ -11,37 +11,37 @@ export default function NearbyTemplesCarousel({ lang }: { lang: string }) {
     {
       name: "Thiruvanaikaval Jambukeswarar",
       desc: "Appu Lingam (Water element)",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Jambukeshwarar_Temple_Trichy.jpg/800px-Jambukeshwarar_Temple_Trichy.jpg",
+      image: "/srirangam/thiruvanikovil-1.png",
       distSrirangam: "2.5 km"
     },
     {
       name: "Rockfort Ucchi Pillayar",
       desc: "Ganesha on a 3-billion-year-old rock",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Rockfort_Temple_Trichy_India.jpg/800px-Rockfort_Temple_Trichy_India.jpg",
+      image: "/srirangam/Rockfort3.png",
       distSrirangam: "6 km"
     },
     {
       name: "Samayapuram Mariamman",
       desc: "Powerful Goddess Mariamman",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Samayapuram_Mariamman_Temple.jpg/800px-Samayapuram_Mariamman_Temple.jpg",
+      image: "/srirangam/samayapuram1.png",
       distSrirangam: "12 km"
     },
     {
       name: "Uraiyur Vekkali Amman",
       desc: "Goddess without a roof",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Vekkali_Amman_Temple_Gopuram.jpg/800px-Vekkali_Amman_Temple_Gopuram.jpg",
+      image: "/srirangam/uraiyur1.jpg",
       distSrirangam: "9 km"
     },
     {
       name: "Vayalur Murugan",
       desc: "Peaceful Lord Murugan temple",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Vayalur_Murugan_Temple.jpg/800px-Vayalur_Murugan_Temple.jpg",
+      image: "/srirangam/vayalur1.png",
       distSrirangam: "15 km"
     },
     {
       name: "Tanjore Brahadeswara",
       desc: "UNESCO World Heritage Site",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Brihadeeswarar_Temple_Thanjavur.jpg/800px-Brihadeeswarar_Temple_Thanjavur.jpg",
+      image: "/srirangam/tanjore1.png",
       distSrirangam: "60 km"
     }
   ];

@@ -100,10 +100,8 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 @media (max-width: 768px) {
-  .top-bar .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
+  .top-bar {
+    display: none;
   }
 }
 
@@ -660,3 +658,20 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-5px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
+
+@media (max-width: 768px) { .lang-label { display: none; } }
+
+@media (max-width: 768px) { h1 { font-size: 1.5rem !important; } h2 { font-size: 1.25rem !important; } h3 { font-size: 1.1rem !important; } }
+
+.timing-row { display: flex; justify-content: space-between; padding-bottom: 1rem; border-bottom: 1px solid #eee; margin-bottom: 1rem; } 
+@media (max-width: 768px) { .timing-row { font-size: 0.85rem; padding-bottom: 0.5rem; margin-bottom: 0.5rem; } }
+
+.timing-val { text-align: right; display: block; }
+
+@media (max-width: 768px) { .header { padding: 0.75rem 0; } }
+
+.content-box { padding: 3rem; } 
+@media (max-width: 768px) { .content-box { padding: 1.25rem 1rem; } }
+
+.history-nav { display: flex; justify-content: space-between; align-items: center; } 
+@media (max-width: 768px) { .history-nav { flex-wrap: wrap; justify-content: center; gap: 1.5rem; } }

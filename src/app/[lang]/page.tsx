@@ -57,11 +57,11 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
           </p>
           
           <div className="hero-actions">
-            <button className="btn glass hero-btn">
+            <a href="#temple-timings" className="btn glass hero-btn" style={{textDecoration: 'none'}}>
               <CalendarHeart size={20} style={{marginBottom: '0.25rem'}}/>
               <span>{dict.home.openToday}</span>
               <strong>{dict.home.slotsToday}</strong>
-            </button>
+            </a>
             <button className="btn glass hero-btn">
               <Users size={20} style={{marginBottom: '0.25rem'}}/>
               <span>{dict.home.todaysQueue}</span>
@@ -164,9 +164,9 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
         </section>
       )}
 
-      <section className="timings-section">
+      <section id="temple-timings" className="timings-section">
         <div className="container">
-          <div className="section-title">
+          <div style={{textAlign: 'center', marginBottom: '3rem'}}>
             <span>{dict.home.darshanSchedule}</span>
             <h2>{dict.home.templeTimings}</h2>
             <p>{dict.home.timingsSub}</p>
@@ -176,21 +176,21 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
              {/* Note: I'll leave a placeholder for the timings list based on screenshots, 
                  since it's a bit cut off in the provided screenshot, we'll keep it simple */}
              <div style={{maxWidth: '600px', width: '100%', backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)'}}>
-               <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: '1px solid #eee', marginBottom: '1rem'}}>
+               <div className="timing-row">
                  <strong style={{color: 'var(--primary-color)'}}>{dict.home.viswaroopaDarshan}</strong>
-                 <span>{timings.viswaroopa}</span>
+                 <span className="timing-val">{timings.viswaroopa.replace(/ AM/g, '\u00A0AM').replace(/ PM/g, '\u00A0PM')}</span>
                </div>
-               <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: '1px solid #eee', marginBottom: '1rem'}}>
+               <div className="timing-row">
                  <strong style={{color: 'var(--primary-color)'}}>{dict.home.generalMorning}</strong>
-                 <span>{timings.morning}</span>
+                 <span className="timing-val">{timings.morning.replace(/ AM/g, '\u00A0AM').replace(/ PM/g, '\u00A0PM')}</span>
                </div>
-               <div style={{display: 'flex', justifyContent: 'space-between', paddingBottom: '1rem', borderBottom: '1px solid #eee', marginBottom: '1rem'}}>
+               <div className="timing-row">
                  <strong style={{color: 'var(--primary-color)'}}>{dict.home.generalAfternoon}</strong>
-                 <span>{timings.afternoon}</span>
+                 <span className="timing-val">{timings.afternoon.replace(/ AM/g, '\u00A0AM').replace(/ PM/g, '\u00A0PM')}</span>
                </div>
-               <div style={{display: 'flex', justifyContent: 'space-between'}}>
+               <div className="timing-row" style={{ borderBottom: 'none', marginBottom: 0, paddingBottom: 0 }}>
                  <strong style={{color: 'var(--primary-color)'}}>{dict.home.generalEvening}</strong>
-                 <span>{timings.evening}</span>
+                 <span className="timing-val">{timings.evening.replace(/ AM/g, '\u00A0AM').replace(/ PM/g, '\u00A0PM')}</span>
                </div>
                
                <div style={{ marginTop: '1.5rem', display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', width: '100%', borderTop: '1px solid #eee', paddingTop: '1.5rem' }}>

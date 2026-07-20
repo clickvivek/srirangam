@@ -37,7 +37,7 @@ export default function HistoryPage({ params }: { params: Promise<{ lang: string
           Back to Home
         </Link>
         
-        <div style={{ backgroundColor: 'white', borderRadius: '12px', padding: '3rem', boxShadow: '0 4px 20px rgba(0,0,0,0.05)', position: 'relative' }}>
+        <div className="content-box" style={{ backgroundColor: 'white', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.05)', position: 'relative' }}>
           
           {/* Progress Indicator */}
           <div style={{ position: 'absolute', top: '1.5rem', right: '2rem', color: '#888', fontSize: '0.9rem', fontWeight: 600 }}>
@@ -98,7 +98,7 @@ export default function HistoryPage({ params }: { params: Promise<{ lang: string
           </div>
 
           {/* Navigation Controls */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '3rem', borderTop: '2px solid #f0f0f0', paddingTop: '2rem' }}>
+          <div className="history-nav" style={{ marginTop: '3rem', borderTop: '2px solid #f0f0f0', paddingTop: '2rem' }}>
             
             <button 
               onClick={handlePrev} 

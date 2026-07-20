@@ -24,6 +24,15 @@ export default function Header() {
     { code: 'ml', label: 'മ', name: 'Malayalam' }
   ];
 
+  const headerSubtitle = {
+    en: "Srirangam Ranganathar Temple • Divya Desam",
+    ta: "ஸ்ரீரங்கம் ரங்கநாதர் கோவில் • திவ்ய தேசம்",
+    hi: "श्रीरंगम रंगनाथर मंदिर • दिव्य देशम",
+    te: "శ్రీరంగం రంగనాథస్వామి దేవస్థానం • దివ్య దేశం",
+    kn: "ಶ್ರೀರಂಗಂ ರಂಗನಾಥಸ್ವಾಮಿ ದೇವಸ್ಥಾನ • ದಿವ್ಯ ದೇಶಂ",
+    ml: "ശ്രീരംഗം രംഗനാഥസ്വാമി ക്ഷേത്രം • ദിവ്യ ദേശം"
+  };
+
   return (
     <>
       <div className="top-bar">
@@ -41,13 +50,13 @@ export default function Header() {
           <Link href={`/${currentLang}`} className="logo-section">
             <img src="/srirangam/logo_new.png" alt="Srirangam Temple Logo" style={{ height: '60px', width: 'auto' }} />
             <div className="logo-text">
-              <h2>Srirangam Temple Portal</h2>
-              <p>ஸ்ரீரங்கம் ரங்கநாதர் கோவில் • Divya Desam</p>
+              <h2>Srirangam.net</h2>
+              <p>{headerSubtitle[currentLang as keyof typeof headerSubtitle] || headerSubtitle['en']}</p>
             </div>
           </Link>
           
           <div className="language-selector">
-            <span>Language:</span>
+            <span className="lang-label">Language:</span>
             {languages.map((lang) => (
               <button 
                 key={lang.code}

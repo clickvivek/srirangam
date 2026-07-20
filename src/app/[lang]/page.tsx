@@ -58,14 +58,18 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
           
           <div className="hero-actions">
             <a href="#temple-timings" className="btn glass hero-btn" style={{textDecoration: 'none'}}>
-              <CalendarHeart size={20} style={{marginBottom: '0.25rem'}}/>
-              <span>{dict.home.openToday}</span>
-              <strong>{dict.home.slotsToday}</strong>
+              <CalendarHeart size={28} style={{marginRight: '0.75rem', flexShrink: 0}}/>
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                <span>{dict.home.openToday}</span>
+                <strong>{dict.home.slotsToday}</strong>
+              </div>
             </a>
             <button className="btn glass hero-btn">
-              <Users size={20} style={{marginBottom: '0.25rem'}}/>
-              <span>{dict.home.todaysQueue}</span>
-              <strong>{dict.home.waitMin}</strong>
+              <Users size={28} style={{marginRight: '0.75rem', flexShrink: 0}}/>
+              <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                <span>{dict.home.todaysQueue}</span>
+                <strong>{dict.home.waitMin}</strong>
+              </div>
             </button>
 
           </div>
@@ -74,13 +78,14 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
 
       <section className="quick-access-section animate-fade-in">
         <div className="container">
-          <div className="section-title">
+          <div className="section-title mobile-hidden">
             <div className="divider">
               <Sparkles size={16} color="#d95c14"/>
               <span>{dict.home.quickAccess}</span>
               <Sparkles size={16} color="#d95c14"/>
             </div>
           </div>
+
           
           <div className="quick-access-grid">
             <Link href={`/${lang}/timings`} className="quick-link-item">

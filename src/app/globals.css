@@ -228,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero h1 {
-  font-size: 2rem;
+  font-size: 1.5rem !important;
   color: var(--background-light);
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -263,9 +263,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-btn {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding: 0.4rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   width: 280px; /* Fixed width to make them all exactly the same size */
   max-width: 100%;
   background: linear-gradient(135deg, rgba(217, 92, 20, 0.9), rgba(181, 65, 8, 0.9)) !important;
@@ -303,12 +303,12 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    min-height: 50vh;
-    padding: 5rem 1rem 2rem;
+    min-height: auto;
+    padding: 0.5rem 1rem 1rem;
   }
   .hero h1 {
     font-size: 1.75rem;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
   }
   .hero .subtitle {
     font-size: 1.1rem;
@@ -675,3 +675,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .history-nav { display: flex; justify-content: space-between; align-items: center; } 
 @media (max-width: 768px) { .history-nav { flex-wrap: wrap; justify-content: center; gap: 1.5rem; } }
+
+@media (min-width: 769px) { .mobile-langs { display: none !important; } .desktop-langs { display: flex; gap: 0.75rem; } } 
+@media (max-width: 768px) { .header-container { flex-direction: row !important; gap: 0.5rem !important; justify-content: space-between !important; } .desktop-langs { display: none !important; } .mobile-langs { display: block !important; padding: 0.35rem 0.5rem; border-radius: 4px; background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.3); font-size: 0.85rem; } .mobile-langs option { background: var(--primary-color); color: white; } .logo-text h2 { font-size: 1.15rem !important; } .logo-text p { font-size: 0.7rem !important; } }
+
+@media (max-width: 768px) { .hero { padding-top: 0 !important; } .hero-content { padding-top: 0 !important; } .hero h1 { margin-top: 0 !important; } }
+
+@media (max-width: 768px) { .hero h1 { font-size: 1.15rem !important; } }
+
+
+
+@media (max-width: 768px) { .mobile-hidden { display: none !important; } }
+
+@media (max-width: 768px) { .quick-access-grid { gap: 0.5rem; row-gap: 1.5rem; justify-content: flex-start; padding: 0 0.5rem; } .quick-link-item { width: 31%; } .quick-icon { width: 60px; height: 60px; margin-bottom: 0.5rem; } .quick-link-item span { font-size: 0.75rem !important; } }

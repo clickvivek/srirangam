@@ -56,17 +56,28 @@ export default function Header() {
           </Link>
           
           <div className="language-selector">
-            <span className="lang-label">Language:</span>
-            {languages.map((lang) => (
-              <button 
-                key={lang.code}
-                className={`lang-btn ${currentLang === lang.code ? 'active' : ''}`}
-                onClick={() => changeLanguage(lang.code)}
-                title={lang.name}
-              >
-                {lang.label}
-              </button>
-            ))}
+            <span className="lang-label desktop-langs">Language:</span>
+            <div className="desktop-langs">
+              {languages.map((lang) => (
+                <button 
+                  key={lang.code}
+                  className={`lang-btn ${currentLang === lang.code ? 'active' : ''}`}
+                  onClick={() => changeLanguage(lang.code)}
+                  title={lang.name}
+                >
+                  {lang.label}
+                </button>
+              ))}
+            </div>
+            <select 
+              className="mobile-langs"
+              value={currentLang}
+              onChange={(e) => changeLanguage(e.target.value)}
+            >
+              {languages.map((lang) => (
+                <option key={lang.code} value={lang.code}>{lang.name}</option>
+              ))}
+            </select>
           </div>
         </div>
       </header>

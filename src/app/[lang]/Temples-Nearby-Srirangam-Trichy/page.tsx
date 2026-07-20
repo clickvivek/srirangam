@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { MapPin } from 'lucide-react';
+import { MapPin, ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 import { getDictionary } from '@/dictionaries';
 
 export default async function Surroundings({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
@@ -54,7 +55,11 @@ export default async function Surroundings({ params }: { params: Promise<{ lang:
 
   return (
     <div style={{ backgroundColor: '#fdfaf4', minHeight: '100vh', padding: '4rem 1rem' }}>
-      <div className="container" style={{ maxWidth: '1000px' }}>
+      <div className="container" style={{ maxWidth: '1000px', position: 'relative' }}>
+        <Link href={`/${resolvedParams.lang}`} style={{ position: 'absolute', top: '-2rem', left: '0', color: '#571a15', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+          <ArrowLeft size={20} />
+          Back to Home
+        </Link>
         <h1 style={{ color: 'var(--primary-color)', fontSize: '2.5rem', marginBottom: '1rem', textAlign: 'center' }}>{nearby.title || "Nearby Temples"}</h1>
         <p style={{ fontSize: '1.1rem', marginBottom: '4rem', textAlign: 'center', color: 'var(--text-muted)', maxWidth: '700px', margin: '0 auto 4rem' }}>
           {nearby.subtitle || "Extend your spiritual journey by visiting these magnificent and powerful temples located in and around the Trichy and Tanjore regions."}

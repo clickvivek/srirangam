@@ -1,7 +1,8 @@
 import React from 'react';
 import { getDictionary } from '@/dictionaries';
-import { MapPin, Phone, Info, CheckCircle, XCircle, AlertCircle } from 'lucide-react';
+import { MapPin, Phone, Info, CheckCircle, XCircle, AlertCircle, ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Where to Stay - Sri Ranganathaswamy Temple',
@@ -17,7 +18,11 @@ export default async function StayPage({ params }: { params: Promise<{ lang: 'en
   return (
     <>
       <section className="hero animate-fade-in" style={{ height: '30vh', minHeight: '30vh', background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("/srirangam/hero-bg.png") center/cover no-repeat' }}>
-        <div className="container hero-content">
+        <div className="container hero-content" style={{ position: 'relative' }}>
+          <Link href={`/${lang}`} style={{ position: 'absolute', top: '-1rem', left: '1rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+            <ArrowLeft size={20} />
+            Back to Home
+          </Link>
           <h1 style={{ marginTop: '0' }}>{t.title || "Where to Stay in Srirangam"}</h1>
           <div className="subtitle">{t.subtitle || "A guide to hotels, lodges, and temple guest houses"}</div>
         </div>

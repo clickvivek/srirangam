@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, AlertTriangle, CalendarHeart, Sparkles, MapPin, Ticket } from 'lucide-react';
+import { ExternalLink, AlertTriangle, CalendarHeart, Sparkles, MapPin, Ticket, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import ImportantNotePopup from '@/components/ImportantNotePopup';
 import { getDictionary } from '@/dictionaries';
@@ -61,7 +61,12 @@ export default async function SevaBookingPage({ params }: { params: Promise<{ la
   return (
     <>
       <section className="hero animate-fade-in" style={{ height: '30vh', minHeight: '30vh' }}>
-        <div className="container hero-content">
+        <div className="container hero-content" style={{ position: 'relative' }}>
+          <Link href={`/${resolvedParams.lang}`} style={{ position: 'absolute', top: '-1rem', left: '1rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+            <ArrowLeft size={20} />
+            {/* Using a generic text since dict.sevaBooking might not have backToHome, or we can use dict.timingsPage.home if available, but a hardcoded fallback works best for standard links */}
+            Back to Home
+          </Link>
           <h1 style={{ marginTop: '0' }}>{dict.sevaBooking.title}</h1>
           <div className="subtitle">{dict.sevaBooking.subtitle}</div>
         </div>

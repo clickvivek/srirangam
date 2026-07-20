@@ -30,7 +30,7 @@ export default function HistoryPage({ params }: { params: Promise<{ lang: string
   };
 
   return (
-    <div style={{ padding: '2rem', backgroundColor: '#fdf0f0', minHeight: '100vh', fontFamily: 'sans-serif' }}>
+    <div className="history-page-wrapper" style={{ backgroundColor: '#fdf0f0', minHeight: '100vh', fontFamily: 'sans-serif' }}>
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         <Link href={`/${lang}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#571a15', textDecoration: 'none', marginBottom: '2rem', fontWeight: 'bold' }}>
           <ArrowLeft size={20} />
@@ -40,11 +40,11 @@ export default function HistoryPage({ params }: { params: Promise<{ lang: string
         <div className="content-box" style={{ backgroundColor: 'white', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.05)', position: 'relative' }}>
           
           {/* Progress Indicator */}
-          <div style={{ position: 'absolute', top: '1.5rem', right: '2rem', color: '#888', fontSize: '0.9rem', fontWeight: 600 }}>
+          <div style={{ color: '#888', fontSize: '0.9rem', fontWeight: 600, marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
             Page {currentPage + 1} of {totalPages}
           </div>
 
-          <h1 style={{ color: '#571a15', marginBottom: '1.5rem', borderBottom: '2px solid #f0f0f0', paddingBottom: '1rem', paddingRight: '6rem' }}>
+          <h1 className="history-title" style={{ color: '#571a15', marginBottom: '1.5rem', borderBottom: '2px solid #f0f0f0', paddingBottom: '1rem' }}>
             {currentChapter.title}
           </h1>
           

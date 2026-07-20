@@ -1,5 +1,6 @@
 import React from 'react';
-import { Bus, Train, Plane, MapPin, Info, Car, AlertCircle } from 'lucide-react';
+import { Bus, Train, Plane, MapPin, Info, Car, AlertCircle, ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 import { getDictionary } from '@/dictionaries';
 
 export const metadata = {
@@ -15,7 +16,11 @@ export default async function TransportPage({ params }: { params: Promise<{ lang
   return (
     <>
       <section className="hero animate-fade-in" style={{ height: '30vh', minHeight: '30vh', background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("/srirangam/hero-bg.png") center/cover no-repeat' }}>
-        <div className="container hero-content">
+        <div className="container hero-content" style={{ position: 'relative' }}>
+          <Link href={`/${lang}`} style={{ position: 'absolute', top: '-1rem', left: '1rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+            <ArrowLeft size={20} />
+            Back to Home
+          </Link>
           <h1 style={{ marginTop: '0' }}>{t.heroTitle || "Transport Information"}</h1>
           <div className="subtitle">{t.heroSubtitle || "How to Reach Srirangam"}</div>
         </div>

@@ -688,3 +688,14 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) { .mobile-hidden { display: none !important; } }
 
 @media (max-width: 768px) { .quick-access-grid { gap: 0.5rem; row-gap: 1.5rem; justify-content: flex-start; padding: 0 0.5rem; } .quick-link-item { width: 31%; } .quick-icon { width: 60px; height: 60px; margin-bottom: 0.5rem; } .quick-link-item span { font-size: 0.75rem !important; } }
+
+.back-to-home-link { position: absolute; left: 2rem; top: 2rem; color: white; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; } 
+@media (max-width: 768px) { .page-header-container { padding-top: 3.5rem !important; padding-bottom: 1.5rem !important; } .back-to-home-link { top: 1rem; left: 1rem; } .page-main-title { font-size: 1.75rem !important; } }
+
+@media (max-width: 768px) { .page-header-container { padding: 0.75rem 1rem !important; } .page-main-title { font-size: 1.4rem !important; } .page-header-container p { font-size: 0.85rem !important; margin-top: 0.25rem !important; } .back-to-home-link { position: static !important; margin-bottom: 0.25rem !important; font-size: 0.85rem; } }
+
+.history-title { font-size: 1.75rem; } 
+@media (max-width: 768px) { .history-title { font-size: 1.25rem !important; } }
+
+.history-page-wrapper { padding: 2rem; } 
+@media (max-width: 768px) { .history-page-wrapper { padding: 1rem 0.5rem !important; } }

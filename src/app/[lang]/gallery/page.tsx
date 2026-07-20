@@ -3,7 +3,8 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import Image from 'next/image';
 import { getDictionary } from '@/dictionaries';
-import { ImageIcon } from 'lucide-react';
+import { ImageIcon, ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Gallery - Sri Ranganathaswamy Temple',
@@ -39,8 +40,12 @@ export default async function GalleryPage({ params }: { params: Promise<{ lang: 
 
   return (
     <>
-      <section className="hero animate-fade-in" style={{ height: '15vh', minHeight: '15vh', background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("/srirangam/hero-bg.png") center/cover no-repeat' }}>
-        <div className="container hero-content">
+      <section className="hero animate-fade-in" style={{ height: '30vh', minHeight: '30vh', background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url("/srirangam/hero-bg.png") center/cover no-repeat' }}>
+        <div className="container hero-content" style={{ position: 'relative' }}>
+          <Link href={`/${lang}`} style={{ position: 'absolute', top: '-1rem', left: '1rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+            <ArrowLeft size={20} />
+            Back to Home
+          </Link>
           <h1 style={{ marginTop: '0' }}>{t.galleryTitle || "Temple Gallery"}</h1>
           <div className="subtitle">{t.gallerySubtitle || "A visual journey through Sri Ranganathaswamy Temple"}</div>
         </div>

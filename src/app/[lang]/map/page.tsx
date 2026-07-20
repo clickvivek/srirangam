@@ -12,7 +12,6 @@ export default async function TempleMap({ params }: { params: Promise<{ lang: 'e
     <div className="container" style={{ padding: '2rem 1rem 4rem 1rem', textAlign: 'center' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-start', maxWidth: '1200px', margin: '0 auto', marginBottom: '1rem' }}>
         <Link href={`/${lang}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: '#571a15', textDecoration: 'none', fontWeight: 'bold' }}>
-          <ArrowLeft size={20} />
           {t.backToHome || "Back to Home"}
         </Link>
       </div>

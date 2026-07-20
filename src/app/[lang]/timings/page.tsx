@@ -39,12 +39,12 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
   return (
     <div style={{ backgroundColor: '#fdfaf4', minHeight: '100vh', paddingBottom: '4rem' }}>
       {/* Header */}
-      <div style={{ backgroundColor: '#571a15', padding: '2rem', textAlign: 'center', position: 'relative' }}>
-        <Link href={`/${lang}`} style={{ position: 'absolute', left: '2rem', top: '2rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+      <div className="page-header-container" style={{ backgroundColor: '#571a15', padding: '1rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Link href={`/${lang}`} className="back-to-home-link" style={{ alignSelf: 'flex-start', marginBottom: '0.5rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <ArrowLeft size={20} />
           {dict?.timingsPage?.home || "Home"}
         </Link>
-        <h1 style={{ color: '#d69f12', margin: 0, fontSize: '2.5rem' }}>
+        <h1 className="page-main-title" style={{ color: '#d69f12', margin: 0, fontSize: '2.5rem' }}>
           {dict?.navigation?.darshan || "Temple Timings"}
         </h1>
         <p style={{ color: 'white', opacity: 0.9, marginTop: '0.5rem' }}>
@@ -58,7 +58,7 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
           {/* Main Temple Timings */}
           <div style={cardStyle}>
             <div style={cardHeaderStyle}>
-              <h2 style={{ margin: 0, color: 'white', fontSize: '1.4rem' }}>{dict?.timingsPage?.mainTemple || "Sri Ranganathaswamy Temple"}</h2>
+              <h2 style={{ margin: 0, color: 'white', fontSize: '0.9rem' }}>{dict?.timingsPage?.mainTemple || "Sri Ranganathaswamy Temple"}</h2>
               <span style={{ fontSize: '0.85rem', opacity: 0.9 }}>{dict?.timingsPage?.mainTempleSub || "Sri Ranganathar"}</span>
             </div>
             <div style={{ padding: '1.5rem' }}>
@@ -169,9 +169,11 @@ const timingRowStyle: React.CSSProperties = {
   paddingBottom: '1rem', 
   borderBottom: '1px solid #eee', 
   marginBottom: '1rem',
-  alignItems: 'center'
+  alignItems: 'center',
+  fontSize: '0.85rem'
 };
 
 const timingTitleStyle: React.CSSProperties = {
-  color: '#571a15'
+  color: '#571a15',
+  maxWidth: '45%'
 };

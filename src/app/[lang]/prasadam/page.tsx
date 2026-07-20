@@ -18,7 +18,11 @@ export default async function AnnadhanamPage({ params }: { params: Promise<{ lan
   return (
     <>
       <section className="hero animate-fade-in" style={{ height: '30vh', minHeight: '30vh', background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/srirangam/annadhanam.jpg") center/cover no-repeat' }}>
-        <div className="container hero-content">
+        <div className="container hero-content" style={{ position: 'relative' }}>
+          <Link href={`/${lang}`} style={{ position: 'absolute', top: '-1rem', left: '1rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+            <ArrowLeft size={20} />
+            Back to Home
+          </Link>
           <h1 style={{ marginTop: '0' }}>{t.heroTitle || "Annadhanam & Prasadam"}</h1>
           <div className="subtitle">{t.heroSubtitle || "Free Meals Scheme (Nithya Annadhanam)"}</div>
         </div>

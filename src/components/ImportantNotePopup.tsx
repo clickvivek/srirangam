@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { AlertCircle, X } from 'lucide-react';
 
-export default function ImportantNotePopup({ label = "Important note", content }: { label?: string, content?: React.ReactNode }) {
+export default function ImportantNotePopup({ label = "Important note", content, data }: { label?: string, content?: React.ReactNode, data?: { title: string, p1: string, p2: string, p3: string } }) {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -47,12 +47,18 @@ export default function ImportantNotePopup({ label = "Important note", content }
             
             <h2 style={{ color: '#571a15', marginBottom: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.3rem', borderBottom: '2px solid #f0f0f0', paddingBottom: '0.75rem' }}>
               <AlertCircle color="#d95c14" size={28} />
-              Important Information for Devotees
+              {data?.title || "Important Information for Devotees"}
             </h2>
             
             <div style={contentStyle}>
               {content ? (
                 typeof content === 'string' ? <p style={paragraphStyle}>{content}</p> : content
+              ) : data ? (
+                <>
+                  <p style={paragraphStyle} dangerouslySetInnerHTML={{ __html: data.p1 }}></p>
+                  <p style={paragraphStyle} dangerouslySetInnerHTML={{ __html: data.p2 }}></p>
+                  <p style={paragraphStyle} dangerouslySetInnerHTML={{ __html: data.p3 }}></p>
+                </>
               ) : (
                 <>
                   <p style={paragraphStyle}>
@@ -129,5 +135,5 @@ const paragraphStyle = {
   lineHeight: '1.6',
   marginBottom: '1rem',
   fontSize: '1rem',
-  textAlign: 'justify' as const
+  textAlign: 'left' as const
 };

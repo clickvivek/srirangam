@@ -437,5 +437,11 @@
     ],
     "bottomLineTitle": "Bottom Line",
     "bottomLineDesc": "Yatri Nivas is a solid pick if you're budget-conscious, traveling as a group, and don't mind commuting 2 km for darshan – but go in with realistic expectations. If proximity and consistent quality matter more, private lodges near the South Gate will likely serve you better."
+  },
+  "importantPopup": {
+    "title": "Important Information for Devotees",
+    "p1": "Devotees are strongly advised to join the darshan queue at least <strong>30 minutes</strong> before the scheduled temple closing time to ensure entry before the queue is closed.",
+    "p2": "During major festivals, especially <strong>Vaikunta Ekadasi</strong>, the darshan queue may be closed up to <strong>one hour</strong> before the scheduled closing time, depending on the number of devotees and the crowd within the temple complex. Visitors are therefore encouraged to arrive well in advance during festival periods.",
+    "p3": "Please note that the <strong>Sri Ranga Nachiyar Temple</strong> (also known as Sri Ranga Nayaki Temple, Thayar Sannidhi, or Amma Sannidhi) located within the temple complex generally closes at approximately the same time as the Sri Ranganathar Temple. Devotees planning to have darshan at both shrines are advised to schedule their visit accordingly to avoid missing the closing time."
   }
 }

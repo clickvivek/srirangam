@@ -199,7 +199,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
                </div>
                
                <div style={{ marginTop: '1.5rem', display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', width: '100%', borderTop: '1px solid #eee', paddingTop: '1.5rem' }}>
-                 <ImportantNotePopup label={dict.home.importantNote} />
+                 <ImportantNotePopup label={dict.home.importantNote} data={dict.importantPopup} />
                  <a 
                    href="https://srirangamranganathar.hrce.tn.gov.in/resources/docs/invitation/777/invitation_1.pdf"
                    target="_blank"

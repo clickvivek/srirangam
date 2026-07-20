@@ -155,7 +155,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
       </section>
 
       {updateText && (
-        <section style={{ backgroundColor: '#fff3cd', padding: '1.5rem', borderBottom: '2px solid #ffe69c' }}>
+        <section style={{ backgroundColor: '#fff3cd', padding: '1.5rem', borderTop: '2px solid #0e492c', borderBottom: '2px solid #0e492c' }}>
           <div className="container" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
              <h3 style={{ color: '#856404', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
                <span style={{ backgroundColor: '#856404', color: 'white', padding: '0.25rem 0.5rem', borderRadius: '4px', fontSize: '0.85rem', fontWeight: 'bold', textTransform: 'uppercase' }}>Update :</span>

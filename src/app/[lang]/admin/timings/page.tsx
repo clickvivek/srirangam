@@ -112,7 +112,7 @@ export default function AdminTimingsPage() {
               <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                 
                 <div>
-                  <label style={labelStyle}>Viswaroopa Darshan</label>
+                  <label style={labelStyle}>Viswaroopa Darshan (Morning)</label>
                   <input 
                     type="text" 
                     name="viswaroopa" 

@@ -12,16 +12,18 @@ export default async function Surroundings({ params }: { params: Promise<{ lang:
     {
       name: nearby.temples?.[0]?.name || "Thiruvanaikaval Jambukeswarar Temple",
       desc: nearby.temples?.[0]?.desc || "One of the five major Shiva Temples of Tamil Nadu representing the Mahābhūta or five great elements. This temple represents the element of water (Appu Lingam).",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Jambukeshwarar_Temple_Trichy.jpg/800px-Jambukeshwarar_Temple_Trichy.jpg",
+      image: "/srirangam/thiruvanikovil-1.png",
       distSrirangam: "2.5 km",
-      distTrichy: "8 km"
+      distTrichy: "8 km",
+      link: "Thiruvanaikaval-Jambukeswarar-Temple"
     },
     {
       name: nearby.temples?.[1]?.name || "Rockfort Ucchi Pillayar Temple",
       desc: nearby.temples?.[1]?.desc || "A historic temple dedicated to Lord Ganesha built on a 3-billion-year-old rock. It offers panoramic views of Trichy and Srirangam.",
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Rockfort_Temple_Trichy_India.jpg/800px-Rockfort_Temple_Trichy_India.jpg",
       distSrirangam: "6 km",
-      distTrichy: "5 km"
+      distTrichy: "5 km",
+      link: "rockfort-ucchi-pillayar-temple"
     },
     {
       name: nearby.temples?.[2]?.name || "Samayapuram Mariamman Temple",
@@ -66,56 +68,73 @@ export default async function Surroundings({ params }: { params: Promise<{ lang:
         </p>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-          {temples.map((temple, index) => (
-            <div key={index} style={{ 
-              display: 'flex', 
-              backgroundColor: 'white', 
-              borderRadius: '16px', 
-              overflow: 'hidden',
-              boxShadow: '0 8px 25px rgba(0,0,0,0.06)', 
-              border: '1px solid #f0e6d6',
-              transition: 'transform 0.3s ease, box-shadow 0.3s ease'
-            }} className="row-card">
-              
-              {/* Image Side */}
+          {temples.map((temple, index) => {
+            const CardContent = (
               <div style={{ 
-                flexShrink: 0, 
-                width: '320px', 
-                minHeight: '220px',
-                backgroundImage: `url(${temple.image})`, 
-                backgroundSize: 'cover', 
-                backgroundPosition: 'center'
-              }}></div>
-              
-              {/* Content Side */}
-              <div style={{ 
-                padding: '2.5rem', 
                 display: 'flex', 
-                flexDirection: 'column', 
-                justifyContent: 'center',
-                flex: 1
-              }}>
-                <h2 style={{ color: 'var(--primary-color)', fontSize: '1.6rem', marginBottom: '1rem', marginTop: 0 }}>
-                  {temple.name}
-                </h2>
-                <p style={{ color: '#555', fontSize: '1.05rem', lineHeight: '1.7', margin: '0 0 1.5rem 0' }}>
-                  {temple.desc}
-                </p>
+                backgroundColor: 'white', 
+                borderRadius: '16px', 
+                overflow: 'hidden',
+                boxShadow: '0 8px 25px rgba(0,0,0,0.06)', 
+                border: '1px solid #f0e6d6',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                cursor: temple.link ? 'pointer' : 'default'
+              }} className="row-card">
                 
-                <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#888', fontSize: '0.9rem' }}>
-                    <MapPin size={16} color="var(--secondary-color)" />
-                    <span><strong>{temple.distSrirangam}</strong> {nearby.fromSrirangam || "from Srirangam"}</span>
-                  </div>
-                  <div style={{ width: '1px', height: '15px', backgroundColor: '#e0e0e0' }}></div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#888', fontSize: '0.9rem' }}>
-                    <MapPin size={16} color="var(--secondary-color)" />
-                    <span><strong>{temple.distTrichy}</strong> {nearby.fromTrichy || "from Trichy Central"}</span>
+                {/* Image Side */}
+                <div style={{ 
+                  flexShrink: 0, 
+                  width: '320px', 
+                  minHeight: '220px',
+                  backgroundImage: `url(${temple.image})`, 
+                  backgroundSize: 'contain',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundColor: '#000',
+                  backgroundPosition: 'center'
+                }}></div>
+                
+                {/* Content Side */}
+                <div style={{ 
+                  padding: '2.5rem', 
+                  display: 'flex', 
+                  flexDirection: 'column', 
+                  justifyContent: 'center',
+                  flex: 1
+                }}>
+                  <h2 style={{ color: 'var(--primary-color)', fontSize: '1.6rem', marginBottom: '1rem', marginTop: 0 }}>
+                    {temple.name}
+                  </h2>
+                  <p style={{ color: '#555', fontSize: '1.05rem', lineHeight: '1.7', margin: '0 0 1.5rem 0' }}>
+                    {temple.desc}
+                  </p>
+                  
+                  <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#888', fontSize: '0.9rem' }}>
+                      <MapPin size={16} color="var(--secondary-color)" />
+                      <span><strong>{temple.distSrirangam}</strong> {nearby.fromSrirangam || "from Srirangam"}</span>
+                    </div>
+                    <div style={{ width: '1px', height: '15px', backgroundColor: '#e0e0e0' }}></div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#888', fontSize: '0.9rem' }}>
+                      <MapPin size={16} color="var(--secondary-color)" />
+                      <span><strong>{temple.distTrichy}</strong> {nearby.fromTrichy || "from Trichy Central"}</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+
+            return (
+              <React.Fragment key={index}>
+                {temple.link ? (
+                  <Link href={`/${resolvedParams.lang}/${temple.link}`} style={{ textDecoration: 'none' }}>
+                    {CardContent}
+                  </Link>
+                ) : (
+                  CardContent
+                )}
+              </React.Fragment>
+            );
+          })}
         </div>
       </div>
     </div>

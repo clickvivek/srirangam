@@ -39,7 +39,7 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
   return (
     <div style={{ backgroundColor: '#fdfaf4', minHeight: '100vh', paddingBottom: '4rem' }}>
       {/* Header */}
-      <div className="page-header-container" style={{ backgroundColor: '#571a15', padding: '1rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div className="page-header-container" style={{ background: 'linear-gradient(135deg, rgba(14, 73, 44, 1), rgba(10, 53, 32, 1))', padding: '1rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Link href={`/${lang}`} className="back-to-home-link" style={{ alignSelf: 'flex-start', marginBottom: '0.5rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <ArrowLeft size={20} />
           {dict?.timingsPage?.home || "Home"}
@@ -63,7 +63,7 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
             </div>
             <div style={{ padding: '1.5rem' }}>
               <div style={timingRowStyle}>
-                <strong style={timingTitleStyle}>{dict?.home?.viswaroopaDarshan || "Viswaroopa Darshan"}</strong>
+                <strong style={timingTitleStyle}>{dict?.home?.viswaroopaDarshan || "Viswaroopa Darshan (Morning)"}</strong>
                 <span>{timings.viswaroopa}</span>
               </div>
               <div style={timingRowStyle}>

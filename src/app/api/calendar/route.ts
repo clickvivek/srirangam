@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
 
+export const dynamic = 'force-static';
+
 export async function GET() {
   try {
     const dataFilePath = path.join(process.cwd(), 'data', 'calendar.json');

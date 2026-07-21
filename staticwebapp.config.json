@@ -1,8 +1,17 @@
 {
   "routes": [
     {
-      "route": "/srirangam/*",
-      "rewrite": "/*"
+      "route": "/",
+      "redirect": "/srirangam/en",
+      "statusCode": 301
+    },
+    {
+      "route": "/srirangam",
+      "redirect": "/srirangam/en",
+      "statusCode": 301
     }
-  ]
+  ],
+  "navigationFallback": {
+    "rewrite": "/srirangam/index.html"
+  }
 }

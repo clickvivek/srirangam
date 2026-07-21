@@ -70,7 +70,7 @@ export default function NearbyTemplesCarousel({ lang, dict }: { lang: string, di
         }}
         className="hide-scrollbar"
       >
-        {temples.map((temple, idx) => (
+        {temples.map((temple: any, idx: number) => (
           <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy#${links[idx]}`} key={idx} style={{
             flex: '0 0 calc(25% - 1.2rem)', // 4 items per row
             minWidth: '220px',

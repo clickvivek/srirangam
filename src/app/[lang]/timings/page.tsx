@@ -21,6 +21,7 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
   const dict = await getDictionary(lang) as any;
 
   let timings = {
+    date: '',
     viswaroopa: "06:00 AM - 07:15 AM",
     morning: "09:00 AM - 12:00 PM",
     afternoon: "01:15 PM - 05:45 PM",

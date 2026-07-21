@@ -21,7 +21,7 @@ export default async function Footer({ lang }: { lang: string }) {
           <div className="footer-col">
             <div className="footer-logo">
               <img src="/srirangam/logo_new.png" alt="Srirangam Temple Logo" style={{ height: '50px', width: 'auto', marginRight: '1rem' }} />
-              <h3>Srirangam Temple Portal</h3>
+              <h3>Srirangam.net</h3>
             </div>
             <p className="footer-desc">
               {dict.footer.desc}

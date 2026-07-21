@@ -1,0 +1,409 @@
+1:"$Sreact.fragment"
+2:I[5014,["/srirangam/_next/static/chunks/1zbwxmy80e3z8.js","/srirangam/_next/static/chunks/005hi4m9lnvv2.js"],"default"]
+3:I[22016,["/srirangam/_next/static/chunks/1zbwxmy80e3z8.js","/srirangam/_next/static/chunks/005hi4m9lnvv2.js"],""]
+12:I[99574,["/srirangam/_next/static/chunks/1zbwxmy80e3z8.js","/srirangam/_next/static/chunks/005hi4m9lnvv2.js"],"default"]
+13:I[21585,["/srirangam/_next/static/chunks/1zbwxmy80e3z8.js","/srirangam/_next/static/chunks/005hi4m9lnvv2.js"],"default"]
+1a:I[97367,["/srirangam/_next/static/chunks/05-c3ty_6dwfk.js","/srirangam/_next/static/chunks/0jubty45h__ir.js"],"OutletBoundary"]
+1b:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[[["$","section",null,{"className":"hero animate-fade-in","children":["$","div",null,{"className":"container hero-content","children":[["$","h1",null,{"children":"Sri Ranganathaswamy Temple"}],["$","div",null,{"className":"subtitle","children":"Srirangam Ranganathar — Srirangam, Tamil Nadu"}],["$","p",null,{"className":"desc","children":"The largest functioning Hindu temple in the world, dedicated to Lord Ranganatha (Vishnu). A premier Vaishnava Divya Desam on the sacred island of Srirangam."}],["$","div",null,{"className":"hero-actions","children":[["$","a",null,{"href":"#temple-timings","className":"btn glass hero-btn","style":{"textDecoration":"none"},"children":[["$","$L2",null,{"iconNode":[["path",{"d":"M12.127 22H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.125","key":"vxdnp4"}],["path",{"d":"M14.62 18.8A2.25 2.25 0 1 1 18 15.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a.998.998 0 0 1-1.507 0z","key":"15cy7q"}],["path",{"d":"M16 2v4","key":"4m81vk"}],["path",{"d":"M3 10h18","key":"8toen8"}],["path",{"d":"M8 2v4","key":"1cmpym"}]],"className":"lucide-calendar-heart","size":28,"style":{"marginRight":"0.75rem","flexShrink":0}}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","alignItems":"center"},"children":[["$","span",null,{"children":"OPEN TODAY"}],["$","strong",null,{"children":"4 Slots Today"}]]}]]}],["$","button",null,{"className":"btn glass hero-btn","children":[["$","$L2",null,{"iconNode":[["path",{"d":"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2","key":"1yyitq"}],["path",{"d":"M16 3.128a4 4 0 0 1 0 7.744","key":"16gr8j"}],["path",{"d":"M22 21v-2a4 4 0 0 0-3-3.87","key":"kshegd"}],["circle",{"cx":"9","cy":"7","r":"4","key":"nufk8"}]],"className":"lucide-users","size":28,"style":{"marginRight":"0.75rem","flexShrink":0}}],["$","div",null,{"style":{"display":"flex","flexDirection":"column","alignItems":"center"},"children":[["$","span",null,{"children":"TODAY'S QUEUE"}],["$","strong",null,{"children":"~45 min wait"}]]}]]}]]}]]}]}],["$","section",null,{"className":"quick-access-section animate-fade-in","children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"section-title mobile-hidden","children":["$","div",null,{"className":"divider","children":[["$","$L2",null,{"iconNode":[["path",{"d":"M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z","key":"1s2grr"}],["path",{"d":"M20 2v4","key":"1rf3ol"}],["path",{"d":"M22 4h-4","key":"gwowj6"}],["circle",{"cx":"4","cy":"20","r":"2","key":"6kqj1y"}]],"className":"lucide-sparkles","size":16,"color":"#d95c14"}],["$","span",null,{"children":"QUICK ACCESS"}],["$","$L2",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:props:children:0:props:children:props:children:0:props:iconNode","className":"lucide-sparkles","size":16,"color":"#d95c14"}]]}]}],["$","div",null,{"className":"quick-access-grid","children":[["$","$L3",null,{"href":"/en/timings","className":"quick-link-item","children":[["$","div",null,{"className":"quick-icon","children":["$","$L2",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock","size":32,"color":"#571a15"}]}],["$","span",null,{"children":"Temple Timings"}]]}],["$","$L3",null,{"href":"/en/deity-seva","className":"quick-link-item","children":[["$","div",null,{"className":"quick-icon","children":["$","$L2",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z","key":"9ktpf1"}]],"className":"lucide-compass","size":32,"color":"#c28e5e"}]}],["$","span",null,{"children":"Deities & Seva"}]]}],["$","$L3",null,{"href":"/en/map","className":"quick-link-item","children":[["$","div",null,{"className":"quick-icon","children":["$","$L2",null,{"iconNode":[["path",{"d":"M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z","key":"169xi5"}],["path",{"d":"M15 5.764v15","key":"1pn4in"}],["path",{"d":"M9 3.236v15","key":"1uimfh"}]],"className":"lucide-map","size":32,"color":"#571a15"}]}],["$","span",null,{"children":"Temple Map"}]]}],["$","$L3",null,{"href":"/en/history","className":"quick-link-item","children":[["$","div",null,{"className":"quick-icon","children":"$L4"}],"$L5"]}],"$L6","$L7","$L8","$L9","$La","$Lb"]}],"$Lc"]}]}],"$Ld","$Le","$Lf"],["$L10"],"$L11"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ggah6vySrJ7da7Jy42FhJ"}
+4:["$","$L2",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text","size":32,"color":"#c28e5e"}]
+5:["$","span",null,{"children":"Temple History"}]
+6:["$","$L3",null,{"href":"/en/seva-booking","className":"quick-link-item","children":[["$","div",null,{"className":"quick-icon","children":["$","$L2",null,{"iconNode":"$0:rsc:props:children:0:0:props:children:props:children:3:props:children:0:props:children:0:props:iconNode","className":"lucide-calendar-heart","size":32,"color":"#571a15"}]}],["$","span",null,{"children":"Seva Booking"}]]}]
+7:["$","$L3",null,{"href":"/en/prasadam","className":"quick-link-item","children":[["$","div",null,{"className":"quick-icon","children":["$","$L2",null,{"iconNode":[["path",{"d":"M12 7v14","key":"1akyts"}],["path",{"d":"M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8","key":"1sqzm4"}],["path",{"d":"M7.5 7a1 1 0 0 1 0-5A4.8 8 0 0 1 12 7a4.8 8 0 0 1 4.5-5 1 1 0 0 1 0 5","key":"kc0143"}],["rect",{"x":"3","y":"7","width":"18","height":"4","rx":"1","key":"1hberx"}]],"className":"lucide-gift","size":32,"color":"#d69f12"}]}],["$","span",null,{"children":"Annadhanam / Prasadam"}]]}]
+8:["$","$L3",null,{"href":"/en/transport","className":"quick-link-item","children":[["$","div",null,{"className":"quick-icon","children":["$","$L2",null,{"iconNode":[["path",{"d":"M8 6v6","key":"18i7km"}],["path",{"d":"M15 6v6","key":"1sg6z9"}],["path",{"d":"M2 12h19.6","key":"de5uta"}],["path",{"d":"M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3","key":"1wwztk"}],["circle",{"cx":"7","cy":"18","r":"2","key":"19iecd"}],["path",{"d":"M9 18h5","key":"lrx6i"}],["circle",{"cx":"16","cy":"18","r":"2","key":"1v4tcr"}]],"className":"lucide-bus","size":32,"color":"#571a15"}]}],["$","span",null,{"children":"Transport Info"}]]}]
+9:["$","$L3",null,{"href":"/en/gallery","className":"quick-link-item","children":[["$","div",null,{"className":"quick-icon","children":["$","$L2",null,{"iconNode":[["path",{"d":"M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z","key":"18u6gg"}],["circle",{"cx":"12","cy":"13","r":"3","key":"1vg3eu"}]],"className":"lucide-camera","size":32,"color":"#d69f12"}]}],["$","span",null,{"children":"Photo Gallery"}]]}]
+a:["$","$L3",null,{"href":"/en/Stay-Hotel-Lodge","className":"quick-link-item","children":[["$","div",null,{"className":"quick-icon","children":["$","$L2",null,{"iconNode":[["path",{"d":"M12 10h.01","key":"1nrarc"}],["path",{"d":"M12 14h.01","key":"1etili"}],["path",{"d":"M12 6h.01","key":"1vi96p"}],["path",{"d":"M16 10h.01","key":"1m94wz"}],["path",{"d":"M16 14h.01","key":"1gbofw"}],["path",{"d":"M16 6h.01","key":"1x0f13"}],["path",{"d":"M8 10h.01","key":"19clt8"}],["path",{"d":"M8 14h.01","key":"6423bh"}],["path",{"d":"M8 6h.01","key":"1dz90k"}],["path",{"d":"M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3","key":"cabbwy"}],["rect",{"x":"4","y":"2","width":"16","height":"20","rx":"2","key":"1uxh74"}]],"className":"lucide-building","size":32,"color":"#c28e5e"}]}],["$","span",null,{"children":"Hotels/Stay"}]]}]
+b:["$","$L3",null,{"href":"/en/Temples-Nearby-Srirangam-Trichy","className":"quick-link-item","children":[["$","div",null,{"className":"quick-icon","children":["$","$L2",null,{"iconNode":[["path",{"d":"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0","key":"1r0f0z"}],["circle",{"cx":"12","cy":"10","r":"3","key":"ilqhr7"}]],"className":"lucide-map-pin","size":32,"color":"#d69f12"}]}],["$","span",null,{"children":"Nearby Temples"}]]}]
+c:["$","div",null,{"className":"section-divider"}]
+d:["$","section",null,{"style":{"backgroundColor":"#fff3cd","padding":"1.5rem","borderTop":"2px solid #0e492c","borderBottom":"2px solid #0e492c"},"children":["$","div",null,{"className":"container","style":{"maxWidth":"800px","margin":"0 auto","textAlign":"center"},"children":[["$","h3",null,{"style":{"color":"#856404","marginBottom":"0.5rem","display":"flex","alignItems":"center","justifyContent":"center","gap":"0.5rem"},"children":["$","span",null,{"style":{"backgroundColor":"#856404","color":"white","padding":"0.25rem 0.5rem","borderRadius":"4px","fontSize":"0.85rem","fontWeight":"bold","textTransform":"uppercase"},"children":"Update :"}]}],["$","div",null,{"style":{"color":"#856404","lineHeight":"1.6","fontWeight":"500"},"children":[["$","p","0",{"style":{"margin":0},"children":"Upcoming Brahmotsavam Festival in 2 weeks! Get ready to witness the grand celebrations."}],["$","p","1",{"style":{"margin":0},"children":"All devotees are requested to follow COVID safety guidelines inside the temple premises."}],["$","p","2",{"style":{"margin":0},"children":"Annadhanam timings have been extended by 1 hour on weekends."}]]}]]}]}]
+e:["$","section",null,{"id":"temple-timings","className":"timings-section","children":["$","div",null,{"className":"container","children":[["$","div",null,{"style":{"textAlign":"center","marginBottom":"3rem"},"children":[["$","span",null,{"children":"DARSHAN SCHEDULE"}],["$","h2",null,{"children":"Temple Timings"}],["$","p",null,{"style":{"display":"inline-block","backgroundColor":"var(--secondary-color)","color":"var(--primary-color)","padding":"0.25rem 0.75rem","borderRadius":"20px","fontWeight":"bold","fontSize":"0.9rem","marginBottom":"1rem","marginTop":"-0.25rem","boxShadow":"0 2px 4px rgba(0,0,0,0.1)"},"children":["Timings for: ","22.7.2026"]}],["$","p",null,{"children":"Temple Timings — 4 Darshan Slots Daily"}],["$","p",null,{"style":{"marginTop":"0.5rem","color":"#d35400","fontSize":"0.9rem","fontWeight":"500"},"children":"Schedule may change on daily basis, Check the timings everyday"}]]}],["$","div",null,{"style":{"display":"flex","justifyContent":"center"},"children":["$","div",null,{"style":{"maxWidth":"600px","width":"100%","backgroundColor":"white","padding":"2rem","borderRadius":"12px","boxShadow":"0 4px 15px rgba(0,0,0,0.05)","border":"1px solid var(--border-color)"},"children":[["$","div",null,{"className":"timing-row","children":[["$","strong",null,{"style":{"color":"var(--primary-color)"},"children":"Viswaroopa Darshan (Morning)"}],["$","span",null,{"className":"timing-val","children":"6.02 AM to 7.00 AM"}]]}],["$","div",null,{"className":"timing-row","children":[["$","strong",null,{"style":{"color":"var(--primary-color)"},"children":"General Darshan (Morning)"}],["$","span",null,{"className":"timing-val","children":"9.30 AM to 12.30 PM"}]]}],["$","div",null,{"className":"timing-row","children":[["$","strong",null,{"style":{"color":"var(--primary-color)"},"children":"General Darshan (Afternoon)"}],["$","span",null,{"className":"timing-val","children":"2.30 PM to 5.30 PM"}]]}],["$","div",null,{"className":"timing-row","style":{"borderBottom":"none","marginBottom":0,"paddingBottom":0},"children":[["$","strong",null,{"style":{"color":"var(--primary-color)"},"children":"General Darshan (Evening)"}],["$","span",null,{"className":"timing-val","children":"7.00 PM to 9.00 PM"}]]}],["$","div",null,{"style":{"marginTop":"1.5rem","display":"flex","gap":"2rem","alignItems":"center","justifyContent":"center","width":"100%","borderTop":"1px solid #eee","paddingTop":"1.5rem"},"children":[["$","$L12",null,{"label":"Important note","data":{"title":"Important Information for Devotees","p1":"Devotees are strongly advised to join the darshan queue at least <strong>30 minutes</strong> before the scheduled temple closing time to ensure entry before the queue is closed.","p2":"During major festivals, especially <strong>Vaikunta Ekadasi</strong>, the darshan queue may be closed up to <strong>one hour</strong> before the scheduled closing time, depending on the number of devotees and the crowd within the temple complex. Visitors are therefore encouraged to arrive well in advance during festival periods.","p3":"Please note that the <strong>Sri Ranga Nachiyar Temple</strong> (also known as Sri Ranga Nayaki Temple, Thayar Sannidhi, or Amma Sannidhi) located within the temple complex generally closes at approximately the same time as the Sri Ranganathar Temple. Devotees planning to have darshan at both shrines are advised to schedule their visit accordingly to avoid missing the closing time."}}],["$","a",null,{"href":"https://srirangamranganathar.hrce.tn.gov.in/resources/docs/invitation/777/invitation_1.pdf","target":"_blank","rel":"noopener noreferrer","style":{"color":"#d95c14","fontWeight":600,"textDecoration":"underline","fontSize":"0.95rem","whiteSpace":"nowrap"},"children":"Full calendar"}]]}]]}]}],["$","div",null,{"className":"section-divider"}]]}]}]
+14:T1ee0,Sri Ranganathaswamy Temple, Srirangam
+The First and Foremost of the 108 Divya Desams
+Located on the sacred island of Srirangam (Thiruvarangam) in Tiruchirappalli District, Tamil Nadu, the Arulmigu Sri Ranganathaswamy Temple is the foremost among the 108 Divya Desams glorified by the Azhwars. Revered as "Bhooloka Vaikuntam" (Heaven on Earth) and affectionately known as the "Periya Koil" (The Great Temple), it is one of the largest functioning Hindu temples in the world and stands as the spiritual heart of Sri Vaishnavism.
+Every one of the twelve Azhwars has sung in praise of Lord Ranganatha and the unparalleled greatness of this sacred shrine. It is also the holy place where Sri Andal, Thiruppaan Azhwar, and Thondaradippodi Azhwar attained the divine feet of Lord Ranganatha.
+Situated approximately 5 km north of Tiruchirappalli, 330 km south of Chennai, 130 km north of Madurai, and 200 km east of Coimbatore, the temple is well connected by road, rail, and air, making it easily accessible to devotees from across India and the world.
+
+Temple Architecture and Layout
+The temple is an architectural masterpiece spread over approximately 156 acres, making it one of the largest temple complexes in Asia. The sacred complex consists of seven concentric enclosures (Saptha Prakaras or Thiruchutrus), symbolizing the seven celestial realms through which devotees progress towards the divine.
+The sanctum of Lord Ranganatha is situated within the innermost five enclosures:
+- Thiruvannazhi Thiruchutru 
+- Rajamahendran Thiruchutru 
+- Kulasekaran Thiruchutru 
+- Alinadan Thiruchutru 
+- Agalangan Thiruchutru 
+
+The outer two enclosures are:
+- Thiruvikraman Thiruchutru (Uthara Veedhi) 
+- Kalikandan Thiruchutru (Chithirai Veedhi) 
+
+Within these seven enclosures stand 21 majestic gopurams and 4 unfinished (Mottai) gopurams.
+The most prominent among them is the magnificent Southern Rajagopuram, which rises to an impressive height of 236 feet (72 metres) with 13 storeys and 13 kalasams. Although construction began nearly 400 years ago during the Nayak period, it remained incomplete until 1987, when it was completed under the guidance and tireless efforts of the 44th Jeeyar of Ahobila Mutt, Srimad Azhagiyasingar. It continues to be one of the tallest temple towers in Asia.
+Situated on the banks of the sacred River Cauvery, whose waters are regarded as even more sanctifying than the Ganges according to temple tradition, Srirangam occupies a unique place in Hindu spirituality.
+
+The Mulavar – Sri Ranganatha Perumal
+The Moolavar (Presiding Deity) of Srirangam is Sri Ranganatha Swamy, one of the most magnificent and unique forms of Lord Maha Vishnu.
+The Lord is enshrined in the sanctum in the Bhujanga Sayanam posture—reclining majestically on the thousand-hooded serpent Adisesha, facing south toward Lanka, fulfilling the promise made to Vibhishana, the righteous brother of Ravana.
+Unlike standing or seated forms found in many Vishnu temples, Sri Ranganatha is seen resting gracefully, symbolizing the Lord's eternal protection of the universe while remaining in divine yogic repose.
+The Moolavar possesses several unique characteristics:
+- He faces south, an extremely rare orientation among Vishnu temples. 
+- His divine chest bears the sacred Kaustubha gem, representing His supreme status as the Lord of Vaikunta. 
+- The Lord wears the ever-present Kasturi Tilakam on His forehead. 
+- He holds the eternal Sengol (Royal Sceptre), signifying His role as the righteous ruler of the universe. 
+- His incomparable beauty earned Him the name Azhagiya Manavalan ("The Beautiful Divine Bridegroom"). 
+
+Temple tradition reveres this deity as one possessing exceptional glory in all three sacred aspects:
+- Sthalam (the holy place) 
+- Moorthy (the presiding deity) 
+- Theertham (the sacred waters) 
+
+The temple's sacred Surya Pushkarani is believed to have been worshipped by Surya Bhagavan, making it one of the Navagraha-related sacred waters.
+
+The Utsavar – Namperumal
+The Utsava Murthy of Srirangam is Sri Namperumal, perhaps the most celebrated festival deity in the entire Sri Vaishnava tradition.
+While the Moolavar remains permanently enshrined within the sanctum, Namperumal comes out in grand processions throughout the year, blessing devotees inside and outside the temple. For this reason, devotees often say:
+"In Srirangam, the temple belongs to Namperumal."
+Namperumal is adorned daily in exquisite silk garments, fragrant flower garlands, rare jewels, and magnificent crowns. Each day brings a unique alankaram (decoration), reflecting different divine forms and moods.
+He presides over almost every important temple festival, including:
+- Vaikunta Ekadasi 
+- Panguni Uthiram 
+- Chithirai Brahmotsavam 
+- Vasanthotsavam 
+- Jyeshtabhishekam 
+- Pavithrotsavam 
+- Navaratri 
+- Adhyayana Utsavam 
+
+During these festivals, Namperumal is taken through the seven prakaras and the streets of Srirangam on magnificent vahanas such as:
+- Garuda Vahanam 
+- Hanuman Vahanam 
+- Sesha Vahanam 
+- Horse Vahanam 
+- Elephant Vahanam 
+- Golden Palanquin 
+- Golden Chariot 
+- Surya Prabhai 
+- Chandra Prabhai 
+
+Among all His festivals, the Vaikunta Ekadasi procession is considered the grandest, attracting hundreds of thousands of devotees from across the world.
+
+Viswaroopa Seva – The Divine Awakening
+One of the most unique daily rituals at Srirangam is the Viswaroopa Seva, performed every morning at approximately 6:15 a.m.
+Before sunrise, the temple elephant brings sacred water from the Northern Cauvery (Kollidam) for the Lord's worship. During the Tamil month of Aippasi, water is ceremonially brought from the Southern Cauvery near Amma Mandapam.
+As part of this beautiful tradition, the temple elephant, horse, and a sacred cow are brought before the sanctum. Their presence symbolizes the entire creation awakening the Lord to begin another day of blessing the universe. The gentle sounds of Vedic chanting, temple bells, conches, and devotional hymns fill the sanctum as the doors are opened for the first darshan of the day.
+Devotees consider witnessing Viswaroopa Seva to be highly auspicious, believing that it grants spiritual merit, removes obstacles, and invokes the Lord's divine grace at the very beginning of the day.
+
+A Living Centre of Sri Vaishnavism
+Srirangam is not merely an architectural marvel or an ancient pilgrimage destination—it is the spiritual headquarters of the Sri Vaishnava Sampradaya.
+The temple is deeply associated with Bhagavad Ramanujacharya, who lived, taught, and established the principles of Vishishtadvaita Vedanta here. His sacred shrine, containing his preserved physical form, continues to inspire millions of devotees.
+For centuries, the temple has preserved an unbroken tradition of:
+- Vedic chanting 
+- Divya Prabandham recitation 
+- Agama worship 
+- Temple music 
+- Annual festivals 
+- Ritual processions 
+
+These traditions continue to be practiced exactly as prescribed by the ancient Acharyas, making Srirangam a living embodiment of devotion, philosophy, culture, and temple heritage.
+
+Sri Ranganathaswamy Temple at Srirangam is far more than a magnificent monument. It is a timeless spiritual kingdom where devotion, history, architecture, music, literature, and philosophy converge. From the serene majesty of Sri Ranganatha, reclining eternally on Adisesha, to the vibrant festival processions of Sri Namperumal, every ritual reflects centuries of uninterrupted worship and profound faith.
+Revered as Bhooloka Vaikuntam, Srirangam continues to draw millions of devotees seeking the divine grace of Lord Ranganatha. Whether one visits to witness the sacred Viswaroopa Seva, participate in the grand festivals, admire its monumental architecture, or simply experience its spiritual tranquility, Srirangam remains an eternal beacon of Sri Vaishnava tradition and one of the holiest pilgrimage destinations in the Hindu world.15:T1446,Sri Ramanuja incarnated at Sriperumbudur in 1017 CE, born to Kesava Somayajulu and Kanthimathi, on a Thursday in the asterism of Thiruvadirai in the month of Chithirai of the Pingala year, as a partial manifestation (amsam) of Adisesha.
+In the Krita Yuga he served as Adisesha, the serpent-couch of Sri Ranganatha; in the Treta Yuga as Lakshmana, the younger brother of Sri Rama; in the Dvapara Yuga as Balarama, the elder brother of Krishna; and in the Kali Yuga he incarnated as Sri Ramanuja. To reform the world, to reveal the path of bhakti and sharanagati (surrender), and to lead humanity towards salvation, Sri Mannarayana in Paramapada summoned Adisesha and commanded him: "Live in the mortal world for 200 years and carry out the work described above." It was for this reason that he took birth as Ramanuja.
+At Thiruvarangam, the Lord (Perumal), through Alavandhar's son Thiruvarangap Perumal Araiyar, arranged to bring Ramanuja, who was then in Kanchipuram, to Srirangam. Previously, five classes of temple servants carried out the koyil kainkaryam (temple service). They were the Kovanavar, Kodavar, Koduval Eduppar, Paduvaar and Thazhaiiduvaar. Ramanuja, during his time, expanded these five into ten groups. Following the Parameshwara Samhita of the Pancharatra Agama and the Thenkalai sampradaya, Ramanuja reorganised and refined the conduct of daily worship (thiruvaradhanam), sannidhi festivals and utsavams. In addition to the ten groups of Brahmin temple servants, he also appointed Vaishnava kainkaryaparas such as Ekangis and Sathatha Mudalis, and ensured the efficient administration of temple services.
+The maximum lifespan of a human being has been reckoned at 123 years. Ramanuja lived for 120 years. In 1137 CE, at the time of his passing, he laid his head in the lap of his younger brother and disciple Embar, and placed his sacred feet in the lap of his disciple Andhranirnan, and thus departed this world to fill the seat that had long remained vacant beside the Lord in Paramapada.
+Namperumal appeared in a dream and commanded that Ramanuja's mortal form (thirumeni) should be laid to rest in His own Vasantha Mandapam within the Akalangan Thiruchutru (enclosure). This was done accordingly. That place is today known as the Udaiyavar Sannidhi (Ramanuja's shrine). After Ramanuja's body was interred, a form manifested on its own — and that self-manifested form is the Moolavar (presiding deity) of the Ramanuja Sannidhi today. Ramanuja continues to watch over the administration he established, ensuring it is carried on without interruption.
+This Moolavar of Ramanuja does not receive thirumanjanam (ceremonial ablution). Instead, a mixture of saffron (kungumappu) and green camphor (pachhai karpooram) is applied to the thirumeni twice a year — once in the month of Aippasi and once in Chithirai. In this manner, without any chemical preservative, through entirely natural means using saffron and green camphor, the sacred body is preserved from decay at this temple.
+Ramanuja also served as the administrative reformer at Tirumala Tirupati, increasing the temple's endowments and performing many kainkaryams there. At present, in recognition of this service, the Srirangam temple's Jeer — the Sri Ranganaryana Jeer, who heads the Ramanuja Matham at Srirangam — has been accorded the Sri Sadari honour at Tirumala Tirupati annually since 2003. On that day, the Sri Sadari of Lord Tiruvengadamudaiyan is brought out to the Mugathuvaaram and the honour is formally conferred upon the Jeer, who then has darshan.
+Furthermore, at the request of this temple's administration, the Tirumala Tirupati Devasthanam, acting under Andhra Pradesh Government Order No. 164 dated 7-11-2006, and as per the letter of the Commissioner of the Hindu Religious and Charitable Endowments Department, Chennai (No. 52664/2006 dated 08.09.2006), allotted 5,000 square feet of land at Tirumala Tirupati at an annual rent of Rs. 1,000 for a period of 30 years, on which a Jeer Matham with accommodation facilities has been constructed by the Joint Commissioner/Executive Officer.
+Udaiyavar (Ramanuja) Sannidhi — Seva Timings:
+- Morning: 6.30 AM to 9.00 AM
+- Evening: 4.00 PM to 8.30 PM
+Thiruvarangathamudanar, who composed the Ramanuja Nootrandhadhi, has his shrine at the south-western corner of the Chakkarathazhwar Sannidhi enclosure. The pillars here feature lion-motif carvings reminiscent of the Pallava period style. He composed the Ramanuja Nootrandhadhi, a work of 108 verses. This work is also known as Prapanna Gayatri. Just as the Gayatri mantra is to those who chant the Vedas, the Ramanuja Nootrandhadhi serves as the Gayatri for the Prapannas — those who have surrendered to Lord Thirumal, transcending all distinctions of caste. At this temple, the right to recite Iyarpa (Divya Prabandham in prose form) before Periya Perumal belonged to Amudanar, and he was also accorded the Brahmaratha honour for this privilege. The right to recite the Iyal seva during the Veda Vinnapam also belonged to Amudanar. Notably, Thiruvarangathamudanar has no vigraha prathishtai (installed idol) in any other Divyadesam apart from this temple at Thiruvarangam and Tirupati.16:Td0e,The Sannidhi
+The deity enshrined in the Sri Chakkarathazhwar Sannidhi is known as Sudarsana Azhwar. He appears with eight divine hands, holding the conch (shanku), discus (chakram) and goad (angusam) among his attributes. Behind him, the imprint of the chakra emblem can be seen. Devotees believe that worshipping him bestows many benefits. Every Saturday, large numbers of devotees visit and light ghee lamps (nei vilakku) as an offering. The Moolavar (presiding deity) here has sixteen divine hands. Devotees believe that the weapons held in his hands have the power to remove their troubles and obstacles; these are regarded as yoga yanthras — mystic instruments of divine energy. Behind the Moolavar Chakkarathazhwar, one can see the sacred form of Yoga Narasimhar. Thirumanjanam (ceremonial ablution) is performed for Chakkarathazhwar on all days except Saturdays.
+
+The Sudarshana Chakra — Puranic Background
+The Sudarshana Chakra is the divine weapon of Sri Mahavishnu. It is a spinning, disc-shaped weapon with 108 serrated edges. Among Vishnu's four divine hands, the Sudarshana Chakra is held in the right rear hand, the conch Panchajanyam in the left fore hand, the mace Kaumodaki in the left rear hand, and the lotus bud (Padmam) in the right fore hand.
+
+Origin
+Sanjna Devi, the wife of Surya the Sun God, was the daughter of Vishwakarma, the divine architect. Unable to bear the Sun's intense radiance and heat, she could not approach her husband and appealed to her father for help. Vishwakarma placed the Sun on his grinding wheel and trimmed away the excess brilliance. From the solar dust that fell away, he fashioned three wondrous creations: the first was the Pushpaka Vimana, the famed aerial chariot (later belonging to Kubera and then to Ravana); the second was the Trishula (Trident) of Lord Shiva; and the third was the Sudarshana Chakra of Lord Vishnu. The Chakra carries millions of spike-like serrations arranged in two rows that spin in opposite directions, giving it its fearsome cutting edge.
+
+The Sudarshana Chakra in the Puranas
+The Sudarshana Chakra is referenced in the Rig Veda, the Yajur Veda and the Puranas as the ultimate weapon for the protection of dharma — deployed against rakshasas, asuras and those who walk the path of adharma.
+In the Mahabharata, during Emperor Yudhishthira's Rajasuya Yagna, Sri Krishna employed the Sudarshana Chakra to slay Shishupala, who had committed a hundred offences each worthy of death. The Chakra was also used to shape the Mandara mountain for the Churning of the Ocean of Milk (Samudra Manthan).
+When Sati Devi, the consort of Lord Shiva, gave up her life at her father Daksha's sacrificial fire, Shiva, consumed by grief, carried her lifeless body and wandered inconsolably. Lord Vishnu then used the Sudarshana Chakra to divide Sati's body into 51 pieces. These fell at various places across Bharatavarsha and are venerated today as the Shakti Peethas — the sacred seats of the Goddess.
+
+Sudarshana Ashtakam — Swami Vedanta Desika
+The following is the opening verse of the Sudarshana Ashtakam, composed in praise of Sri Chakkarathazhwar by Swami Vedanta Desika:
+> Pratibhata Shreni Bhishana
+> Varaguṇa Stoma Bhushana
+> Janibhaya Sthana Karana
+> Jagadavasthana Karana
+> Nikhila Dushkarma Karshana
+> Nigamana Saddhama Darshana
+> Jaya Jaya Sri Sudarshana17:T2619,Among the many shrines in the vast complex of the Arulmigu Sri Ranganathaswamy Temple at Srirangam, the Dhanvantri Sannidhi holds a unique and profound significance. Dedicated to Lord Dhanvantri — the divine physician and the god of Ayurveda — this shrine is not merely a place of worship but a testament to ancient India's integration of spiritual faith and physical healing.
+
+Who is Lord Dhanvantri?
+According to Hindu theology, Dhanvantri is an avatar of Lord Vishnu, manifesting as the physician of the Devas (gods). His origin story is found in the Puranas, primarily during the grand cosmic event known as Samudra Manthan (the Churning of the Ocean of Milk).
+When the Devas and Asuras churned the cosmic ocean using Mount Mandara as the churning rod and the serpent Vasuki as the rope, many divine treasures emerged. Among the last to appear was Lord Dhanvantri. He arose from the milky waves holding a kalasha (pot) filled with Amrita (the nectar of immortality) in one hand, and a leech (Jalauka) in another, along with the Sudarshana Chakra and the Shankha (conch).
+
+The Mortal Incarnation
+According to the Vishnu Purana, Dhanvantri incarnated on earth as the King of Kashi (Varanasi). Through his great-grandson Divodasa, Ayurvedic knowledge was transmitted to the world. The foundational texts of Ayurveda — the Charaka Samhita and the Sushruta Samhita — honour him as the primal teacher of the healing sciences.
+
+The Shrine at Srirangam — Location
+The fourth prakaram (enclosure) of the Srirangam temple is known as Mahar Lokam. Its walls were built by Thirumangai Azhwar. This enclosure also houses the enormous Garuda Mandapam with over 200 pillars — perhaps the most magnificent mandapam in the entire complex — and the Paramapada Vaasal (Gateway to Heaven) on its southern side, which opens only once a year on Vaikunta Ekadasi.
+The Dhanvantri Sannidhi stands on an elevated platform on the western side of the Chandra Pushkarani (temple tank), facing east. It is one of only two shrines in the entire complex that are raised above ground level — the other being the Mettazhagiya Singar (Narasimha) shrine.
+Temple tradition holds that on the path leading to the Thayar (Ranganayaki) shrine, Sriman Narayana himself appears as Dhanvantri to serve as the physician of Lord Ranganatha.
+
+The Deity
+The Moolavar (presiding deity) is a standing image (sthanaka thirukkolam) of Vishnu in his Dhanvantri form, approximately 5 feet in height, with four arms:
+- Upper right hand — Chakra (Sudarshana discus)
+- Upper left hand — Shankha (conch)
+- Lower right hand — Amrita Kalasha (pot of nectar)
+- Lower left hand — Varada Mudra (the gesture of bestowing boons)
+
+Exceptional Features by Agama Standards
+Two features make this shrine architecturally unique within the temple:
+**No Utsavar.** Unlike virtually every other sannidhi in the complex, this shrine has no utsava bera — no processional deity. The Moolavar alone receives worship.
+**No Vimana.** By Agama convention, every shrine in a temple should have a vimana (tower structure) above the sanctum. The Dhanvantri Sannidhi has none. The traditional explanation is characteristically practical: Dhanvantri is a physician; patients come to him. A vimana is therefore not required. This is one of the most distinctive Agamic exceptions in all of Srirangam.
+
+Historical Evidence — The Inscription
+The Hoysala-Era Foundation
+In front of the shrine stands a stone slab bearing an inscription catalogued as ARE 80 of 1936-37 (Annual Report on Epigraphy). It dates from the third regnal year of the Hoysala king Pratapachakravartin Vira Ramanatha Deva (r. 1255–1295 CE) and records the following:
+- **Patron:** Changadeva Singanna Dandanayaka, pradhani (chief minister) of the king
+- **Custodian:** Garudavahana Pandita (Garudavahana Bhattar), the royal physician, designated as the rakshaka (protector) of the donor
+- **What was founded:** A salai (hospital) to the west of the north gopuram in the fourth prakaram, with the enshrinement of the deity "Eduttakai-alagiya Nayinar"
+- **Land endowment:** Agricultural land in Mummudisola Chaturvedimangalam, in Vilanadu, a subdivision of Pandikulasani Valanadu, was granted for the upkeep of the hospital
+The inscription confirms that Garudavahana Bhattar — a practising Ayurvedic physician — established the Dhanvantri idol within the temple. This is not oral tradition; it is epigraphic record.
+
+The Arogyashala — An Ancient Hospital
+In earlier centuries, the Dhanvantri Sannidhi was not merely a place of worship. It functioned as the arogyashala — the hospital — for the residents of Srirangam. This is a significant detail for understanding the social role of South Indian temples: they were not only centres of worship and learning but also institutions of public health. The Dhanvantri shrine at Srirangam is physical evidence of this tradition.
+
+Destruction and Rebuilding
+The shrine was damaged during the devastating raids of Malik Kafur (1311 CE) and Ulugh Khan (1323 CE), during which much of the temple complex was plundered. It was subsequently rebuilt during the Nayak period. The painted ceilings and decorative elements visible today are attributed to the Nayak-era restoration.
+
+Dhanvantri and Ranganatha — Special Rituals
+The Kashayam — Divine Medical Service
+One of the most charming traditions associated with this shrine dates from the time of Ramanuja (11th–12th century). Every day, before the aravanai — the final puja of the day when the Lord retires — a medicinal kashayam (herbal decoction) was sent from the Dhanvantri shrine to Lord Ranganatha.
+The logic behind this practice is disarmingly simple: Ranganatha receives continuous offerings of very rich foods throughout the day — pongal, tamarind rice, sweet pongal, payasam, and many other preparations. To keep the Lord's system healthy after such a diet, Dhanvantri — as the resident physician — would dispatch a kashayam as his medical service to the Lord. A digestive made from ginger and jaggery was also sent to Ranganatha after certain meals.
+This practice transforms an abstract theological concept — Dhanvantri as the physician of the gods — into a daily, tangible ritual within the temple's routine.
+
+Herbal Theertham for Devotees
+Visitors to the shrine receive a prasada theertham — a herbal decoction — as a sacred offering. This continues the ancient association between the shrine and healing, and distinguishes it from every other sannidhi in the complex, where the prasadam is invariably food or sanctified water.
+
+Healing and Devotion
+Devotees suffering from illness — particularly chronic or otherwise intractable ailments — come to this shrine to perform archana and thirumanjanam before Dhanvantri Perumal, praying for relief. It is a deeply held belief that worship here can cure bodily afflictions and restore health and vitality.
+Dhanvantri Jayanti is celebrated annually on Dhanteras (Dhanvantri Trayodashi) — the thirteenth lunar day of Krishna Paksha in the month of Kartik, one day before Diwali. This day is also observed as National Ayurveda Day across India.
+
+The Dhanvantri Mantra
+> Om Namo Bhagavate Maha Sudarshana Vasudevaya Dhanvantaraye
+> Amruta Kalasha Hastaya Sarva Bhaya Vinashaya
+> Sarva Roga Nivaranaya Trilokya Nathaya
+> Sri Maha Vishnu Svarupa Sri Dhanvantri Svarupa Namaha
+*(We bow to the Lord known as Sudarshana Vasudeva Dhanvantri, who holds the pot of the nectar of immortality, who destroys all fears, who cures all diseases, who is the Lord of the three worlds, who is the very form of Sri Maha Vishnu — to that Dhanvantri, we offer our salutations.)*
+
+The Dhanvantri Sannidhi at Srirangam is not a minor sub-shrine. Founded in the 13th century by a Hoysala royal physician, functioning as a hospital for the temple town, possessing an Agamic architecture that breaks convention (no vimana, no utsavar), and maintaining a living tradition of herbal theertham and the kashayam service to Ranganatha — it stands as an unmatched institution among the 108 Divya Desams. In a temple complex often celebrated for its scale, its festivals and its theology, this small, elevated, tower-less shrine is quiet proof that the sacred and the medical were once the same thing.
+
+Sri Dhanvanthri Sannidhi – Thirumanjanam Information
+
+The Sri Dhanvanthri Sannidhi is situated opposite the Paramapada Vasal (Paramapada Gate) in Alinadan Thiruchuttru, the Fourth Prakaram of the Sri Ranganathaswamy Temple, Srirangam.
+
+Sri Dhanvanthri Perumal, the divine physician and incarnation of Lord Vishnu, is enshrined here in a majestic standing posture, holding the Shankha (Conch) and Chakra (Discus), with four sacred hands bestowing blessings upon devotees.
+
+Devotees believe that sincere and regular worship at this sacred shrine, especially by those suffering from chronic or incurable ailments, invokes the divine grace of Sri Dhanvanthri and brings strength, healing, and well-being.
+
+Thirumanjanam (Sacred Abhishekam): Days: Sunday, Monday, Tuesday, Wednesday, and Friday. Time: 11:00 AM – 12:00 Noon. Offering Fee: ₹1,200. Margazhi Notice: Thirumanjanam is not performed during the Tamil month of Margazhi.
+
+Contact for Thirumanjanam Booking: For Thirumanjanam reservations and further information, please contact: Mr. S. T. Harikrishnan, Thirumanjanam In-charge, Mobile: +91 81224 85950.
+
+Sources
+- Stone inscription ARE 80 of 1936-37, fourth prakaram, Ranganathaswamy Temple, Srirangam
+- Chitra Madhavan, Vishnu Temples of South India, Volume 2, 2008
+- S. Krishnaswami Aiyangar, South India and Her Muhammadan Invaders
+- Koyil Ozhugu (Temple Chronicle of Srirangam)
+- Bhagavata Purana; Vishnu Purana; Vishnudharmottara
+- Charaka Samhita; Sushruta Samhita18:T10b6,Location
+The fourth prakaram (enclosure) of the Srirangam temple is known as the Thirumangai Mannan Thiruchutru or the Aalinadan Thiruchutru. Its walls were built by Thirumangai Azhwar. This enclosure houses some of the most significant structures in the entire complex: the vast Garuda Mandapam with over 200 pillars, the Paramapada Vaasal (Gateway to Heaven, opened only on Vaikunta Ekadasi), the Dhanvantri Sannidhi, and the Ramanuja Sannidhi.
+Within the Garuda Mandapam stands one of the largest Garudalwar shrines among all 108 Divya Desams.
+
+The Deity
+Garudalwar is enshrined here at a towering height of approximately 14 feet — a truly imposing presence. He sits directly opposite the Moolasthanam (main sanctum), in a seated posture with both hands joined in anjali (reverential salutation) facing the Lord.
+He is adorned with the Ashta Nagabharanam — a jewelled ornament in the form of eight serpents. The hooded cobra that forms the base beneath him is carved with such lifelike intensity that it cannot fail to strike awe in the beholder. The image of Garuda seated upon serpents evokes the ancient Puranic relationship between Vishnu's mount and the Nagas — a tension between predator and prey that finds its resolution in the presence of the Lord.
+
+The Legend — "Stay Right Here"
+A beautiful sthala purana (local temple legend) explains why Garudalwar sits in this unusual posture.
+Brahma once summoned Garuda and asked him to bring Lord Sri Ranganatha to this place and install him here. Garuda carried the Lord and set him down. Upon seeing Garuda, the Lord was pleased and commanded: "Stay right here."
+From that day, Garudalwar has remained seated directly opposite the sanctum, waiting for the Lord's next command. It is said that he will continue to sit in this posture until Azhivemperuman (the Lord of Paramapada) issues a further order — an order that has never come. And so Garuda waits, in eternal devoted service, to this day.
+This legend is offered as the explanation for Garudalwar's seated posture. In most other Divya Desams, Garuda appears standing, in flight, or kneeling. At Srirangam alone, he sits — not resting, but waiting. The distinction is theologically precise: his stillness is not repose but readiness, an unbroken act of obedience held across the centuries.
+
+The Garuda Mandapam — Architectural Splendour
+The Garuda Mandapam in which the Garudalwar sannidhi stands is one of the largest mandapams dedicated to Garuda among all 108 Divya Desams. With over 200 intricately carved pillars, it is widely regarded as one of the most beautiful halls in the entire Srirangam complex. The pillar carvings display fine sculptural workmanship and merit close examination by visitors.
+
+Garuda in the Vaishnava Tradition
+In the Sri Vaishnava sampradaya, Garuda is not merely Vishnu's mount — he is venerated as a divine devotee. The very name "Garudalwar" (with the honorific "Azhwar" meaning "one immersed in the divine") signals that he belongs to the same spiritual category as the great Azhwar saint-poets. He is Vishnu's nitya suri — an eternal attendant in Vaikuntha — who chose to serve as the Lord's vehicle out of love, not servitude.
+At Srirangam, Garuda holds a special place of honour. When the Lord goes in procession, the Garuda Vahanam (Garuda mount) is among the most spectacular and eagerly awaited events, drawing large crowds of devotees. The image of Namperumal mounted upon Garuda, moving through the lamplit prakarams, is one of the defining sights of the temple's festival calendar.
+Just as the temple elephant carrying Kaveri water at dawn evokes Gajendra Moksham (the liberation of the elephant-king by Vishnu), Garudalwar's eternal vigil opposite the sanctum represents the highest form of Vaishnava bhakti — patient, unwavering, and requiring no instruction beyond the Lord's single word.
+
+Visitor Information
+The Garudalwar sannidhi is accessible upon entering the fourth prakaram. The Garuda Mandapam is one of the finest architectural spaces in the temple, and visitors are encouraged to spend time examining the pillar carvings and the overall spatial composition of the hall. The 14-foot Garudalwar is visible from a considerable distance and serves as a natural landmark within the enclosure.19:T229d,Sri Ranga Nayaki Thayar Temple, Srirangam – The Divine Mother of Bhooloka Vaikuntham
+
+Among the countless sacred shrines within the magnificent Sri Ranganathaswamy Temple at Srirangam, none commands greater affection from devotees than the shrine of Sri Ranga Nayaki Thayar, the eternal Divine Consort of Lord Sri Ranganatha. While Lord Ranganatha is revered as the Supreme Lord reclining on Adisesha, it is Sri Ranga Nayaki who embodies His infinite compassion, grace, and motherly protection. To generations of Sri Vaishnavas, she is not merely the Goddess Lakshmi but the compassionate Mother who intercedes on behalf of every devotee before the Lord.
+
+The Sri Ranga Nayaki Temple is unique among all Divya Desams. Unlike many Vishnu temples where the Goddess shares the sanctum with the Lord, at Srirangam she has an independent and magnificent temple complex of her own, reflecting her supreme status within the Sri Vaishnava tradition. The shrine is one of the most sacred manifestations of Mahalakshmi and occupies a central place in the theology, rituals, festivals, and daily worship of Srirangam.
+
+The Supreme Mother of Sri Vaishnavism
+
+In Sri Vaishnava philosophy, salvation is possible through the combined grace of Divine Mother (Purushakara) and Lord Narayana. The Acharyas explain that while Lord Narayana is the Supreme Judge, Sri Mahalakshmi is the embodiment of mercy. She listens to the prayers of devotees, softens the Lord's justice with compassion, and recommends every sincere soul for His divine grace.
+
+This theological principle reaches its highest expression at Srirangam.
+
+Sri Vedanta Desika beautifully explains that no devotee should approach the Lord without first seeking the blessings of Thayar. Likewise, Sri Ramanuja consistently emphasized that surrender (Prapatti) becomes complete only through the compassionate mediation of Sri Mahalakshmi.
+
+For this reason, countless devotees visit Sri Ranga Nayaki before or immediately after receiving darshan of Sri Ranganatha.
+
+Why She is Called "Ranga Nayaki"
+
+The name Ranga Nayaki literally means "Queen of Srirangam".
+
+Ranga refers to Sri Rangam, the sacred abode of Lord Ranganatha.
+
+Nayaki means Queen, Divine Mistress, or Supreme Lady.
+
+She is regarded as the sovereign ruler of the spiritual kingdom of Bhooloka Vaikuntham. While Lord Ranganatha is the king, temple traditions often describe Sri Ranga Nayaki as the compassionate queen who governs with infinite mercy.
+
+Even today many devotees affectionately address her as:
+
+- Sri Ranga Nachiyar
+
+- Periya Piratti
+
+- Thayar
+
+- Amma
+
+- Mahalakshmi of Srirangam
+
+The word "Thayar", meaning "Mother," perfectly reflects her relationship with devotees.
+
+Historical Development of the Shrine
+
+The shrine of Sri Ranga Nayaki evolved over several centuries under the patronage of the Cholas, Pandyas, Hoysalas, Vijayanagara rulers, and Nayak kings. Temple chronicles known as the Koil Olugu describe the growth of the temple, royal endowments, festivals, jewels, and ritual traditions connected with both Lord Ranganatha and Thayar.
+
+Unlike many temples where the Goddess occupies a comparatively smaller shrine, Srirangam's architects created an independent temple for Thayar with its own sanctum, mandapas, processional routes, and festivals. This architectural choice reflects the elevated theological status accorded to Mahalakshmi within Sri Vaishnavism.
+
+Several inscriptions record donations of gold ornaments, silk garments, lamps, lands, and villages dedicated specifically for the worship of Sri Ranga Nayaki.
+
+The Unique Tradition – Thayar Rarely Leaves Her Temple
+
+One of the most fascinating traditions at Srirangam is that Sri Ranga Nayaki almost never leaves her sanctum.
+
+Unlike Namperumal (the processional form of Lord Ranganatha), who participates in numerous festivals throughout the year, Thayar generally remains within her shrine. This practice symbolizes the dignity and majesty of the Divine Queen.
+
+During important festivals, the Lord Himself comes to visit His Divine Consort rather than the Goddess travelling outside.
+
+This beautiful tradition teaches that while the Lord actively seeks His devotees, the Divine Mother remains the ever-compassionate refuge where every soul may approach without hesitation.
+
+Panguni Uttiram – The Divine Wedding
+
+The grandest festival associated with Sri Ranga Nayaki is Panguni Uttiram, celebrated during the Tamil month of Panguni (March–April).
+
+This festival commemorates the celestial wedding of Lord Ranganatha and Sri Ranga Nayaki. It is among the most emotionally moving celebrations in the temple calendar.
+
+Thousands of devotees gather to witness the sacred union, believing that participation brings harmony in marriage, family happiness, prosperity, and spiritual blessings.
+
+The festival also symbolizes the inseparable union of Sri (Lakshmi) and Narayana, representing compassion and justice, grace and protection, divine love and cosmic order.
+
+The Koil Olugu and temple traditions preserve detailed accounts of these ceremonies and their historical continuity across centuries.
+
+Iconography of Sri Ranga Nayaki
+
+The presiding deity appears seated in majestic posture, radiating serenity and compassion.
+
+She is richly adorned with:
+
+- Golden crown
+
+- Exquisite silk garments
+
+- Magnificent diamond and emerald jewellery
+
+- Lotus in her hand
+
+- Abhaya Mudra (gesture of protection)
+
+- Varada Mudra (gesture of granting boons)
+
+Her gentle smile is often described by devotees as one of the most compassionate expressions found in any temple.
+
+Unlike fierce manifestations of the Divine Mother found elsewhere, Sri Ranga Nayaki represents pure maternal affection, forgiveness, patience, and unconditional love.
+
+The Spiritual Significance of Thayar
+
+Sri Vaishnava philosophy identifies Mahalakshmi with six principal qualities:
+
+- Compassion
+
+- Mercy
+
+- Prosperity
+
+- Divine Wisdom
+
+- Protection
+
+- Mediation before the Lord
+
+Acharyas explain that even when devotees feel unworthy of approaching the Supreme Lord, they may confidently approach Thayar, who never rejects anyone.
+
+This doctrine of Purushakara is one of the defining theological contributions of the Sri Vaishnava tradition and is deeply associated with Srirangam.
+
+Sri Ramanuja and Ranga Nayaki
+
+Sri Ramanuja regarded Srirangam as the spiritual capital of Sri Vaishnavism. During his long residence here, he systematized temple worship, festivals, and administrative practices.
+
+The daily rituals established under his guidance ensured that worship of Sri Ranga Nayaki received equal prominence alongside Lord Ranganatha. His reforms profoundly influenced temple life and are reflected in later temple records.
+
+Darshan Experience
+
+Pilgrims often describe the atmosphere within the Thayar shrine as remarkably peaceful.
+
+Compared to the larger crowds at the sanctum of Lord Ranganatha, the shrine of Sri Ranga Nayaki offers devotees a quieter space for prayer and contemplation. Families frequently pray here for marriage, childbirth, health, education, and domestic harmony, reflecting her enduring role as the compassionate Mother.
+
+Traditional devotees often recommend completing one's pilgrimage with the blessings of Thayar, believing that her grace makes the Lord's blessings complete.
+
+Architectural Features
+
+- The temple dedicated to Sri Ranga Nayaki contains:
+
+- Independent sanctum (Garbhagriha)
+
+- Maha Mandapa
+
+- Beautiful pillared halls
+
+- Ornate Vijayanagara and Nayak sculptures
+
+- Festival mandapas
+
+- Processional pathways
+
+- Intricate stone carvings and traditional iconography
+
+The shrine integrates seamlessly into the vast sacred city of Srirangam while preserving its own identity as the abode of the Divine Mother.
+
+Living Legacy
+
+For nearly a thousand years, Sri Ranga Nayaki has remained the spiritual mother of millions of devotees. Kings sought her blessings before battles, Acharyas composed hymns in her praise, saints surrendered at her feet, and ordinary devotees continue to experience her compassion in their daily lives.
+
+In the hearts of Sri Vaishnavas, no pilgrimage to Srirangam is complete without standing before Sri Ranga Nayaki Thayar, offering a silent prayer, and receiving the reassuring glance of the Divine Mother. Her shrine stands as a timeless reminder that divine grace is inseparable from divine compassion, and that every seeker—regardless of background or circumstance—is welcomed by the Mother before being embraced by the Lord.
+
+Selected References
+
+- V. N. Hari Rao, Kōil Olugu: The Chronicle of the Srirangam Temple with Historical Notes (1961).
+
+- T. S. Parthasarathy, The Koyil Olugu – History of the Srirangam Temple.
+
+- Prof. V. S. Seshadri, A Brief History of the Srirangam Temple.
+
+Temple inscriptions and Sri Vaishnava Guruparampara traditions summarized in the Koil Olugu and historical studies of Srirangam.f:["$","section",null,{"className":"nearby-section","children":["$","div",null,{"className":"container","children":[["$","div",null,{"className":"section-title","children":[["$","span",null,{"children":"SACRED ENVIRONS"}],["$","h2",null,{"children":"Nearby Temples"}],["$","p",null,{"children":"Pilgrimage Circuit"}]]}],["$","$L13",null,{"lang":"en","dict":{"navigation":{"darshan":"Temple Timings","deity":"Deities & Seva","history":"Temple History","map":"Temple Map","surroundings":"Nearby Temples","seva":"Seva Booking","prasadam":"Annadhanam / Prasadam","dharmaSalas":"Hotels/Stay","transport":"Transport Info","gallery":"Photo Gallery"},"home":{"title":"Sri Ranganathaswamy Temple","subtitle":"Srirangam Ranganathar — Srirangam, Tamil Nadu","desc":"The largest functioning Hindu temple in the world, dedicated to Lord Ranganatha (Vishnu). A premier Vaishnava Divya Desam on the sacred island of Srirangam.","openToday":"OPEN TODAY","slotsToday":"4 Slots Today","todaysQueue":"TODAY'S QUEUE","waitMin":"~45 min wait","darshanSchedule":"DARSHAN SCHEDULE","templeTimings":"Temple Timings","timingsSub":"Temple Timings — 4 Darshan Slots Daily","scheduleWarning":"Schedule may change on daily basis, Check the timings everyday","explore":"Deities & Seva","quickAccess":"QUICK ACCESS","viswaroopaDarshan":"Viswaroopa Darshan (Morning)","generalMorning":"General Darshan (Morning)","generalAfternoon":"General Darshan (Afternoon)","generalEvening":"General Darshan (Evening)","importantNote":"Important note","fullCalendar":"Full calendar"},"viswaroopaSeva":{"backLink":"Back to Deities and Seva","subheading":"Sacred Dawn Worship","title":"Vishwaroopam Seva","description":"The ceremonial awakening of Lord Namperumal at Sri Ranganathaswamy Temple","leadParagraph":"<strong>Vishwaroopam</strong> is the first and most sacred seva (worship service) performed every day at dawn in the Arulmigu Ranganathaswamy Temple at Srirangam. It is the ritual of <em>\"Palli Ezhuchi\"</em> — the ceremonial awakening of Namperumal from his Yoga Nidra (divine slumber, known as Thiruppallik Kolludhal), conducted through Vedic chanting, Divya Prabandha hymns, the ringing of bells and the waving of lamps (deepaaradhanai), beseeching the Lord to rise and bestow his grace upon the world.","timingHeading":"Timing of the Vishwaroopam Seva","timingParagraph":"The Vishwaroopam seva generally takes place at around <strong>6.15 AM</strong>. Minor changes in timing may occur during festivals and on special occasions.","significanceHeading":"Significance of Vishwaroopam","significanceList":["It marks the commencement of all pujas at the temple for the day.","The first deepaaradhanai (lamp offering) takes place immediately after the Lord's awakening.","Vedic chanting (Veda Parayanam) and recitation of the Nalayira Divya Prabandham are performed.","Witnessing this seva at dawn is considered highly meritorious by devotees.","It is a cherished belief in the Vaishnava tradition that those who witness this seva will be blessed with divine grace throughout the day."],"theerthamHeading":"The Tradition of Bringing Kaveri Theertham","theerthamParagraph1":"Every day for the Vishwaroopam seva, the temple elephant carries sacred water (theertham) in pots from the Vada Thirukaveri (the northern branch of the Kaveri river). This theertham is used for the Lord's thirumanjanam (ceremonial ablution) and for the day's pujas.","theerthamParagraph2":"During the month of Thula (Aippasi, October–November), when the water level in the Vada Thirukaveri rises high, there is also a tradition of drawing the theertham from the Then Thirukaveri (southern Kaveri), near the Amma Mandapam area.","elephantHeading":"The Spiritual Role of the Elephant","elephantParagraph1":"The elephant that carries the theertham bows in reverence towards the Moolasthanam (main sanctum) before setting out through the temple's principal gateways. This spectacle is a feast for the eyes of the devotees.","elephantParagraph2":"In the Vaishnava tradition, the temple elephant is regarded as a reminder of Gajendraazhwan and is seen as evoking the episode of Gajendra Moksham (the liberation of the elephant-king by Lord Vishnu). The Kaveri theertham brought by the elephant is revered as a sacred union of the Lord's grace and the sanctity of Mother Kaveri.","benefitsHeading":"Spiritual Benefits of Witnessing Vishwaroopam","benefitsList":["It bestows peace of mind and spiritual fulfilment.","The day is believed to unfold auspiciously for those who witness it.","Many devotees participate in this seva seeking the welfare, health and prosperity of their families.","Among the dawn sevas conducted at the 108 Divyadesams, the Vishwaroopam at Srirangam is regarded as one of the most distinguished."],"literatureHeading":"Vishwaroopam in Vaishnava Literature","literatureParagraph":"The Thiruppalliyeluchi tradition is closely associated with the hymns composed by Thondaradippodi Azhwar. These verses, which lovingly rouse the Lord with the refrain <em>\"Palli Ezhundarulaaye\"</em> (\"May You graciously awaken\"), form the spiritual foundation of the dawn worship tradition at the Srirangam temple.","knowHeading":"What Devotees Should Know","knowList":["Arriving at the temple early in the morning allows one to witness the Vishwaroopam seva in its entirety.","Crowds tend to be larger on festival days.","It is advisable to observe the darshan with quietness and decorum, in keeping with temple traditions.","Witnessing the morning pujas that follow the Vishwaroopam is also considered especially auspicious by devotees."],"footerQuote":"The Vishwaroopam at Srirangam is not merely an ordinary dawn puja; it is cherished in the Vaishnava tradition as the very moment when the world awakens to divine grace alongside Lord Ranganatha's rising from his sacred slumber."},"ranganathaPerumal":{"backLink":"Back to Deities and Seva","title":"Sri Ranganatha Perumal","subheading":"The Presiding Deity of Srirangam","content":"$14"},"ramanujar":{"backLink":"Back to Deities and Seva","title":"Sri Ramanujar","subheading":"The Great Preceptor","content":"$15"},"chakrathalwar":{"backLink":"Back to Deities and Seva","title":"Sri Chakkarathazhwar (Sudarshanar)","subheading":"Lord Sudarshana","content":"$16"},"dhanvantri":{"backLink":"Back to Deities and Seva","title":"Sri Dhavanthri Sannidhi","subheading":"The God of Medicine","content":"$17"},"garudalwar":{"backLink":"Back to Deities and Seva","title":"Sri Garudalwar Sannidhi","subheading":"The Divine Mount","content":"$18"},"thayar":{"title":"Sri Ranga Nayaki","subheading":"Thayar / Amma Sannidhi","backLink":"Back to Deities and Seva","content":"$19"},"footer":{"desc":"An informational portal for Sri Ranganathaswamy Temple, Srirangam — the world's largest functioning Hindu temple and a premier Vaishnava Divya Desam.","quickLinks":"QUICK LINKS","contact":"CONTACT","contactForm":"Contact Form","disclaimer":"Disclaimer: This is not the official government website of Sriranganatha temple. This website is maintained by Sri Ranganathar Devotees (Volunteers).","madeWith":"Made with 🙏 for devotees by devotees","sarveBhavantu":"Sarve Bhavantu Sukhinah"},"sevaBooking":{"title":"Seva Booking","subtitle":"Official Darshan & Services","noticeTitle":"Important Notice","noticeText":"srirangam.net is an informational portal and is not the official temple booking site. All seva and darshan bookings are securely processed through the official Tamil Nadu Government (HR&CE) website. The links below will redirect you to the official government portal for booking.","proceedToBooking":"Proceed to Official Booking","importantNoteLabel":"Important Note","items":{"allSevas":{"title":"All Seva Bookings","desc":"Explore and book all available Sevas and services."},"vishwaroopam":{"title":"Perumal Sannathi Vishwaroopam Sevai","desc":"Book tickets for the early morning Vishwaroopam Darshan of Lord Ranganatha.","timing":"Timing 5.30 AM to 7.00 AM. No Darshan on Festival days & Mid Dec to Mid Jan Marghazi month.","importantNote":"Only 150 people are allowed in for Viswaroopa Darshan at a time, so it's best to book your ticket online at least a week ahead. Tickets are also sold offline at the counter for ₹70, but that route is risky — there's no guarantee you'll reach the counter in time to get one."},"perumalSpecial":{"title":"Perumal Sannathi Special Entrance","desc":"Special entry tickets for Lord Ranganatha's main sanctum."},"thayaarSpecial":{"title":"Thayaar Sannathi Special Entrance","desc":"Special entry tickets for Goddess Sri Ranganayaki Thayar's sanctum."},"thirumanjanam":{"title":"Thirumanjanam Tanvandiri","desc":"Book Thirumanjanam service for Lord Dhanvantri."}}},"timingsPage":{"home":"Home","subtitle":"Darshan Schedule for all Deities","mainTemple":"Sri Ranganathaswamy Temple","mainTempleSub":"Sri Ranganathar","nachiyar":"Sri Ranga Nayaki (Nachiyar)","nachiyarSub":"Sri Ranganayaki Thayar","ramanujar":"Sri Ramanujar","ramanujarSub":"Sri Ramanujar","morningSeva1":"Morning Seva (Slot 1)","morningSeva2":"Morning Seva (Slot 2)","morningSeva":"Morning Seva","afternoonSeva":"Afternoon Seva","eveningSeva":"Evening Seva","notePrefix":"Note: ","chithiraiNote":"During Chithirai and Aippasi months, Vadai Ilai Pachai Karpuram and Kalavai Sathumurai takes place."},"nearby":{"title":"Nearby Temples","subtitle":"Extend your spiritual journey by visiting these magnificent and powerful temples located in and around the Trichy and Tanjore regions.","sacredEnvirons":"SACRED ENVIRONS","pilgrimageCircuit":"Pilgrimage Circuit","explore":"Explore →","carousel":[{"name":"Thiruvanaikaval Jambukeswarar","desc":"Appu Lingam (Water element)","distSrirangam":"2.5 km"},{"name":"Rockfort Ucchi Pillayar","desc":"Ganesha on a 3-billion-year-old rock","distSrirangam":"6 km"},{"name":"Samayapuram Mariamman","desc":"Powerful Goddess Mariamman","distSrirangam":"12 km"},{"name":"Uraiyur Vekkali Amman","desc":"Goddess without a roof","distSrirangam":"9 km"},{"name":"Vayalur Murugan","desc":"Peaceful Lord Murugan temple","distSrirangam":"15 km"},{"name":"Tanjore Brahadeswara","desc":"UNESCO World Heritage Site","distSrirangam":"60 km"}],"fromSrirangam":"from Srirangam","fromTrichy":"from Trichy Central","temples":[{"name":"Thiruvanaikaval Jambukeswarar Temple","desc":"One of the five major Shiva Temples of Tamil Nadu representing the Mahābhūta or five great elements. This temple represents the element of water (Appu Lingam)."},{"name":"Rockfort Ucchi Pillayar Temple","desc":"A historic temple dedicated to Lord Ganesha built on a 3-billion-year-old rock. It offers panoramic views of Trichy and Srirangam."},{"name":"Samayapuram Mariamman Temple","desc":"A very popular and powerful temple dedicated to Goddess Mariamman, located on the outskirts of Trichy."},{"name":"Uraiyur Vekkali Amman Temple","desc":"A unique and powerful temple in Uraiyur (the ancient Chola capital) where the sanctum of the Goddess does not have a roof, symbolizing her connection to the sky and nature."},{"name":"Vayalur Murugan Temple","desc":"Located amidst lush green fields, this peaceful temple dedicated to Lord Murugan is associated with the great saint Arunagirinathar."},{"name":"Tanjore Brahadeswara Temple","desc":"Also known as the Peruvudaiyar Kovil, this UNESCO World Heritage Site is one of the largest and most magnificent Chola temples, located in Thanjavur."}]},"deitySeva":{"backToHome":"Back to Home","title":"Deities and Seva","subtitle":"Discover the divine shrines and deities of Srirangam","viewDetails":"View Details","deities":[{"name":"Sri Ranganatha Perumal","title":"The Presiding Deity","description":"The presiding deity of the temple, Lord Ranganatha, is seen in a reclining posture (Anantha Sayanam) on the serpent Adisesha. He is the ultimate symbol of peace and grace, facing south towards Lanka to bless His great devotee, King Vibhishana."},{"name":"Sri Ranga Nayaki","title":"Thayar / Amma Sannidhi","description":"Sri Ranga Nayaki, affectionately known as Thayar (Mother), is the divine consort of Lord Ranganatha. Her shrine is located in the fourth enclosure. According to tradition, Lord Ranganatha never leaves the temple without Her permission."},{"name":"Sri Chakrathalvar","title":"Lord Sudarshana","description":"The Sri Chakrathalvar shrine is one of the most prominent sub-shrines. It houses the personification of Lord Vishnu's divine discus (Sudarshana Chakra). On the reverse of the idol is Lord Narasimha, offering dual blessings to devotees."},{"name":"Sri Ramanujar","title":"The Great Preceptor","description":"The shrine of Sri Ramanujacharya holds his preserved mortal remains (Thaan Ana Thirumeni). He was the most important philosopher of the Sri Vaishnava tradition, and he administered the Srirangam temple for many decades during his lifetime."},{"name":"Sri Thulakka Nachiyar","title":"The Celestial Princess","description":"Sri Thulakka Nachiyar (also known as Bibi Nachiyar or Surathani) is a unique and revered shrine dedicated to a Muslim princess from Delhi who fell deeply in love with the processional deity, Lord Namperumal. Her devotion represents the universal nature of the Lord's grace."},{"name":"Sri Garudalwar Sannidhi","title":"The Divine Mount","description":"Located opposite the main sanctum, this impressive shrine features a towering 14-foot image of Garuda, Lord Vishnu's eagle mount. Uniquely, he is depicted in a seated posture, eternally waiting for the Lord's command."},{"name":"Sri Dhavanthri Sannidhi","title":"The God of Medicine","description":"This shrine is dedicated to Lord Dhanvantari, the divine physician and avatar of Lord Vishnu who emerged with the nectar of immortality (Amrita). Devotees offer prayers here seeking good health, healing, and well-being."},{"name":"Viswaroopam Seva","title":"Sacred Dawn Worship","description":"Vishwaroopam is the first and most sacred seva performed every day at dawn. It is the ritual of 'Palli Ezhuchi' — the ceremonial awakening of Namperumal from his divine slumber."}]},"map":{"layout":"TEMPLE LAYOUT","title":"Sri Ranganathaswamy Temple Map","subtitle":"Explore the layout of the 7 prakarams (enclosures) and 21 gopurams","paramapathavasal":"Paramapathavasal","rangaNaachiyar":"Ranga Naachiyar","darshanRouteTitle":"Recommended Darshan Route","darshanRouteSubtitle":"Welcome to the sacred abode of Sri Ranganatha! 🙏\nTo make your pilgrimage smooth, peaceful, and spiritually fulfilling, we recommend following the route below.","step1Title":"🚩 Step 1: Enter Through the South Rajagopuram","step1P1":"Begin your divine journey through the South Rajagopuram, the main and most convenient entrance to the temple.","step1P2":"As you enter, you will be blessed with the majestic Sri Garudazhwar. Pause for a moment, offer your prayers, and seek His blessings before proceeding to the sanctum of Sri Ranganathar.","step2Title":"🛕 Step 2: Choose Your Darshan Queue","step2P1":"You have two options for darshan:","step2L1":"🟢 <strong>Free Darshan:</strong> Entrance is located on the left side of the Sri Ranganathar Temple entrance. Suitable for devotees who prefer the regular queue.","step2L2":"⭐ <strong>₹100 Special Darshan:</strong> Entrance is located on the right side. Offers a significantly faster darshan with shorter waiting times.","step2P2":"Whichever option you choose, may Lord Ranganatha bless you with peace, happiness, and prosperity.","step3Title":"🚗 Step 3: Visit Sri Ranganachiyaar (Ranganayaki Thayar) Temple","step3P1":"After completing your darshan of Sri Ranganathar, continue your pilgrimage to Sri Ranganachiyaar Thayar Temple (Ranganayaki Amma Temple).","step3P2":"For your convenience:","step3L1":"🚗 Battery-operated golf carts are available and provide the easiest way to reach the temple.","step3L2":"🚶 Prefer walking? It takes approximately 10 minutes.","step4Title":"🛕 Step 4: Visit Sri Chakrathazhwar Temple","step4P1":"After receiving the blessings of Sri Ranganayaki Thayar, walk to the nearby Sri Chakrathazhwar Temple, one of the closest shrines from there.","step5Title":"🙏 Step 5: Seek the Blessings of Sri Ramanujar","step5P1":"Continue walking to the sacred Sri Ramanujar Temple, dedicated to the great Acharya who preserved and spread the Sri Vaishnava tradition.","step5P2":"Many devotees consider this visit an essential part of their pilgrimage to Srirangam.","step6Title":"🍛 Step 6: Receive the Blessings of Annadanam","step6P1":"As you return towards the main entrance, don't miss the opportunity to participate in Annadanam, the sacred offering of free meals to devotees.","step6BoxTitle":"Annadanam Timings","step6Box1":"📅 Every day throughout the year","step6Box2":"🕗 8:00 AM to approximately 8:30–9:00 PM","step6P2":"Sharing or receiving Annadanam is regarded as one of the highest forms of service and blessing.","finishTitle":"🌺 Complete Your Pilgrimage","finishP1":"By following this recommended route, you can comfortably visit the major shrines within the Sri Ranganathaswamy Temple Complex in the most convenient and spiritually enriching order.","finishP2":"May Sri Ranganatha, Sri Ranganayaki Thayar, Sri Chakrathazhwar, Sri Garudazhwar, and Sri Ramanujar shower you and your family with good health, happiness, prosperity, and divine grace.","finishP3":"🙏 Wishing you a blessed and memorable darshan at the holy temple of Srirangam!","backToHome":"← Back to Home"},"prasadam":{"heroTitle":"Annadhanam & Prasadam","heroSubtitle":"Free Meals Scheme (Nithya Annadhanam)","programTitle":"Nithya Annadhanam Program","programDesc1":"For the convenience of the devotees, the full-day Annadanam program has been running successfully since <strong>13-09-2012</strong>. Every single day, at least <strong>3,000 devotees</strong> are provided with wholesome, sacred meals as Prasadam.","locationTitle":"Location","locationDesc":"Dining Hall near to the Temple Rooftop View Point.","referMap":"Refer to the Temple Map","donationTitle":"Donation Details","oneDayTitle":"One-Day Scheme","oneDayDesc":"Provides Annadanam to 100 persons for a single day.","permanentTitle":"Permanent Endowment","permanentDesc":"Deposit for feeding 100 persons on a particular day every year.","multipleNote":"For multiple Annadanams, the amount will be calculated in the above ratio.","donateBtn":"Proceed to Online Donation"},"transport":{"heroTitle":"Transport Information","heroSubtitle":"How to Reach Srirangam","intro":"Sri Ranganathaswamy Temple is located on Srirangam Island in Tiruchirappalli (Trichy), Tamil Nadu. The temple is well connected by air, rail and road, making it easy for devotees from across India and abroad to visit.","busTitle":"Local Bus Stands","busChathiram":"From Chathiram Bus Stand","busChathiramD":"~5 km","busChathiramT":"⏱ 15–20 mins","busChathiramL1":"Frequent city buses to Srirangam.","busChathiramL2":"Auto-rickshaws readily available.","busChathiramL3":"Taxis and app-based cabs offer direct drop.","busTrichy":"From Trichy Central Bus Stand","busTrichyD":"~10 km","busTrichyT":"⏱ 25–35 mins","busTrichyL1":"City buses operate regularly.","busTrichyL2":"Autos and taxis available outside terminal.","busTrichyL3":"Recommended for families travelling with luggage.","busPanjapur":"From Panjapur Integrated Terminus","busPanjapurD":"~15–18 km","busPanjapurT":"⏱ 30–45 mins","busPanjapurL1":"Direct or connecting buses.","busPanjapurL2":"Allow extra time during peak traffic.","trainTitle":"Railway Stations","trainSrirangam":"Srirangam Railway Station","trainSrirangamD":"~1.5 km from the temple. Easily accessible by walk, auto or taxi.","trainTrichy":"Tiruchirappalli Junction","trainTrichyD":"~10 km from the temple. City buses, autos and taxis available outside.","airTitle":"By Air","airD":"~15 km to Airport","airT":"⏱ 30–40 mins travel","airDesc":"Trichy International Airport has domestic connectivity to Chennai, Bengaluru, Hyderabad, Mumbai, Delhi and Kochi, along with international flights to Singapore, Kuala Lumpur, Colombo and Gulf destinations.","airL1":"24×7 prepaid taxis & App-based cabs.","airL2":"Airport buses to city with Srirangam connections.","trainTravelTitle":"Train Travel from Major Cities","thCity":"City","thDist":"Distance","thTime":"Time","roadTravelTitle":"By Road (Driving)","parkingTitle":"Parking Information","parkingDesc":"Dedicated parking is available around the temple. During weekends and major festivals (like Vaikunta Ekadasi), arrive early as parking fills quickly.","tipsTitle":"Travel Tips","tip1":"Arrive at least 30 minutes before the queue closing time.","tip2":"Expect additional traffic during festivals.","tip3":"If your train stops at Srirangam Station, alight there for the shortest transfer.","tip4":"Carry drinking water and small cash for local transport.","tip5":"Early morning visits are recommended during summer.","tip6":"We recommend RedTaxi as a reliable Cab service. Affordable and reliable. Phone Number 0431 456 7890 or you can download Redtaxi from Playstore or Appstore.","tip7":"Annadhanam (Free Food/ Meals) Available from 8 am to 9 PM. Waiting time is approx 0-30 minutes."},"gallery":{"galleryTitle":"Temple Gallery","gallerySubtitle":"A visual journey through Sri Ranganathaswamy Temple","noPhotos":"No photos have been uploaded yet. Please visit the Admin page to upload photos.","adminTitle":"Admin Photo Upload","adminSubtitle":"Upload photos to the public gallery","selectImage":"Select Image:","uploadBtn":"Upload Photo","uploadSuccess":"Photo uploaded successfully!","uploadFailed":"Upload failed.","uploading":"Uploading..."},"stay":{"title":"Where to Stay in Srirangam","subtitle":"A guide to hotels, lodges, and temple guest houses","zonesTitle":"Two Main Zones to Choose From","zonesIntro":"For a Srirangam pilgrimage, you've basically got two zones to choose from: right at the temple's doorstep (walk to darshan, no traffic hassle) or a bit further out (usually quieter, sometimes cheaper).","walkingDistanceTitle":"Walking distance to the temple","walkingDistanceDesc":"Best if you want to avoid autos during early-morning or late-night darshan:","hotels":[{"name":"Anantha Shaiya","link":"https://share.google/J6QbeiL3UNSdyGeK2","desc":"About 30m from the South Gopuram, the closest option going. Small but very clean rooms, no elevator."},{"name":"Sri Maruti Inn","link":"https://share.google/s8XcUQxbaxEmzwVom","desc":"2 minutes from the darshan entrance, some rooms even have gopuram views."},{"name":"Sri Krishna Residency","link":"https://share.google/PnHW0EAaEMg9QcBTt","desc":"Spacious, clean rooms, also walking distance."},{"name":"SRI RANGANADHA NILAYAM","link":"https://share.google/JAuCWraollwEqxpVk","desc":"A more homely lodge with a shared kitchen if you want to cook your own food, popular with families doing multi-day visits."},{"name":"Yatri Nivas Guest House","link":"https://share.google/R1hnduL9IAgUq0okv","desc":"(on Kollidam Flood Bank Road) — Owned by the temple itself, large parking area, has an in-house veg restaurant. (Note: Cash-only, no online booking)."}],"furtherOutTitle":"Slightly further out, quieter","furtherOutDesc":"Good if you're also visiting Rockfort or Jambukeswarar Temple:","furtherOutHotels":[{"name":"RJ Residency Srirangam","link":"https://share.google/rxiguSlZbTxN4LyaJ","desc":"Highest-rated of the lot (4.9), calm location, family-friendly."}],"practicalNotesTitle":"Practical Notes","practicalNotes":["Book well ahead during festival season, especially around Vaikuntha Ekadasi (December–January) – rooms get scarce and some properties are known to hike prices last-minute.","If you want AC and modern amenities, the private hotels near the South Gate are more reliable than the temple guest houses, which are more basic.","Carry your own toiletries and a towel – several budget lodges near the temple don't provide them."],"yatriNivasDetailsTitle":"Yatri Nivas Srirangam","yatriNivasDetailsLink":"https://share.google/9fwkK4alV4UEDyOWT","yatriNivasDetailsDesc":"The temple-run guest house – pulled together from booking guides, official temple contacts, and traveler reviews.","basicsTitle":"The Basics","basics":["Location: Kollidam Flood Bank Road, Srirangam – about 2 km from the temple, not walking distance.","Ownership: It's the official Sri Ranganathaswamy Devasthanam (temple) lodge, not a private hotel.","Room types: 88 rooms plus separate cottages and dormitories.","Booking: No official online booking exists. You book by phone (temple enquiry: 0431-2432246, lodge: 94864-82246) or by walking in. Fake sites exist, beware.","Payment: Cash only at check-in – no cards, no UPI/GPay. Refundable deposit typically required.","Rough tariffs: AC double rooms ~₹1750/night, four-bed AC cottages ~₹1750, dorms ₹800 (8-bed) to ₹1400 (14-bed)."],"prosTitle":"Pros","pros":["Cheapest option in the area by a wide margin, especially for groups.","Genuinely built for pilgrims – large parking (~30 cars), in-house veg restaurant, layout designed for groups/families.","Peaceful setting – calmer and less commercial than lodges near temple gates.","Ample space – large rooms, cottages, and dorms for bigger groups."],"consTitle":"Cons","cons":["Not walking distance – needs an auto for every darshan.","Inconsistent maintenance – worn bedding, mosquitoes (especially dorms), general upkeep issues.","No hot water in dormitories (confirm if booking).","Restaurant is average and pricier than expected.","Booking uncertainty – no real online system, phone bookings sometimes not honored.","Inconsistent service quality – check-in/out policies can be unclear."],"bottomLineTitle":"Bottom Line","bottomLineDesc":"Yatri Nivas is a solid pick if you're budget-conscious, traveling as a group, and don't mind commuting 2 km for darshan – but go in with realistic expectations. If proximity and consistent quality matter more, private lodges near the South Gate will likely serve you better."},"importantPopup":"$e:props:children:props:children:1:props:children:props:children:4:props:children:0:props:data"}}]]}]}]
+10:["$","script","script-0",{"src":"/srirangam/_next/static/chunks/005hi4m9lnvv2.js","async":true}]
+11:["$","$L1a",null,{"children":["$","$1b",null,{"name":"Next.MetadataOutlet","children":"$@1c"}]}]
+1c:null

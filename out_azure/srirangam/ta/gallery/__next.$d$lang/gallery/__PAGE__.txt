@@ -1,0 +1,39 @@
+1:"$Sreact.fragment"
+2:I[22016,["/srirangam/_next/static/chunks/1zbwxmy80e3z8.js"],""]
+3:I[5014,["/srirangam/_next/static/chunks/1zbwxmy80e3z8.js"],"default"]
+5:I[97367,["/srirangam/_next/static/chunks/05-c3ty_6dwfk.js","/srirangam/_next/static/chunks/0jubty45h__ir.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+4:T438,
+                .gallery-grid {
+                  column-count: 1;
+                  column-gap: 1.5rem;
+                }
+                @media (min-width: 768px) {
+                  .gallery-grid {
+                    column-count: 2;
+                  }
+                }
+                @media (min-width: 1024px) {
+                  .gallery-grid {
+                    column-count: 3;
+                  }
+                }
+                .gallery-item {
+                  break-inside: avoid;
+                  margin-bottom: 1.5rem;
+                  position: relative;
+                  border-radius: 12px;
+                  overflow: hidden;
+                  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                  background-color: #eee;
+                }
+                .gallery-image-hover {
+                  width: 100%;
+                  display: block;
+                  transition: transform 0.3s ease;
+                }
+                .gallery-item:hover .gallery-image-hover {
+                  transform: scale(1.05);
+                }
+              0:{"rsc":["$","$1","c",{"children":[[["$","section",null,{"className":"hero animate-fade-in","style":{"height":"30vh","minHeight":"30vh","background":"linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(\"/srirangam/hero-bg.png\") center/cover no-repeat"},"children":["$","div",null,{"className":"container hero-content","style":{"position":"relative"},"children":[["$","$L2",null,{"href":"/ta","className":"back-link","children":[["$","$L3",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left","size":20}],"Back to Home"]}],["$","h1",null,{"style":{"marginTop":"0"},"children":"கோவில் புகைப்படங்கள்"}],["$","div",null,{"className":"subtitle","children":"ஸ்ரீ ரங்கநாதசுவாமி கோவிலின் ஒரு காட்சிப் பயணம்"}]]}]}],["$","section",null,{"className":"section","style":{"backgroundColor":"#fdfaf4","minHeight":"50vh","padding":"3rem 0"},"children":["$","div",null,{"className":"container","style":{"maxWidth":"1200px"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$4"}}],["$","div",null,{"className":"gallery-grid","children":[["$","div","0",{"className":"gallery-item","children":["$","img",null,{"src":"/srirangam/gallery/741fd90ed5fdd353230fc08e89c0a5b6.webp","alt":"Srirangam Gallery Image 1","className":"gallery-image-hover","loading":"lazy"}]}],["$","div","1",{"className":"gallery-item","children":["$","img",null,{"src":"/srirangam/gallery/bebb31101a5f009a7dc949c199332740.jpg","alt":"Srirangam Gallery Image 2","className":"gallery-image-hover","loading":"lazy"}]}],["$","div","2",{"className":"gallery-item","children":["$","img",null,{"src":"/srirangam/gallery/fc4ad242b361e26c26886a317c73697f.jpg","alt":"Srirangam Gallery Image 3","className":"gallery-image-hover","loading":"lazy"}]}],["$","div","3",{"className":"gallery-item","children":["$","img",null,{"src":"/srirangam/gallery/Paramapada_vasal_1.png","alt":"Srirangam Gallery Image 4","className":"gallery-image-hover","loading":"lazy"}]}],["$","div","4",{"className":"gallery-item","children":["$","img",null,{"src":"/srirangam/gallery/Ranganathaswamy-Temple-Srirangam.jpg","alt":"Srirangam Gallery Image 5","className":"gallery-image-hover","loading":"lazy"}]}],["$","div","5",{"className":"gallery-item","children":["$","img",null,{"src":"/srirangam/gallery/videoframe_5674.png","alt":"Srirangam Gallery Image 6","className":"gallery-image-hover","loading":"lazy"}]}],["$","div","6",{"className":"gallery-item","children":["$","img",null,{"src":"/srirangam/gallery/Vimanam_Srirangam.net.jpg","alt":"Srirangam Gallery Image 7","className":"gallery-image-hover","loading":"lazy"}]}]]}]]}]}]}]],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ggah6vySrJ7da7Jy42FhJ"}
+7:null

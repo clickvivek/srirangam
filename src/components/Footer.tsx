@@ -60,7 +60,7 @@ export default async function Footer({ lang }: { lang: string }) {
       <div className="footer-bottom">
         <div className="container">
           <p style={{marginBottom: '0.5rem'}}>{dict.footer.disclaimer}</p>
-          <p>© 2024 Devasthana Portal • Made with 🙏 for devotees • सर्वे भवन्तु सुखिनः</p>
+          <p>© 2024 Srirangam.net • {dict.footer.madeWith} • {dict.footer.sarveBhavantu}</p>
         </div>
       </div>
     </footer>

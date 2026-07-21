@@ -4,46 +4,26 @@ import React, { useRef } from 'react';
 import { MapPin, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
-export default function NearbyTemplesCarousel({ lang }: { lang: string }) {
+export default function NearbyTemplesCarousel({ lang, dict }: { lang: string, dict: any }) {
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const temples = [
-    {
-      name: "Thiruvanaikaval Jambukeswarar",
-      desc: "Appu Lingam (Water element)",
-      image: "/srirangam/thiruvanikovil-1.png",
-      distSrirangam: "2.5 km"
-    },
-    {
-      name: "Rockfort Ucchi Pillayar",
-      desc: "Ganesha on a 3-billion-year-old rock",
-      image: "/srirangam/Rockfort3.png",
-      distSrirangam: "6 km"
-    },
-    {
-      name: "Samayapuram Mariamman",
-      desc: "Powerful Goddess Mariamman",
-      image: "/srirangam/samayapuram1.png",
-      distSrirangam: "12 km"
-    },
-    {
-      name: "Uraiyur Vekkali Amman",
-      desc: "Goddess without a roof",
-      image: "/srirangam/uraiyur1.jpg",
-      distSrirangam: "9 km"
-    },
-    {
-      name: "Vayalur Murugan",
-      desc: "Peaceful Lord Murugan temple",
-      image: "/srirangam/vayalur1.png",
-      distSrirangam: "15 km"
-    },
-    {
-      name: "Tanjore Brahadeswara",
-      desc: "UNESCO World Heritage Site",
-      image: "/srirangam/tanjore1.png",
-      distSrirangam: "60 km"
-    }
+  const images = [
+    "/srirangam/thiruvanikovil-1.png",
+    "/srirangam/Rockfort3.png",
+    "/srirangam/samayapuram1.png",
+    "/srirangam/uraiyur1.jpg",
+    "/srirangam/vayalur1.png",
+    "/srirangam/tanjore1.png"
+  ];
+  
+  // Fallback if dict is missing
+  const temples = dict?.nearby?.carousel || [
+    { name: "Thiruvanaikaval Jambukeswarar", desc: "Appu Lingam (Water element)", distSrirangam: "2.5 km" },
+    { name: "Rockfort Ucchi Pillayar", desc: "Ganesha on a 3-billion-year-old rock", distSrirangam: "6 km" },
+    { name: "Samayapuram Mariamman", desc: "Powerful Goddess Mariamman", distSrirangam: "12 km" },
+    { name: "Uraiyur Vekkali Amman", desc: "Goddess without a roof", distSrirangam: "9 km" },
+    { name: "Vayalur Murugan", desc: "Peaceful Lord Murugan temple", distSrirangam: "15 km" },
+    { name: "Tanjore Brahadeswara", desc: "UNESCO World Heritage Site", distSrirangam: "60 km" }
   ];
 
   const scroll = (direction: 'left' | 'right') => {
@@ -96,7 +76,7 @@ export default function NearbyTemplesCarousel({ lang }: { lang: string }) {
           onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-4px)'}
           onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
           >
-            <div style={{ height: '140px', backgroundImage: `url(${temple.image})`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
+            <div style={{ height: '140px', backgroundImage: `url(${images[idx]})`, backgroundSize: 'cover', backgroundPosition: 'center', position: 'relative' }}>
                <span style={{ position: 'absolute', bottom: '10px', right: '10px', backgroundColor: 'rgba(0,0,0,0.6)', color: 'white', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '4px' }}>
                  <MapPin size={12} /> {temple.distSrirangam}
                </span>
@@ -104,7 +84,7 @@ export default function NearbyTemplesCarousel({ lang }: { lang: string }) {
             <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
               <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', color: '#571a15', minHeight: '40px' }}>{temple.name}</h3>
               <p style={{ margin: '0 0 1rem 0', fontSize: '0.9rem', color: '#666', flexGrow: 1 }}>{temple.desc}</p>
-              <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`} style={{ fontSize: '0.9rem', color: '#d95c14', fontWeight: 600, textDecoration: 'none' }}>Explore →</Link>
+              <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`} style={{ fontSize: '0.9rem', color: '#d95c14', fontWeight: 600, textDecoration: 'none' }}>{dict?.nearby?.explore || "Explore →"}</Link>
             </div>
           </div>
         ))}

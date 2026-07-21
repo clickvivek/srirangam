@@ -29,7 +29,39 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
   try {
     const dataFilePath = path.join(process.cwd(), 'data', 'timings.json');
     const fileContents = await fs.readFile(dataFilePath, 'utf8');
-    timings = JSON.parse(fileContents);
+    const data = JSON.parse(fileContents);
+    
+    const todayStr = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Kolkata' });
+    let currentTimings = data.default || data;
+    let overrideDate = '';
+    
+    if (data.overrides && Array.isArray(data.overrides)) {
+      const override = data.overrides.find((o: any) => {
+        if (o.date === todayStr) return true;
+        if (o.date && o.date.includes('.')) {
+          const [d, m, y] = o.date.split('.');
+          const formatted = `${y}-${m.padStart(2, '0')}-${d.padStart(2, '0')}`;
+          return formatted === todayStr;
+        }
+        return false;
+      });
+      
+      if (override) {
+        if (override.timings) {
+          currentTimings = override.timings;
+        } else if (override.slots && Array.isArray(override.slots) && override.slots.length >= 4) {
+          currentTimings = {
+            viswaroopa: override.slots[0],
+            morning: override.slots[1],
+            afternoon: override.slots[2],
+            evening: override.slots[3]
+          };
+        }
+        overrideDate = override.date;
+      }
+    }
+    
+    timings = { ...currentTimings, date: overrideDate };
   } catch (err) {
     console.error("Could not load timings, using defaults.", err);
   }
@@ -50,6 +82,11 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
         <p style={{ color: 'white', opacity: 0.9, marginTop: '0.5rem' }}>
           {dict?.timingsPage?.subtitle || "Darshan Schedule for all Deities"}
         </p>
+        {timings.date && (
+          <p style={{ color: '#d69f12', fontWeight: 'bold', marginTop: '0.25rem', marginBottom: 0 }}>
+            Effective Date: {timings.date}
+          </p>
+        )}
       </div>
 
       <div className="container" style={{ marginTop: '3rem', maxWidth: '800px', margin: '3rem auto 0' }}>
@@ -64,19 +101,19 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
             <div style={{ padding: '1.5rem' }}>
               <div style={timingRowStyle}>
                 <strong style={timingTitleStyle}>{dict?.home?.viswaroopaDarshan || "Viswaroopa Darshan (Morning)"}</strong>
-                <span>{timings.viswaroopa}</span>
+                <span>{timings.viswaroopa || ''}</span>
               </div>
               <div style={timingRowStyle}>
                 <strong style={timingTitleStyle}>{dict?.home?.generalMorning || "Morning Darshan"}</strong>
-                <span>{timings.morning}</span>
+                <span>{timings.morning || ''}</span>
               </div>
               <div style={timingRowStyle}>
                 <strong style={timingTitleStyle}>{dict?.home?.generalAfternoon || "Afternoon Darshan"}</strong>
-                <span>{timings.afternoon}</span>
+                <span>{timings.afternoon || ''}</span>
               </div>
               <div style={{...timingRowStyle, borderBottom: 'none'}}>
                 <strong style={timingTitleStyle}>{dict?.home?.generalEvening || "Evening Darshan"}</strong>
-                <span>{timings.evening}</span>
+                <span>{timings.evening || ''}</span>
               </div>
               <div style={{ marginTop: '1.5rem', display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', width: '100%', borderTop: '1px solid #eee', paddingTop: '1.5rem' }}>
                 <ImportantNotePopup label={dict?.home?.importantNote || "Important Note"} data={dict?.importantPopup} />

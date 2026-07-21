@@ -32,7 +32,40 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
   try {
     const dataFilePath = path.join(process.cwd(), 'data', 'timings.json');
     const fileContents = await fs.readFile(dataFilePath, 'utf8');
-    timings = JSON.parse(fileContents);
+    const data = JSON.parse(fileContents);
+    
+    const todayStr = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Kolkata' });
+    let currentTimings = data.default || data;
+    let overrideDate = '';
+    
+    if (data.overrides && Array.isArray(data.overrides)) {
+      const override = data.overrides.find((o: any) => {
+        // try to match YYYY-MM-DD to DD.MM.YYYY etc
+        if (o.date === todayStr) return true;
+        if (o.date && o.date.includes('.')) {
+          const [d, m, y] = o.date.split('.');
+          const formatted = `${y}-${m.padStart(2, '0')}-${d.padStart(2, '0')}`;
+          return formatted === todayStr;
+        }
+        return false;
+      });
+      
+      if (override) {
+        if (override.timings) {
+          currentTimings = override.timings;
+        } else if (override.slots && Array.isArray(override.slots) && override.slots.length >= 4) {
+          currentTimings = {
+            viswaroopa: override.slots[0],
+            morning: override.slots[1],
+            afternoon: override.slots[2],
+            evening: override.slots[3]
+          };
+        }
+        overrideDate = override.date;
+      }
+    }
+    
+    timings = { ...currentTimings, date: overrideDate };
   } catch (err) {
     console.error("Could not load timings, using defaults.", err);
   }
@@ -174,6 +207,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
           <div style={{textAlign: 'center', marginBottom: '3rem'}}>
             <span>{dict.home.darshanSchedule}</span>
             <h2>{dict.home.templeTimings}</h2>
+            {timings.date && <p style={{ fontWeight: 'bold', color: 'var(--primary-color)', marginBottom: '0.5rem', marginTop: '-0.5rem' }}>Timings for: {timings.date}</p>}
             <p>{dict.home.timingsSub}</p>
           </div>
           
@@ -183,19 +217,19 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
              <div style={{maxWidth: '600px', width: '100%', backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)'}}>
                <div className="timing-row">
                  <strong style={{color: 'var(--primary-color)'}}>{dict.home.viswaroopaDarshan}</strong>
-                 <span className="timing-val">{timings.viswaroopa.replace(/ AM/g, '\u00A0AM').replace(/ PM/g, '\u00A0PM')}</span>
+                 <span className="timing-val">{(timings.viswaroopa || '').replace(/ AM/gi, '\u00A0AM').replace(/ PM/gi, '\u00A0PM')}</span>
                </div>
                <div className="timing-row">
                  <strong style={{color: 'var(--primary-color)'}}>{dict.home.generalMorning}</strong>
-                 <span className="timing-val">{timings.morning.replace(/ AM/g, '\u00A0AM').replace(/ PM/g, '\u00A0PM')}</span>
+                 <span className="timing-val">{(timings.morning || '').replace(/ AM/gi, '\u00A0AM').replace(/ PM/gi, '\u00A0PM')}</span>
                </div>
                <div className="timing-row">
                  <strong style={{color: 'var(--primary-color)'}}>{dict.home.generalAfternoon}</strong>
-                 <span className="timing-val">{timings.afternoon.replace(/ AM/g, '\u00A0AM').replace(/ PM/g, '\u00A0PM')}</span>
+                 <span className="timing-val">{(timings.afternoon || '').replace(/ AM/gi, '\u00A0AM').replace(/ PM/gi, '\u00A0PM')}</span>
                </div>
                <div className="timing-row" style={{ borderBottom: 'none', marginBottom: 0, paddingBottom: 0 }}>
                  <strong style={{color: 'var(--primary-color)'}}>{dict.home.generalEvening}</strong>
-                 <span className="timing-val">{timings.evening.replace(/ AM/g, '\u00A0AM').replace(/ PM/g, '\u00A0PM')}</span>
+                 <span className="timing-val">{(timings.evening || '').replace(/ AM/gi, '\u00A0AM').replace(/ PM/gi, '\u00A0PM')}</span>
                </div>
                
                <div style={{ marginTop: '1.5rem', display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', width: '100%', borderTop: '1px solid #eee', paddingTop: '1.5rem' }}>
@@ -219,12 +253,12 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
       <section className="nearby-section">
         <div className="container">
           <div className="section-title">
-            <span>SACRED ENVIRONS</span>
-            <h2>Nearby Temples</h2>
-            <p>समीपवर्ती देवालय — Pilgrimage Circuit</p>
+            <span>{dict?.nearby?.sacredEnvirons || "SACRED ENVIRONS"}</span>
+            <h2>{dict?.nearby?.title || "Nearby Temples"}</h2>
+            <p>{dict?.nearby?.pilgrimageCircuit || "समीपवर्ती देवालय — Pilgrimage Circuit"}</p>
           </div>
 
-          <NearbyTemplesCarousel lang={lang} />
+          <NearbyTemplesCarousel lang={lang} dict={dict} />
         </div>
       </section>
     </>

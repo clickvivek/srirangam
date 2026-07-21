@@ -13,7 +13,7 @@
   },
   "home": {
     "title": "Sri Ranganathaswamy Temple",
-    "subtitle": "ஸ்ரீரங்கம் ரங்கநாதர் — Srirangam, Tamil Nadu",
+    "subtitle": "Srirangam Ranganathar — Srirangam, Tamil Nadu",
     "desc": "The largest functioning Hindu temple in the world, dedicated to Lord Ranganatha (Vishnu). A premier Vaishnava Divya Desam on the sacred island of Srirangam.",
     "openToday": "OPEN TODAY",
     "slotsToday": "4 Slots Today",
@@ -21,7 +21,7 @@
     "waitMin": "~45 min wait",
     "darshanSchedule": "DARSHAN SCHEDULE",
     "templeTimings": "Temple Timings",
-    "timingsSub": "கோயில் நேரம் — 4 Darshan Slots Daily",
+    "timingsSub": "Temple Timings — 4 Darshan Slots Daily",
     "explore": "Deities & Seva",
     "quickAccess": "QUICK ACCESS",
     "viswaroopaDarshan": "Viswaroopa Darshan (Morning)",
@@ -112,7 +112,9 @@
     "quickLinks": "QUICK LINKS",
     "contact": "CONTACT",
     "contactForm": "Contact Form",
-    "disclaimer": "Disclaimer: This is not the official government website of Sriranganatha temple. This website is maintained by Sri Ranganathar Devotees (Volunteers)."
+    "disclaimer": "Disclaimer: This is not the official government website of Sriranganatha temple. This website is maintained by Sri Ranganathar Devotees (Volunteers).",
+    "madeWith": "Made with 🙏 for devotees by devotees",
+    "sarveBhavantu": "Sarve Bhavantu Sukhinah"
   },
   "sevaBooking": {
     "title": "Seva Booking",
@@ -166,6 +168,17 @@
   "nearby": {
     "title": "Nearby Temples",
     "subtitle": "Extend your spiritual journey by visiting these magnificent and powerful temples located in and around the Trichy and Tanjore regions.",
+    "sacredEnvirons": "SACRED ENVIRONS",
+    "pilgrimageCircuit": "समीपवर्ती देवालय — Pilgrimage Circuit",
+    "explore": "Explore →",
+    "carousel": [
+      { "name": "Thiruvanaikaval Jambukeswarar", "desc": "Appu Lingam (Water element)", "distSrirangam": "2.5 km" },
+      { "name": "Rockfort Ucchi Pillayar", "desc": "Ganesha on a 3-billion-year-old rock", "distSrirangam": "6 km" },
+      { "name": "Samayapuram Mariamman", "desc": "Powerful Goddess Mariamman", "distSrirangam": "12 km" },
+      { "name": "Uraiyur Vekkali Amman", "desc": "Goddess without a roof", "distSrirangam": "9 km" },
+      { "name": "Vayalur Murugan", "desc": "Peaceful Lord Murugan temple", "distSrirangam": "15 km" },
+      { "name": "Tanjore Brahadeswara", "desc": "UNESCO World Heritage Site", "distSrirangam": "60 km" }
+    ],
     "fromSrirangam": "from Srirangam",
     "fromTrichy": "from Trichy Central",
     "temples": [

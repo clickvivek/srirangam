@@ -1,6 +1,131 @@
 {
-  "viswaroopa": "06:00 AM - 07:15 AM",
-  "morning": "09:30 AM - 12:30 PM",
-  "afternoon": "02:30 PM - 05:30 PM",
-  "evening": "07:00 PM - 09:00 PM"
+  "default": {
+    "viswaroopa": "06:00 AM - 07:15 AM",
+    "morning": "09:00 AM - 12:30 PM",
+    "afternoon": "02:30 PM - 05:30 PM",
+    "evening": "07:00 PM - 09:00 PM"
+  },
+  "overrides": [
+    {
+      "day_number": 83,
+      "date": "21.7.2026",
+      "day": "Tuesday",
+      "slots": [
+        "6.01 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    },
+    {
+      "day_number": 84,
+      "date": "22.7.2026",
+      "day": "Wednesday",
+      "slots": [
+        "6.02 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    },
+    {
+      "day_number": 85,
+      "date": "23.7.2026",
+      "day": "Thursday",
+      "slots": [
+        "6.00 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    },
+    {
+      "day_number": 86,
+      "date": "24.7.2026",
+      "day": "Friday",
+      "slots": [
+        "6.00 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    },
+    {
+      "day_number": 87,
+      "date": "25.7.2026",
+      "day": "Saturday",
+      "slots": [
+        "6.00 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    },
+    {
+      "day_number": 88,
+      "date": "26.7.2026",
+      "day": "Sunday",
+      "slots": [
+        "6.00 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    },
+    {
+      "day_number": 89,
+      "date": "27.7.2026",
+      "day": "Monday",
+      "slots": [
+        "6.00 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    },
+    {
+      "day_number": 90,
+      "date": "28.7.2026",
+      "day": "Tuesday",
+      "slots": [
+        "6.00 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    },
+    {
+      "day_number": 91,
+      "date": "29.7.2026",
+      "day": "Wednesday",
+      "slots": [
+        "6.00 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    },
+    {
+      "day_number": null,
+      "date": "30.7.2026",
+      "day": "Thursday",
+      "slots": [
+        "6.00 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    },
+    {
+      "day_number": null,
+      "date": "31.7.2026",
+      "day": "Friday",
+      "slots": [
+        "6.00 am to 7.00 am",
+        "9.30 am to 12.30 pm",
+        "2.30 pm to 5.30 pm",
+        "7.00 pm to 9.00 pm"
+      ]
+    }
+  ]
 }

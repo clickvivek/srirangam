@@ -22,12 +22,8 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
   const { lang } = await params;
   const dict = await getDictionary(lang) as any;
 
-  let timings = {
-    viswaroopa: "06:00 AM - 07:15 AM",
-    morning: "09:00 AM - 12:00 PM",
-    afternoon: "01:15 PM - 05:45 PM",
-    evening: "06:45 PM - 09:00 PM"
-  };
+  let timings = { date: '', viswaroopa: '', morning: '', afternoon: '', evening: '' };
+  let calendarLink = "https://srirangamranganathar.hrce.tn.gov.in/resources/docs/invitation/777/invitation_1.pdf";
 
   try {
     const dataFilePath = path.join(process.cwd(), 'data', 'timings.json');
@@ -40,7 +36,6 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
     
     if (data.overrides && Array.isArray(data.overrides)) {
       const override = data.overrides.find((o: any) => {
-        // try to match YYYY-MM-DD to DD.MM.YYYY etc
         if (o.date === todayStr) return true;
         if (o.date && o.date.includes('.')) {
           const [d, m, y] = o.date.split('.');
@@ -68,6 +63,17 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
     timings = { ...currentTimings, date: overrideDate };
   } catch (err) {
     console.error("Could not load timings, using defaults.", err);
+  }
+
+  try {
+    const calFilePath = path.join(process.cwd(), 'data', 'calendar.json');
+    const calContents = await fs.readFile(calFilePath, 'utf8');
+    const calData = JSON.parse(calContents);
+    if (calData.link) {
+      calendarLink = calData.link;
+    }
+  } catch (err) {
+    console.error('Failed to read calendar data:', err);
   }
 
   let updateText = "";
@@ -207,13 +213,14 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
           <div style={{textAlign: 'center', marginBottom: '3rem'}}>
             <span>{dict.home.darshanSchedule}</span>
             <h2>{dict.home.templeTimings}</h2>
-            {timings.date && <p style={{ fontWeight: 'bold', color: 'var(--primary-color)', marginBottom: '0.5rem', marginTop: '-0.5rem' }}>Timings for: {timings.date}</p>}
+            {timings.date && <p style={{ display: 'inline-block', backgroundColor: 'var(--secondary-color)', color: 'var(--primary-color)', padding: '0.25rem 0.75rem', borderRadius: '20px', fontWeight: 'bold', fontSize: '0.9rem', marginBottom: '1rem', marginTop: '-0.25rem', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>Timings for: {timings.date}</p>}
             <p>{dict.home.timingsSub}</p>
+            <p style={{ marginTop: '0.5rem', color: '#d35400', fontSize: '0.9rem', fontWeight: '500' }}>
+              {dict.home.scheduleWarning || "Schedule may change on daily basis, Check the timings everyday"}
+            </p>
           </div>
           
           <div style={{display: 'flex', justifyContent: 'center'}}>
-             {/* Note: I'll leave a placeholder for the timings list based on screenshots, 
-                 since it's a bit cut off in the provided screenshot, we'll keep it simple */}
              <div style={{maxWidth: '600px', width: '100%', backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.05)', border: '1px solid var(--border-color)'}}>
                <div className="timing-row">
                  <strong style={{color: 'var(--primary-color)'}}>{dict.home.viswaroopaDarshan}</strong>
@@ -235,7 +242,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
                <div style={{ marginTop: '1.5rem', display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', width: '100%', borderTop: '1px solid #eee', paddingTop: '1.5rem' }}>
                  <ImportantNotePopup label={dict.home.importantNote} data={dict.importantPopup} />
                  <a 
-                   href="https://srirangamranganathar.hrce.tn.gov.in/resources/docs/invitation/777/invitation_1.pdf"
+                   href={calendarLink}
                    target="_blank"
                    rel="noopener noreferrer"
                    style={{ color: '#d95c14', fontWeight: 600, textDecoration: 'underline', fontSize: '0.95rem', whiteSpace: 'nowrap' }}

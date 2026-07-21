@@ -22,6 +22,7 @@
     "darshanSchedule": "DARSHAN SCHEDULE",
     "templeTimings": "Temple Timings",
     "timingsSub": "Temple Timings — 4 Darshan Slots Daily",
+    "scheduleWarning": "Schedule may change on daily basis, Check the timings everyday",
     "explore": "Deities & Seva",
     "quickAccess": "QUICK ACCESS",
     "viswaroopaDarshan": "Viswaroopa Darshan (Morning)",
@@ -169,7 +170,7 @@
     "title": "Nearby Temples",
     "subtitle": "Extend your spiritual journey by visiting these magnificent and powerful temples located in and around the Trichy and Tanjore regions.",
     "sacredEnvirons": "SACRED ENVIRONS",
-    "pilgrimageCircuit": "समीपवर्ती देवालय — Pilgrimage Circuit",
+    "pilgrimageCircuit": "Pilgrimage Circuit",
     "explore": "Explore →",
     "carousel": [
       { "name": "Thiruvanaikaval Jambukeswarar", "desc": "Appu Lingam (Water element)", "distSrirangam": "2.5 km" },

@@ -16,7 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 }
 
 export default async function TimingsPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {
-  const { lang } = await params;
+  const resolvedParams = await params;
+  const lang = resolvedParams.lang;
   const dict = await getDictionary(lang) as any;
 
   let timings = {
@@ -25,6 +26,8 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
     afternoon: "01:15 PM - 05:45 PM",
     evening: "06:45 PM - 09:00 PM"
   };
+
+  let calendarLink = "https://srirangamranganathar.hrce.tn.gov.in/resources/docs/invitation/777/invitation_1.pdf";
 
   try {
     const dataFilePath = path.join(process.cwd(), 'data', 'timings.json');
@@ -66,12 +69,23 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
     console.error("Could not load timings, using defaults.", err);
   }
 
+  try {
+    const calFilePath = path.join(process.cwd(), 'data', 'calendar.json');
+    const calContents = await fs.readFile(calFilePath, 'utf8');
+    const calData = JSON.parse(calContents);
+    if (calData.link) {
+      calendarLink = calData.link;
+    }
+  } catch (err) {
+    console.error('Failed to read calendar data:', err);
+  }
+
   const isTamil = lang === 'ta';
 
   return (
     <div style={{ backgroundColor: '#fdfaf4', minHeight: '100vh', paddingBottom: '4rem' }}>
       {/* Header */}
-      <div className="page-header-container" style={{ background: 'linear-gradient(135deg, rgba(14, 73, 44, 1), rgba(10, 53, 32, 1))', padding: '1rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div className="page-header-container" style={{ position: 'relative', background: 'linear-gradient(135deg, rgba(14, 73, 44, 1), rgba(10, 53, 32, 1))', padding: '3rem 1rem', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Link href={`/${lang}`} className="back-to-home-link" style={{ alignSelf: 'flex-start', marginBottom: '0.5rem', color: 'white', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
           <ArrowLeft size={20} />
           {dict?.timingsPage?.home || "Home"}
@@ -118,7 +132,7 @@ export default async function TimingsPage({ params }: { params: Promise<{ lang: 
               <div style={{ marginTop: '1.5rem', display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', width: '100%', borderTop: '1px solid #eee', paddingTop: '1.5rem' }}>
                 <ImportantNotePopup label={dict?.home?.importantNote || "Important Note"} data={dict?.importantPopup} />
                 <a 
-                  href="https://srirangamranganathar.hrce.tn.gov.in/resources/docs/invitation/777/invitation_1.pdf"
+                  href={calendarLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ color: '#d95c14', fontWeight: 600, textDecoration: 'underline', fontSize: '0.95rem', whiteSpace: 'nowrap' }}

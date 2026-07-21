@@ -26,6 +26,15 @@ export default function NearbyTemplesCarousel({ lang, dict }: { lang: string, di
     { name: "Tanjore Brahadeswara", desc: "UNESCO World Heritage Site", distSrirangam: "60 km" }
   ];
 
+  const links = [
+    "Thiruvanaikaval-Jambukeswarar-Temple",
+    "rockfort-ucchi-pillayar-temple",
+    "samayapuram-mariamman-temple",
+    "uraiyur-vekkali-amman-temple",
+    "vayalur-murugan-temple",
+    "tanjore-brahadeswara-temple"
+  ];
+
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const scrollAmount = 300; // Roughly one card width
@@ -62,7 +71,7 @@ export default function NearbyTemplesCarousel({ lang, dict }: { lang: string, di
         className="hide-scrollbar"
       >
         {temples.map((temple, idx) => (
-          <div key={idx} style={{
+          <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy#${links[idx]}`} key={idx} style={{
             flex: '0 0 calc(25% - 1.2rem)', // 4 items per row
             minWidth: '220px',
             backgroundColor: 'white',
@@ -72,6 +81,8 @@ export default function NearbyTemplesCarousel({ lang, dict }: { lang: string, di
             display: 'flex',
             flexDirection: 'column',
             transition: 'transform 0.2s',
+            textDecoration: 'none',
+            color: 'inherit'
           }}
           onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-4px)'}
           onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
@@ -84,9 +95,9 @@ export default function NearbyTemplesCarousel({ lang, dict }: { lang: string, di
             <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
               <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', color: '#571a15', minHeight: '40px' }}>{temple.name}</h3>
               <p style={{ margin: '0 0 1rem 0', fontSize: '0.9rem', color: '#666', flexGrow: 1 }}>{temple.desc}</p>
-              <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`} style={{ fontSize: '0.9rem', color: '#d95c14', fontWeight: 600, textDecoration: 'none' }}>{dict?.nearby?.explore || "Explore →"}</Link>
+              <span style={{ fontSize: '0.9rem', color: '#d95c14', fontWeight: 600, textDecoration: 'none' }}>{dict?.nearby?.explore || "Explore →"}</span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 

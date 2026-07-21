@@ -74,7 +74,7 @@ export default async function Surroundings({ params }: { params: Promise<{ lang:
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           {temples.map((temple, index) => {
             const CardContent = (
-              <div style={{ 
+              <div id={temple.link} style={{ 
                 display: 'flex', 
                 backgroundColor: 'white', 
                 borderRadius: '16px', 
@@ -82,7 +82,8 @@ export default async function Surroundings({ params }: { params: Promise<{ lang:
                 boxShadow: '0 8px 25px rgba(0,0,0,0.06)', 
                 border: '1px solid #f0e6d6',
                 transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                cursor: temple.link ? 'pointer' : 'default'
+                cursor: temple.link ? 'pointer' : 'default',
+                scrollMarginTop: '100px'
               }} className="row-card">
                 
                 {/* Image Side */}

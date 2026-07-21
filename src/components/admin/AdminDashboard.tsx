@@ -3,12 +3,13 @@
 import React, { useState } from 'react';
 import AdminTimingsTab from './AdminTimingsTab';
 import AdminUpdatesTab from './AdminUpdatesTab';
+import AdminCalendarTab from './AdminCalendarTab';
 import GalleryUploadForm from '@/components/GalleryUploadForm';
 
 export default function AdminDashboard({ dict, lang }: { dict: any, lang: string }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [secretCode, setSecretCode] = useState('');
-  const [activeTab, setActiveTab] = useState<'timings' | 'gallery' | 'updates'>('timings');
+  const [activeTab, setActiveTab] = useState<'timings' | 'calendar' | 'gallery' | 'updates'>('timings');
   const [status, setStatus] = useState({ type: '', message: '' });
 
   const handleLogin = (e: React.FormEvent) => {
@@ -59,6 +60,7 @@ export default function AdminDashboard({ dict, lang }: { dict: any, lang: string
         </div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           <button onClick={() => setActiveTab('timings')} style={getTabStyle(activeTab === 'timings')}>Temple Timings</button>
+          <button onClick={() => setActiveTab('calendar')} style={getTabStyle(activeTab === 'calendar')}>Calendar Link</button>
           <button onClick={() => setActiveTab('gallery')} style={getTabStyle(activeTab === 'gallery')}>Photo Gallery</button>
           <button onClick={() => setActiveTab('updates')} style={getTabStyle(activeTab === 'updates')}>Recent Updates</button>
         </div>
@@ -70,6 +72,7 @@ export default function AdminDashboard({ dict, lang }: { dict: any, lang: string
       {/* Main Content Area */}
       <div style={{ flex: '3 1 500px', backgroundColor: 'white', padding: '2rem', borderRadius: '12px', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', minHeight: '60vh' }}>
         {activeTab === 'timings' && <AdminTimingsTab secretCode={secretCode} onLogout={handleLogout} />}
+        {activeTab === 'calendar' && <AdminCalendarTab secretCode={secretCode} onLogout={handleLogout} />}
         {activeTab === 'gallery' && (
           <div>
             <h2 style={{ color: '#571a15', marginBottom: '1.5rem', borderBottom: '2px solid #f0f0f0', paddingBottom: '0.5rem' }}>Photo Gallery Upload</h2>

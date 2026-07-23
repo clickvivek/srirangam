@@ -82,6 +82,21 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
+      <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-26C0FWB69M"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'G-26C0FWB69M');
+            `,
+          }}
+        />
+      </head>
       <body className={`${lora.variable} ${inter.variable}`}>
         <Header />
         <main>{children}</main>

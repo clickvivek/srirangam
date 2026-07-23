@@ -12,7 +12,7 @@ export default async function Surroundings({ params }: { params: Promise<{ lang:
     {
       name: nearby.temples?.[0]?.name || "Thiruvanaikaval Jambukeswarar Temple",
       desc: nearby.temples?.[0]?.desc || "One of the five major Shiva Temples of Tamil Nadu representing the Mahābhūta or five great elements. This temple represents the element of water (Appu Lingam).",
-      image: "/srirangam/thiruvanikovil-1.png",
+      image: "/srirangam/thiruvanikovil-1.jpg",
       distSrirangam: "2.5 km",
       distTrichy: "8 km",
       link: "Thiruvanaikaval-Jambukeswarar-Temple"

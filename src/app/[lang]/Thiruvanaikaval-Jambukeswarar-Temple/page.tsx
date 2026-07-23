@@ -29,7 +29,7 @@ export default async function JambukeswararTemple({ params }: { params: Promise<
 
   return (
     <>
-      <section className="hero animate-fade-in" style={{ height: '30vh', minHeight: '30vh', background: 'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("/srirangam/thiruvanikovil-hero.png") center/cover no-repeat' }}>
+      <section className="hero animate-fade-in" style={{ height: '30vh', minHeight: '30vh', background: 'linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url("/srirangam/thiruvanikovil-hero.jpg") center/cover no-repeat' }}>
         <div className="container hero-content" style={{ position: 'relative' }}>
           <Link href={`/${lang}/Temples-Nearby-Srirangam-Trichy`} className="back-link">
             <ArrowLeft size={20} />

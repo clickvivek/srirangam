@@ -8,7 +8,7 @@ export default function NearbyTemplesCarousel({ lang, dict }: { lang: string, di
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const images = [
-    "/srirangam/thiruvanikovil-1.png",
+    "/srirangam/thiruvanikovil-1.jpg",
     "/srirangam/Rockfort3.png",
     "/srirangam/samayapuram1.png",
     "/srirangam/uraiyur1.jpg",

@@ -1,4 +1,5 @@
 import React from "react";
+import Script from "next/script";
 
 export default function RootLayout({
   children,
@@ -9,8 +10,9 @@ export default function RootLayout({
     <html>
       <head>
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-26C0FWB69M"></script>
-        <script
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-26C0FWB69M"></Script>
+        <Script
+          id="google-analytics-root"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];

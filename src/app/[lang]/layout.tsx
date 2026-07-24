@@ -71,6 +71,8 @@ export function generateStaticParams() {
   ];
 }
 
+import Script from "next/script";
+
 export default async function RootLayout({
   children,
   params,
@@ -84,8 +86,9 @@ export default async function RootLayout({
     <html lang={lang}>
       <head>
         {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-26C0FWB69M"></script>
-        <script
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-26C0FWB69M"></Script>
+        <Script
+          id="google-analytics"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];

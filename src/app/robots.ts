@@ -7,8 +7,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/admin/'],
+      disallow: ['/api/', '/admin/', '/*/admin/'],
     },
-    sitemap: 'https://srirangam.org/sitemap.xml',
+    sitemap: 'https://srirangam.net/srirangam/sitemap.xml',
   };
 }

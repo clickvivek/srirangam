@@ -5,6 +5,10 @@ import AdminDashboard from '@/components/admin/AdminDashboard';
 export const metadata = {
   title: 'Admin Dashboard - Sri Ranganathaswamy Temple',
   description: 'Unified Admin Dashboard',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default async function AdminPage({ params }: { params: Promise<{ lang: 'en' | 'ta' | 'hi' | 'te' | 'ml' | 'kn' }> }) {

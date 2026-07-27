@@ -21,7 +21,7 @@ const routes = [
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://srirangam.org'; // Replace with actual domain when going to production
+  const baseUrl = 'https://srirangam.net/srirangam'; 
   
   const sitemapEntries: MetadataRoute.Sitemap = [
     {

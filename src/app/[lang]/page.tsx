@@ -85,6 +85,19 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
   } catch (err) {
     console.error("Could not load update text.", err);
   }
+
+  let queueWaitTime = dict?.home?.waitMin || "~45 min wait";
+  try {
+    const queueFilePath = path.join(process.cwd(), 'data', 'queue.json');
+    const queueContents = await fs.readFile(queueFilePath, 'utf8');
+    const queueData = JSON.parse(queueContents);
+    if (queueData.waitMin) {
+      queueWaitTime = queueData.waitMin;
+    }
+  } catch (err) {
+    console.error("Could not load queue text.", err);
+  }
+
   return (
     <>
       <section className="hero animate-fade-in">
@@ -107,7 +120,7 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
               <Users size={28} style={{marginRight: '0.75rem', flexShrink: 0}}/>
               <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <span>{dict.home.todaysQueue}</span>
-                <strong>{dict.home.waitMin}</strong>
+                <strong>{queueWaitTime}</strong>
               </div>
             </button>
 

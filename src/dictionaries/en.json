@@ -483,5 +483,50 @@
     "p1": "Devotees are strongly advised to join the darshan queue at least <strong>30 minutes</strong> before the scheduled temple closing time to ensure entry before the queue is closed.",
     "p2": "During major festivals, especially <strong>Vaikunta Ekadasi</strong>, the darshan queue may be closed up to <strong>one hour</strong> before the scheduled closing time, depending on the number of devotees and the crowd within the temple complex. Visitors are therefore encouraged to arrive well in advance during festival periods.",
     "p3": "Please note that the <strong>Sri Ranga Nachiyar Temple</strong> (also known as Sri Ranga Nayaki Temple, Thayar Sannidhi, or Amma Sannidhi) located within the temple complex generally closes at approximately the same time as the Sri Ranganathar Temple. Devotees planning to have darshan at both shrines are advised to schedule their visit accordingly to avoid missing the closing time."
+  },
+  "dressCodePage": {
+    "title": "Temple Dress Code Guidelines",
+    "subtitle": "Please follow these guidelines to maintain the sanctity and spiritual atmosphere of the temple.",
+    "forMen": "For Men",
+    "forWomen": "For Women",
+    "recommended": "Recommended Attire",
+    "notPermitted": "Not Permitted",
+    "men": {
+      "rec1Title": "Dhoti (Veshti)",
+      "rec1Desc": "Traditional white or colored dhoti. Wearing an angavastram (upper cloth) is encouraged.",
+      "rec2Title": "Panchakacham",
+      "rec2Desc": "The traditional five-fold style of draping a dhoti, especially appropriate for religious ceremonies.",
+      "rec3Title": "Kurta with Dhoti",
+      "rec3Desc": "A simple kurta or traditional shirt paired with a dhoti is a respectful choice.",
+      "rec4Title": "Formal Shirt with Trousers (Permitted)",
+      "rec4Desc": "Formal trousers with a collared shirt, collar T-shirts, or jeans are permitted. However, traditional Indian attire is preferred.",
+      "not1Title": "Shorts",
+      "not1Desc": "Not allowed inside the temple premises.",
+      "not2Title": "Sleeveless Shirts/Vests",
+      "not2Desc": "Clothing must cover the shoulders.",
+      "not3Title": "Ripped/Revealing Clothing",
+      "not3Desc": "Please wear clean, modest attire.",
+      "not4Title": "Leather Items",
+      "not4Desc": "Avoid carrying/wearing leather belts inside the main sanctum."
+    },
+    "women": {
+      "rec1Title": "Saree",
+      "rec1Desc": "The most traditional and widely preferred attire for temple visits.",
+      "rec2Title": "Half Saree (Pavadai Davani)",
+      "rec2Desc": "A traditional South Indian outfit suitable for all religious occasions.",
+      "rec3Title": "Salwar Kameez",
+      "rec3Desc": "Acceptable when worn with a dupatta covering the shoulders.",
+      "rec4Title": "Churidar with Long Kurta (Permitted)",
+      "rec4Desc": "A modest, comfortable, and appropriate choice for temple visits.",
+      "not1Title": "Jeans/Western Casuals",
+      "not1Desc": "Traditional attire is preferred for main sanctum darshan.",
+      "not2Title": "Sleeveless Tops",
+      "not2Desc": "Clothing should adequately cover the shoulders.",
+      "not3Title": "Short Skirts/Dresses",
+      "not3Desc": "Attire should extend below the knees.",
+      "not4Title": "Revealing Clothing",
+      "not4Desc": "Please wear modest clothing that reflects the sanctity."
+    },
+    "note": "Note: The temple administration reserves the right to deny entry to anyone not adhering to the dress code. Your cooperation in maintaining the spiritual decorum is highly appreciated."
   }
 }

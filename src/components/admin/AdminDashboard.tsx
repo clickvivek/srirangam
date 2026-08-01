@@ -4,12 +4,13 @@ import React, { useState } from 'react';
 import AdminTimingsTab from './AdminTimingsTab';
 import AdminUpdatesTab from './AdminUpdatesTab';
 import AdminCalendarTab from './AdminCalendarTab';
+import AdminQueueTab from './AdminQueueTab';
 import GalleryUploadForm from '@/components/GalleryUploadForm';
 
 export default function AdminDashboard({ dict, lang }: { dict: any, lang: string }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [secretCode, setSecretCode] = useState('');
-  const [activeTab, setActiveTab] = useState<'timings' | 'calendar' | 'gallery' | 'updates'>('timings');
+  const [activeTab, setActiveTab] = useState<'timings' | 'calendar' | 'gallery' | 'updates' | 'queue'>('timings');
   const [status, setStatus] = useState({ type: '', message: '' });
 
   const handleLogin = (e: React.FormEvent) => {
@@ -63,6 +64,7 @@ export default function AdminDashboard({ dict, lang }: { dict: any, lang: string
           <button onClick={() => setActiveTab('calendar')} style={getTabStyle(activeTab === 'calendar')}>Calendar Link</button>
           <button onClick={() => setActiveTab('gallery')} style={getTabStyle(activeTab === 'gallery')}>Photo Gallery</button>
           <button onClick={() => setActiveTab('updates')} style={getTabStyle(activeTab === 'updates')}>Recent Updates</button>
+          <button onClick={() => setActiveTab('queue')} style={getTabStyle(activeTab === 'queue')}>Today's Queue</button>
         </div>
         <div style={{ padding: '1rem', borderTop: '1px solid #eee' }}>
           <button onClick={handleLogout} style={{ width: '100%', padding: '10px', backgroundColor: '#f1f5f9', border: 'none', borderRadius: '6px', color: '#475569', cursor: 'pointer', fontWeight: '600' }}>Logout</button>
@@ -80,6 +82,7 @@ export default function AdminDashboard({ dict, lang }: { dict: any, lang: string
           </div>
         )}
         {activeTab === 'updates' && <AdminUpdatesTab secretCode={secretCode} onLogout={handleLogout} />}
+        {activeTab === 'queue' && <AdminQueueTab secretCode={secretCode} onLogout={handleLogout} />}
       </div>
 
     </div>

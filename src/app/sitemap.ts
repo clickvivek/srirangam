@@ -4,6 +4,7 @@ const languages = ['en', 'ta', 'hi', 'te', 'ml', 'kn'];
 const routes = [
   '',
   '/deity-seva',
+  '/virtual-tour',
   '/chakrathalwar',
   '/dhanvantri',
   '/garudalwar',

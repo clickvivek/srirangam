@@ -1,6 +1,6 @@
 import { 
   Clock, MapPin, FileText, CalendarHeart, Gift, 
-  Building, Bus, Camera, Users, Calendar, Map, Compass, Sparkles
+  Building, Bus, Camera, Users, Calendar, Map, Compass, Sparkles, MonitorPlay
 } from 'lucide-react';
 import Link from 'next/link';
 import fs from 'fs/promises';
@@ -138,6 +138,12 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
                 <Compass size={32} color="#c28e5e" />
               </div>
               <span>{dict.navigation.deity}</span>
+            </Link>
+            <Link href={`/${lang}/virtual-tour`} className="quick-link-item">
+              <div className="quick-icon">
+                <MonitorPlay size={32} color="#d95c14" />
+              </div>
+              <span>{dict.navigation.virtualTour || "Virtual Tour"}</span>
             </Link>
             <Link href={`/${lang}/map`} className="quick-link-item">
               <div className="quick-icon">

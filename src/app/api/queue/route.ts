@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
 
+export const dynamic = 'force-static';
+
 const SECRET_CODE = process.env.ADMIN_SECRET || 'secret123';
 
 export async function POST(req: NextRequest) {

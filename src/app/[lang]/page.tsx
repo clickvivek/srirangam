@@ -152,6 +152,18 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
               </div>
               <span>{dict.navigation.deity}</span>
             </Link>
+            <Link href={`/${lang}/seva-booking`} className="quick-link-item">
+              <div className="quick-icon">
+                <CalendarHeart size={32} color="#571a15" />
+              </div>
+              <span>{dict.navigation.seva}</span>
+            </Link>
+            <Link href={`/${lang}/map`} className="quick-link-item">
+              <div className="quick-icon">
+                <Map size={32} color="#571a15" />
+              </div>
+              <span>{dict.navigation.map}</span>
+            </Link>
             <Link href={`/${lang}/virtual-tour`} className="quick-link-item">
               <div className="quick-icon">
                 <MonitorPlay size={32} color="#d95c14" />
@@ -164,23 +176,11 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
               </div>
               <span>{dict.navigation.dressCode || "Dress Code"}</span>
             </Link>
-            <Link href={`/${lang}/map`} className="quick-link-item">
-              <div className="quick-icon">
-                <Map size={32} color="#571a15" />
-              </div>
-              <span>{dict.navigation.map}</span>
-            </Link>
             <Link href={`/${lang}/history`} className="quick-link-item">
               <div className="quick-icon">
                 <FileText size={32} color="#c28e5e" />
               </div>
               <span>{dict.navigation.history}</span>
-            </Link>
-            <Link href={`/${lang}/seva-booking`} className="quick-link-item">
-              <div className="quick-icon">
-                <CalendarHeart size={32} color="#571a15" />
-              </div>
-              <span>{dict.navigation.seva}</span>
             </Link>
             <Link href={`/${lang}/prasadam`} className="quick-link-item">
               <div className="quick-icon">

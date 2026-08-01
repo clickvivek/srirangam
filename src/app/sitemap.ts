@@ -5,6 +5,7 @@ const routes = [
   '',
   '/deity-seva',
   '/virtual-tour',
+  '/dress-code',
   '/chakrathalwar',
   '/dhanvantri',
   '/garudalwar',

@@ -1,6 +1,6 @@
 import { 
   Clock, MapPin, FileText, CalendarHeart, Gift, 
-  Building, Bus, Camera, Users, Calendar, Map, Compass, Sparkles, MonitorPlay
+  Building, Bus, Camera, Users, Calendar, Map, Compass, Sparkles, MonitorPlay, Shirt
 } from 'lucide-react';
 import Link from 'next/link';
 import fs from 'fs/promises';
@@ -144,6 +144,12 @@ export default async function Home({ params }: { params: Promise<{ lang: 'en' | 
                 <MonitorPlay size={32} color="#d95c14" />
               </div>
               <span>{dict.navigation.virtualTour || "Virtual Tour"}</span>
+            </Link>
+            <Link href={`/${lang}/dress-code`} className="quick-link-item">
+              <div className="quick-icon">
+                <Shirt size={32} color="#571a15" />
+              </div>
+              <span>{dict.navigation.dressCode || "Dress Code"}</span>
             </Link>
             <Link href={`/${lang}/map`} className="quick-link-item">
               <div className="quick-icon">

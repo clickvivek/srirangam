@@ -10,8 +10,5 @@
       "redirect": "/srirangam/en",
       "statusCode": 301
     }
-  ],
-  "navigationFallback": {
-    "rewrite": "/srirangam/index.html"
-  }
+  ]
 }

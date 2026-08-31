@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  output: "standalone",
+  output: process.env.BUILD_FOR_PAGES === 'true' ? 'export' : 'standalone',
   turbopack: {},
 };
 
